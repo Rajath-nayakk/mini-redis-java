@@ -26,3 +26,4 @@ public final class ServerConfig {
     private final int maxClients;
     private final int maxRequestSize;
     private final int timeoutMs;
+    private final Path dataDir;
