@@ -173,3 +173,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 result.add(stringVal.getValue());
             } else {
                 result.add(null);
+            }
