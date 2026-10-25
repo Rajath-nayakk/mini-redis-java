@@ -112,3 +112,4 @@ class ServerIntegrationTest {
             RespValue r2 = sendAndReceive(c2, "*3\r\n$3\r\nSET\r\n$5\r\nuser2\r\n$3\r\nBob\r\n");
 
             assertEquals("OK", ((RespValue.RespSimpleString) r1).value());
+            assertEquals("OK", ((RespValue.RespSimpleString) r2).value());
