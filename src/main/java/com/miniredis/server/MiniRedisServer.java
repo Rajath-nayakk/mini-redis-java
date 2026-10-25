@@ -69,3 +69,4 @@ public class MiniRedisServer {
                     break;
                 }
 
+                if (config.getTimeoutMs() > 0) {
