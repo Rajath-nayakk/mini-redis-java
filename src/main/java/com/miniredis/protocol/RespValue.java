@@ -115,3 +115,4 @@ public interface RespValue {
         }
     }
 
+    record RespArray(List<RespValue> elements) implements RespValue {
