@@ -46,3 +46,4 @@ public class CommandDispatcher {
         String upperCommand = commandName.toUpperCase(Locale.ROOT);
 
         try {
+            return switch (upperCommand) {
