@@ -149,3 +149,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleDecr(List<String> args) {
+        if (args.size() != 1) {
