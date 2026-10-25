@@ -84,3 +84,4 @@ if ($env:MAVEN_USER_HOME) {
   $MAVEN_M2_PATH = "$env:MAVEN_USER_HOME"
 }
 
+if (-not (Test-Path -Path $MAVEN_M2_PATH)) {
