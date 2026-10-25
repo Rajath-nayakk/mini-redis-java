@@ -35,3 +35,4 @@ public class RespParser {
     }
 
     public void append(byte[] data, int offset, int length) {
+        if (data == null || length <= 0) {
