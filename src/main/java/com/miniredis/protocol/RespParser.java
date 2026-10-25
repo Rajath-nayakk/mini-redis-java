@@ -93,3 +93,4 @@ public class RespParser {
         String str = new String(buffer, start, len, StandardCharsets.UTF_8);
         readPos = crlfIndex + 2;
         return new RespValue.RespSimpleString(str);
+    }
