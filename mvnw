@@ -176,3 +176,4 @@ verbose "Downloading from: $distributionUrl"
 verbose "Downloading to: $TMP_DOWNLOAD_DIR/$distributionUrlName"
 
 # select .zip or .tar.gz
+if ! command -v unzip >/dev/null; then
