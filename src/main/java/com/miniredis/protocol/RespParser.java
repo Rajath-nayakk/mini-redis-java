@@ -31,3 +31,4 @@ public class RespParser {
     public void append(byte[] data) {
         if (data != null && data.length > 0) {
             append(data, 0, data.length);
+        }
