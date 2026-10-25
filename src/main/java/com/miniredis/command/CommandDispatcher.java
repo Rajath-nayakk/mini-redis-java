@@ -18,3 +18,4 @@ public class CommandDispatcher {
     }
 
     public RespValue dispatch(RespValue request) {
+        if (!(request instanceof RespValue.RespArray array) || array.isNull()) {
