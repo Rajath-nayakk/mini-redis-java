@@ -215,3 +215,4 @@ public class RespParser {
                 return i;
             }
         }
+        return -1;
