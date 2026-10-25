@@ -92,3 +92,4 @@ public final class ServerConfig {
             return builder.build();
         }
         for (int i = 0; i < args.length; i++) {
+            String arg = args[i];
