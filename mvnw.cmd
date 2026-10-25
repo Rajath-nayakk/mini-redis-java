@@ -83,3 +83,4 @@ $MAVEN_M2_PATH = "$HOME/.m2"
 if ($env:MAVEN_USER_HOME) {
   $MAVEN_M2_PATH = "$env:MAVEN_USER_HOME"
 }
+
