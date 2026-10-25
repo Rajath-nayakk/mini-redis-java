@@ -76,3 +76,4 @@ class ServerConfigTest {
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().aofSyncPolicy("unknown").build());
     }
 
+    @Test
