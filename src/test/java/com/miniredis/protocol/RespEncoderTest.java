@@ -29,3 +29,4 @@ class RespEncoderTest {
     }
 
     @Test
+    void testEncodeBulkString() {
