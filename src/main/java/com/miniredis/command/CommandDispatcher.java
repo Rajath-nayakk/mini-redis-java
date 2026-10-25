@@ -114,3 +114,4 @@ public class CommandDispatcher {
         if (args.isEmpty()) {
             return RespValue.error("ERR wrong number of arguments for 'exists' command");
         }
+        int count = engine.exists(args);
