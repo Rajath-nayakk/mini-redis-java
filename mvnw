@@ -240,3 +240,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
   else
     echo "Checksum validation was requested but neither 'sha256sum' or 'shasum' are available." >&2
     echo "Please install either command, or disable validation by removing 'distributionSha256Sum' from your maven-wrapper.properties." >&2
+    exit 1
