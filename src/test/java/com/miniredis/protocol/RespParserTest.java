@@ -35,3 +35,4 @@ class RespParserTest {
         assertEquals("ERR unknown command", ((RespValue.RespError) val).message());
     }
 
+    @Test
