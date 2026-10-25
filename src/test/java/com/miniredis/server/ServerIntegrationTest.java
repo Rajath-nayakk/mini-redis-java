@@ -84,3 +84,4 @@ class ServerIntegrationTest {
     }
 
     @Test
+    void testSetFollowedByGet() throws Exception {
