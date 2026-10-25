@@ -34,3 +34,4 @@ public class ClientSession implements Runnable {
     public void run() {
         try (socket;
              InputStream in = socket.getInputStream();
+             OutputStream out = socket.getOutputStream()) {
