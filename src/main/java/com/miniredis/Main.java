@@ -30,3 +30,4 @@ public final class Main {
         System.out.println("  /\\/\\   ___   (_)     | |  __ \\        | (_)      ");
         System.out.println(" /    \\ / _ \\  | |     | | |__) |___  __| |_ ___   ");
         System.out.println("/ /\\/\\ \\ (_) | | |_ /\\| |  _  // _ \\/ _ | / __|  ");
+        System.out.println("\\/    \\/\\___/  |_(_)\\__/ |_| \\_\\\\___/\\__,_|_\\___|  ");
