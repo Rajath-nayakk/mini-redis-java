@@ -156,3 +156,4 @@ if [ -d "$MAVEN_HOME" ]; then
 fi
 
 case "${distributionUrl-}" in
+*?-bin.zip | *?maven-mvnd-?*-?*.zip) ;;
