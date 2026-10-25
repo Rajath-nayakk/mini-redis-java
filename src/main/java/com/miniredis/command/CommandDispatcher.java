@@ -76,3 +76,4 @@ public class CommandDispatcher {
         if (args.size() == 1) {
             return RespValue.bulkString(args.get(0));
         }
+        return RespValue.error("ERR wrong number of arguments for 'ping' command");
