@@ -81,3 +81,4 @@ public interface RespValue {
     record RespInteger(long value) implements RespValue {
         @Override
         public RespType getType() {
+            return RespType.INTEGER;
