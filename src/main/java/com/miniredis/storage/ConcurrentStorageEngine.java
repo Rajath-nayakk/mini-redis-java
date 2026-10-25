@@ -163,3 +163,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public List<String> mget(List<String> keys) {
+        if (keys == null || keys.isEmpty()) {
