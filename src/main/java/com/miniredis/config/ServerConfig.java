@@ -138,3 +138,4 @@ public final class ServerConfig {
         public Builder host(String host) { this.host = host; return this; }
         public Builder port(int port) { this.port = port; return this; }
         public Builder maxClients(int maxClients) { this.maxClients = maxClients; return this; }
+        public Builder maxRequestSize(int maxRequestSize) { this.maxRequestSize = maxRequestSize; return this; }
