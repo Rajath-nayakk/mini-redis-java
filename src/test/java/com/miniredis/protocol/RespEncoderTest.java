@@ -17,3 +17,4 @@ class RespEncoderTest {
 
     @Test
     void testEncodeError() {
+        byte[] encoded = RespEncoder.encode(RespValue.error("ERR unknown"));
