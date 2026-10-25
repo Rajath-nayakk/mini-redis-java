@@ -113,3 +113,4 @@ class RespParserTest {
     void testPartialInputAcrossChunks() {
         byte[] full = "*3\r\n$3\r\nSET\r\n$3\r\nkey\r\n$5\r\nvalue\r\n".getBytes(StandardCharsets.UTF_8);
         // Feed 3 bytes at a time
+        for (int i = 0; i < full.length - 1; i += 3) {
