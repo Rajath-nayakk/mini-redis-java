@@ -59,3 +59,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Max clients must be positive: " + maxClients);
         }
         if (maxRequestSize <= 0) {
+            throw new IllegalArgumentException("Max request size must be positive: " + maxRequestSize);
