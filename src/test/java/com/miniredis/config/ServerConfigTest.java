@@ -51,3 +51,4 @@ class ServerConfigTest {
         assertEquals(100_000_000L, config.getMaxMemoryBytes());
         assertEquals("debug", config.getLogLevel());
     }
+
