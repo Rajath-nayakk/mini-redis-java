@@ -145,3 +145,4 @@ public class MiniRedisServer {
         }
     }
 
+    public int getPort() {
