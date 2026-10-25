@@ -65,3 +65,4 @@ class RespEncoderTest {
                 RespValue.bulkString("user:2"),
                 RespValue.nullBulkString()
         ));
+        byte[] encoded = RespEncoder.encode(original);
