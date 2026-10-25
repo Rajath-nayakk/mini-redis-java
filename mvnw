@@ -63,3 +63,4 @@ set_java_home() {
     JAVACMD="$(
       'set' +e
       'unset' -f command 2>/dev/null
+      'command' -v java
