@@ -101,3 +101,4 @@ class RespParserTest {
         parser.append("*0\r\n*-1\r\n".getBytes(StandardCharsets.UTF_8));
         RespValue.RespArray empty = (RespValue.RespArray) parser.parseNext();
         assertNotNull(empty);
+        assertFalse(empty.isNull());
