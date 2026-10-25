@@ -133,3 +133,4 @@ class ServerIntegrationTest {
         for (int i = 0; i < 50 && server.getActiveClientCount() == 0; i++) {
             Thread.sleep(20);
         }
+        assertEquals(1, server.getActiveClientCount());
