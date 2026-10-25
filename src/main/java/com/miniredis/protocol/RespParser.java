@@ -162,3 +162,4 @@ public class RespParser {
             throw new ProtocolException("Bulk string missing terminating CRLF");
         }
 
+        byte[] payload = new byte[bulkLength];
