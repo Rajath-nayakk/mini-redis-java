@@ -206,3 +206,4 @@ public class RespParser {
             }
             elements.add(elem);
         }
+        return new RespValue.RespArray(Collections.unmodifiableList(elements));
