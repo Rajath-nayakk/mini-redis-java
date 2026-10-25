@@ -117,3 +117,4 @@ public class MiniRedisServer {
         }
         running = false;
 
+        try {
