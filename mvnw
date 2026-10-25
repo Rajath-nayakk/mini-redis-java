@@ -85,3 +85,4 @@ hash_string() {
     char="${str%"${str#?}"}"
     h=$(((h * 31 + $(LC_CTYPE=C printf %d "'$char")) % 4294967296))
     str="${str#?}"
+  done
