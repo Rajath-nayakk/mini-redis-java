@@ -90,3 +90,4 @@ class ServerIntegrationTest {
             assertNotNull(setResp);
             assertEquals(RespType.SIMPLE_STRING, setResp.getType());
             assertEquals("OK", ((RespValue.RespSimpleString) setResp).value());
+
