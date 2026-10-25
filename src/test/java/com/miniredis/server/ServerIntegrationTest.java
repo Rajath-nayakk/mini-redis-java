@@ -95,3 +95,4 @@ class ServerIntegrationTest {
     }
 
     @Test
+    void testMultipleRequestsOverOneConnection() throws Exception {
