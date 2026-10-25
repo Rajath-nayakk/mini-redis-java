@@ -155,3 +155,4 @@ class StorageEngineTest {
         assertTrue(userKeys.contains("user:2"));
         assertTrue(userKeys.contains("user:3:profile"));
 
+        Set<String> singleDigitUsers = engine.keys("user:?");
