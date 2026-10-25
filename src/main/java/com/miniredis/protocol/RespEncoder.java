@@ -57,3 +57,4 @@ public final class RespEncoder {
                 out.write(CRLF);
             }
             case BULK_STRING -> {
+                RespValue.RespBulkString bs = (RespValue.RespBulkString) value;
