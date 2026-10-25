@@ -97,3 +97,4 @@ public class RespParser {
 
     private RespValue.RespError parseError() {
         int crlfIndex = findCrlf(readPos + 1);
+        if (crlfIndex == -1) {
