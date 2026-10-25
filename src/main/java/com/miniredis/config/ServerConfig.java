@@ -56,3 +56,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Port must be between 1 and 65535: " + port);
         }
         if (maxClients <= 0) {
+            throw new IllegalArgumentException("Max clients must be positive: " + maxClients);
