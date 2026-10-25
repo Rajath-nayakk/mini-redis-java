@@ -182,3 +182,4 @@ if ! command -v unzip >/dev/null; then
 fi
 
 # verbose opt
+__MVNW_QUIET_WGET=--quiet __MVNW_QUIET_CURL=--silent __MVNW_QUIET_UNZIP=-q __MVNW_QUIET_TAR=''
