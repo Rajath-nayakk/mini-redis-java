@@ -149,3 +149,4 @@ class RespParserTest {
     }
 
     @Test
+    void testMalformedInvalidLength() {
