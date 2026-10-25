@@ -158,3 +158,4 @@ public class RespParser {
         }
 
         int trailingCrIndex = payloadStart + bulkLength;
+        if (buffer[trailingCrIndex] != '\r' || buffer[trailingCrIndex + 1] != '\n') {
