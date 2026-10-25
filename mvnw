@@ -103,3 +103,4 @@ trim() {
   #   Needed for removing poorly interpreted newline sequences when running in more
   #   exotic environments such as mingw bash on Windows.
   printf "%s" "${1}" | tr -d '[:space:]'
+}
