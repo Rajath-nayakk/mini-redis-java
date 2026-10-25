@@ -35,3 +35,4 @@ class ServerConfigTest {
                 .persistenceEnabled(true)
                 .aofSyncPolicy("always")
                 .cleanupIntervalMs(50L)
+                .maxMemoryBytes(100_000_000L)
