@@ -6,3 +6,4 @@ import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
 /**
+ * Serializes RespValue objects into RESP2 wire-format byte sequences.
