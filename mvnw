@@ -263,3 +263,4 @@ actualDistributionDir=""
 if [ -d "$TMP_DOWNLOAD_DIR/$distributionUrlNameMain" ]; then
   if [ -f "$TMP_DOWNLOAD_DIR/$distributionUrlNameMain/bin/$MVN_CMD" ]; then
     actualDistributionDir="$distributionUrlNameMain"
+  fi
