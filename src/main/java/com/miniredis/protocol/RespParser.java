@@ -168,3 +168,4 @@ public class RespParser {
         return new RespValue.RespBulkString(payload);
     }
 
+    private RespValue.RespArray parseArray() {
