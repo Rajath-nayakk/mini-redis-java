@@ -168,3 +168,4 @@ public class CommandDispatcher {
         }
         long result = engine.decrBy(args.get(0), delta);
         return RespValue.integer(result);
+    }
