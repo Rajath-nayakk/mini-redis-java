@@ -72,3 +72,4 @@ class RespParserTest {
 
     @Test
     void testParseUnicodeBulkString() {
+        String unicode = "æ—¥æœ¬èªž / MiniRedis ðŸš€";
