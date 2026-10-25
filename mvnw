@@ -204,3 +204,4 @@ elif set_java_home; then
   cat >"$javaSource" <<-END
 	public class Downloader extends java.net.Authenticator
 	{
+	  protected java.net.PasswordAuthentication getPasswordAuthentication()
