@@ -14,3 +14,4 @@ public interface RespValue {
         return new RespSimpleString("OK");
     }
 
+    static RespSimpleString pong() {
