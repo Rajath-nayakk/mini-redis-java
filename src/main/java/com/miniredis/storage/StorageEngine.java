@@ -10,3 +10,4 @@ import java.util.Set;
 public interface StorageEngine {
     void set(String key, String value);
     String get(String key);
+    String getSet(String key, String value);
