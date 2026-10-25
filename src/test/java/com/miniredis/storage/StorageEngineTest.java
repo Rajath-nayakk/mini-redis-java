@@ -115,3 +115,4 @@ class StorageEngineTest {
         assertEquals(0, engine.exists(List.of("k1", "k2")));
 
         engine.set("k1", "v1");
+        engine.set("k2", "v2");
