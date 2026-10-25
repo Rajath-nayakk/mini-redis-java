@@ -48,3 +48,4 @@ redis-cli -p 6379
 ```
 
 ## Project Status
+- [x] Phase 0: Workspace inspection & environment validation
