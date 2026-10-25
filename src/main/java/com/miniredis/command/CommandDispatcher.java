@@ -30,3 +30,4 @@ public class CommandDispatcher {
         for (RespValue elem : elements) {
             if (elem instanceof RespValue.RespBulkString bulkStr) {
                 tokens.add(bulkStr.asUtf8String());
+            } else if (elem instanceof RespValue.RespSimpleString ss) {
