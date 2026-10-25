@@ -142,3 +142,4 @@ class StorageEngineTest {
     @Test
     void testKeysPatternMatching() {
         engine.set("user:1", "alice");
+        engine.set("user:2", "bob");
