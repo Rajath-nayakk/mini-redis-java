@@ -162,3 +162,4 @@ public class CommandDispatcher {
         }
         long delta;
         try {
+            delta = Long.parseLong(args.get(1));
