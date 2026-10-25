@@ -59,3 +59,4 @@ public final class RespEncoder {
             case BULK_STRING -> {
                 RespValue.RespBulkString bs = (RespValue.RespBulkString) value;
                 if (bs.isNull()) {
+                    out.write(NULL_BULK_STRING);
