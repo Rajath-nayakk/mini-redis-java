@@ -179,3 +179,4 @@ verbose "Downloading to: $TMP_DOWNLOAD_DIR/$distributionUrlName"
 if ! command -v unzip >/dev/null; then
   distributionUrl="${distributionUrl%.zip}.tar.gz"
   distributionUrlName="${distributionUrl##*/}"
+fi
