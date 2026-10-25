@@ -74,3 +74,4 @@ class StorageEngineTest {
                 } finally {
                     doneLatch.countDown();
                 }
+            });
