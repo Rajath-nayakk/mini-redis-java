@@ -126,3 +126,4 @@ class ServerIntegrationTest {
     void testDisconnectionCleansUpResources() throws Exception {
         assertEquals(0, server.getActiveClientCount());
         Socket s = connect();
+        // Give listener thread a moment to accept
