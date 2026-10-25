@@ -30,3 +30,4 @@
 - Date: 2026-10-25
 - Configured JDK 21 LTS (Temurin-21.0.12.1+1) and verified java, javac, and JAVA_HOME.
 - Configured official Maven Wrapper (mvnw, mvnw.cmd, .mvn/wrapper/maven-wrapper.properties using Maven 3.9.6).
+- Implemented RedisType enum (STRING, LIST, SET, HASH, ZSET, NONE).
