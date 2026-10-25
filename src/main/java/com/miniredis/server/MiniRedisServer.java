@@ -128,3 +128,4 @@ public class MiniRedisServer {
             try {
                 if (!s.isClosed()) {
                     s.close();
+                }
