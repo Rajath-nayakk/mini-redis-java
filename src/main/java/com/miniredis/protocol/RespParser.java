@@ -230,3 +230,4 @@ public class RespParser {
                 readPos = 0;
                 writePos = unread;
             }
+            if (buffer.length - writePos < needed) {
