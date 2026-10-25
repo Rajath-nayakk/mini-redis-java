@@ -56,3 +56,4 @@ class ServerIntegrationTest {
         RespParser parser = new RespParser();
         byte[] buf = new byte[1024];
         while (!socket.isClosed()) {
+            int read = in.read(buf);
