@@ -70,3 +70,4 @@ class RespParserTest {
         assertNull(bs.asUtf8String());
     }
 
+    @Test
