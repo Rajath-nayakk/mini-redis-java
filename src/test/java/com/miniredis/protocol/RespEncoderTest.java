@@ -66,3 +66,4 @@ class RespEncoderTest {
                 RespValue.nullBulkString()
         ));
         byte[] encoded = RespEncoder.encode(original);
+
