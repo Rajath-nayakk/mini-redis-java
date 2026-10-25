@@ -132,3 +132,4 @@ maven-mvnd-*bin.*)
   esac
   distributionUrl="${distributionUrl%-bin.*}-$distributionPlatform.zip"
   ;;
+maven-mvnd-*) MVN_CMD=mvnd.sh _MVNW_REPO_PATTERN=/maven/mvnd/ ;;
