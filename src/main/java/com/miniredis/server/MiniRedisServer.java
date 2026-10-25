@@ -108,3 +108,4 @@ public class MiniRedisServer {
                 if (!s.isClosed()) {
                     s.close();
                 }
+            } catch (IOException ignored) {
