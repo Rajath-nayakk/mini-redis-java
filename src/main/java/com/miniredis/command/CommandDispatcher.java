@@ -91,3 +91,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR wrong number of arguments for 'set' command");
         }
         engine.set(args.get(0), args.get(1));
+        return RespValue.ok();
