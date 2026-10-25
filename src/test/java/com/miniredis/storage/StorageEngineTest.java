@@ -124,3 +124,4 @@ class StorageEngineTest {
         assertEquals(1, engine.del(List.of("k2", "k3")));
     }
 
+    @Test
