@@ -22,3 +22,4 @@ public final class Main {
             CommandDispatcher dispatcher = new CommandDispatcher(engine);
             MiniRedisServer server = new MiniRedisServer(config, dispatcher);
 
+            Runtime.getRuntime().addShutdownHook(new Thread(() -> {
