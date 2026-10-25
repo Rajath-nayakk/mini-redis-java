@@ -166,3 +166,4 @@ if (!$actualDistributionDir) {
     if (Test-Path -Path $testPath -PathType Leaf) {
       $actualDistributionDir = $_.Name
     }
+  }
