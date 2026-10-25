@@ -67,3 +67,4 @@ switch -wildcard -casesensitive ( $($distributionUrl -replace '^.*/','') ) {
     $USE_MVND = $false
     $MVN_CMD = $script -replace '^mvnw','mvn'
     break
+  }
