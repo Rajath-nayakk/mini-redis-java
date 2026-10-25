@@ -8,3 +8,4 @@ public class WrongTypeException extends StorageException {
 
     public WrongTypeException() {
         super(DEFAULT_MESSAGE);
+    }
