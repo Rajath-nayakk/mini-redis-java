@@ -151,3 +151,4 @@ public class RespParser {
         }
 
         int payloadStart = crlfIndex + 2;
+        int requiredBytes = bulkLength + 2; // payload + CRLF
