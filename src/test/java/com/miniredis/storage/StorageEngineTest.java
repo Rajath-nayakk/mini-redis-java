@@ -176,3 +176,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testType() {
