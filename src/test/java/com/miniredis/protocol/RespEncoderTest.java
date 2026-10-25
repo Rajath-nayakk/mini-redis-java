@@ -47,3 +47,4 @@ class RespEncoderTest {
                 RespValue.bulkString("k"),
                 RespValue.bulkString("v")
         ));
+        byte[] encoded = RespEncoder.encode(array);
