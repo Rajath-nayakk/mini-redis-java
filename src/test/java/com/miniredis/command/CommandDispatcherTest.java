@@ -119,3 +119,4 @@ class CommandDispatcherTest {
         assertTrue(((RespValue.RespError) err).message().contains("overflow"));
     }
 
+    @Test
