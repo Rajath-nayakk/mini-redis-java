@@ -89,3 +89,4 @@ hash_string() {
   printf %x\\n $h
 }
 
+verbose() { :; }
