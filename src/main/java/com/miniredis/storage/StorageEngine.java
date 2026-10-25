@@ -20,3 +20,4 @@ public interface StorageEngine {
     boolean exists(String key);
     int exists(List<String> keys);
     boolean del(String key);
+    int del(List<String> keys);
