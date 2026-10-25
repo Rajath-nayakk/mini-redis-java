@@ -104,3 +104,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             } catch (ArithmeticException e) {
                 throw new NumericOverflowException();
             }
+        });
