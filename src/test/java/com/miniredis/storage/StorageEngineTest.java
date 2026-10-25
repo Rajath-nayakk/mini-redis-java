@@ -98,3 +98,4 @@ class StorageEngineTest {
     @Test
     void testIntegerOverflow() {
         engine.set("overflowKey", String.valueOf(Long.MAX_VALUE));
+        assertThrows(NumericOverflowException.class, () -> engine.incr("overflowKey"));
