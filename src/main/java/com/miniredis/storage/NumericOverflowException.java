@@ -10,3 +10,4 @@ public class NumericOverflowException extends StorageException {
         super(DEFAULT_MESSAGE);
     }
 
+    public NumericOverflowException(String message) {
