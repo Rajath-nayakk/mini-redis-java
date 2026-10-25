@@ -34,3 +34,4 @@ class RespEncoderTest {
         assertEquals("$5\r\nhello\r\n", new String(encoded, StandardCharsets.UTF_8));
     }
 
+    @Test
