@@ -23,3 +23,4 @@ class ServerConfigTest {
         assertEquals("notice", config.getLogLevel());
     }
 
+    @Test
