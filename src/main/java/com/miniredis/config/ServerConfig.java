@@ -132,3 +132,4 @@ public final class ServerConfig {
         private boolean persistenceEnabled = DEFAULT_PERSISTENCE_ENABLED;
         private String aofSyncPolicy = DEFAULT_AOF_SYNC_POLICY;
         private long cleanupIntervalMs = DEFAULT_CLEANUP_INTERVAL_MS;
+        private long maxMemoryBytes = DEFAULT_MAX_MEMORY_BYTES;
