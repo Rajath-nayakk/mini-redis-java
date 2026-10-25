@@ -59,3 +59,4 @@ public class ClientSession implements Runnable {
                     out.flush();
                 }
             } catch (IOException ignored) {
+            }
