@@ -20,3 +20,4 @@ public class CommandDispatcher {
     public RespValue dispatch(RespValue request) {
         if (!(request instanceof RespValue.RespArray array) || array.isNull()) {
             return RespValue.error("ERR Protocol error: expected array of bulk strings");
+        }
