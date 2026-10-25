@@ -20,3 +20,4 @@ public enum RedisType {
     public String getCode() {
         return code;
     }
+}
