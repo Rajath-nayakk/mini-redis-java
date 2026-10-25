@@ -127,3 +127,4 @@ class StorageEngineTest {
     @Test
     void testMgetAndMset() {
         Map<String, String> pairs = new HashMap<>();
+        pairs.put("alpha", "1");
