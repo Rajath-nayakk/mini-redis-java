@@ -24,3 +24,4 @@ public final class ServerConfig {
     private final String host;
     private final int port;
     private final int maxClients;
+    private final int maxRequestSize;
