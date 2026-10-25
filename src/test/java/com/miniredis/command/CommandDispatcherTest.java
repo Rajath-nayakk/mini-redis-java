@@ -115,3 +115,4 @@ class CommandDispatcherTest {
     void testNumericOverflowErrors() {
         dispatcher.dispatch(cmd("SET", "big", String.valueOf(Long.MAX_VALUE)));
         RespValue err = dispatcher.dispatch(cmd("INCR", "big"));
+        assertEquals(RespType.ERROR, err.getType());
