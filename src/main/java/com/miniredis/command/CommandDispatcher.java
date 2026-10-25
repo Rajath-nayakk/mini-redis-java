@@ -120,3 +120,4 @@ public class CommandDispatcher {
 
     private RespValue handleDbsize(List<String> args) {
         if (!args.isEmpty()) {
+            return RespValue.error("ERR wrong number of arguments for 'dbsize' command");
