@@ -287,3 +287,4 @@ if [ -z "$actualDistributionDir" ]; then
   die "Could not find Maven distribution directory in extracted archive"
 fi
 
+verbose "Found extracted Maven distribution directory: $actualDistributionDir"
