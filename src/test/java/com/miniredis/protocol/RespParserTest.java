@@ -146,3 +146,4 @@ class RespParserTest {
         // Bulk string missing terminating CRLF
         parser.append("$3\r\nfooXX".getBytes(StandardCharsets.UTF_8));
         assertThrows(ProtocolException.class, () -> parser.parseNext());
+    }
