@@ -128,3 +128,4 @@ class ServerIntegrationTest {
 
     @Test
     void testDisconnectionCleansUpResources() throws Exception {
+        assertEquals(0, server.getActiveClientCount());
