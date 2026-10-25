@@ -33,3 +33,4 @@ public final class Main {
         } catch (IllegalArgumentException e) {
             System.err.println("Configuration error: " + e.getMessage());
             System.exit(1);
+        } catch (Exception e) {
