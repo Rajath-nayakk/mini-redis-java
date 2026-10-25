@@ -167,3 +167,4 @@ public class CommandDispatcher {
             return RespValue.error(InvalidIntegerException.DEFAULT_MESSAGE);
         }
         long result = engine.decrBy(args.get(0), delta);
+        return RespValue.integer(result);
