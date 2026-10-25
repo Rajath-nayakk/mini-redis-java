@@ -7,3 +7,4 @@
 - User Identity: Rajath Nayak <rajathnayak2006@gmail.com>
 
 ### Environment Discovery
+- Git: Available (version 2.53.0.2).
