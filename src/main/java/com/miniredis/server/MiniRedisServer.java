@@ -59,3 +59,4 @@ public class MiniRedisServer {
 
     private void listenLoop() {
         while (running && serverSocket != null && !serverSocket.isClosed()) {
+            try {
