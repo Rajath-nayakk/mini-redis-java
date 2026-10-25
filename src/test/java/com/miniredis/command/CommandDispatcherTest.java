@@ -37,3 +37,4 @@ class CommandDispatcherTest {
         assertEquals(RespType.BULK_STRING, r2.getType());
         assertEquals("hello", ((RespValue.RespBulkString) r2).asUtf8String());
 
+        RespValue r3 = dispatcher.dispatch(cmd("PING", "arg1", "arg2"));
