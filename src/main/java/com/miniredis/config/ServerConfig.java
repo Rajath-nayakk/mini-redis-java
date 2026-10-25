@@ -29,3 +29,4 @@ public final class ServerConfig {
     private final Path dataDir;
     private final boolean persistenceEnabled;
     private final String aofSyncPolicy;
+    private final long cleanupIntervalMs;
