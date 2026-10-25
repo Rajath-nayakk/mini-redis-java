@@ -119,3 +119,4 @@ class StorageEngineTest {
         assertTrue(engine.exists("k1"));
         assertEquals(2, engine.exists(List.of("k1", "k2", "k3")));
 
+        assertTrue(engine.del("k1"));
