@@ -122,3 +122,4 @@ class RespParserTest {
         // Send last byte
         parser.append(full, full.length - 1, 1);
         RespValue.RespArray cmd = (RespValue.RespArray) parser.parseNext();
+        assertNotNull(cmd, "Should complete when final byte arrives");
