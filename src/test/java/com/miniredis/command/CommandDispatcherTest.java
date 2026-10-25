@@ -42,3 +42,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testEcho() {
