@@ -196,3 +196,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             return RedisType.NONE;
         }
         return val.getType();
+    }
