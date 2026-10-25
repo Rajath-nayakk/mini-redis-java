@@ -161,3 +161,4 @@ public class RespParser {
         if (buffer[trailingCrIndex] != '\r' || buffer[trailingCrIndex + 1] != '\n') {
             throw new ProtocolException("Bulk string missing terminating CRLF");
         }
+
