@@ -101,3 +101,4 @@ public final class ServerConfig {
                 builder.dataDir(Paths.get(args[++i]));
             } else if ("--max-clients".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.maxClients(Integer.parseInt(args[++i]));
+            } else if ("--max-memory".equalsIgnoreCase(arg) && i + 1 < args.length) {
