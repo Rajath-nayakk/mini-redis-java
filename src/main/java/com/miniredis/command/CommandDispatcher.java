@@ -77,3 +77,4 @@ public class CommandDispatcher {
             return RespValue.bulkString(args.get(0));
         }
         return RespValue.error("ERR wrong number of arguments for 'ping' command");
+    }
