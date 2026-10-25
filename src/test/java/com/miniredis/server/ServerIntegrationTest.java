@@ -173,3 +173,4 @@ class ServerIntegrationTest {
 
         // Verify server is healthy and accepts new clients
         try (Socket healthyClient = connect()) {
+            RespValue ping = sendAndReceive(healthyClient, "*1\r\n$4\r\nPING\r\n");
