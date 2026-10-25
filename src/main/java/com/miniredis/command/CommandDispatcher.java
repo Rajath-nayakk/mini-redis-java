@@ -139,3 +139,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR wrong number of arguments for 'incrby' command");
         }
         long delta;
+        try {
