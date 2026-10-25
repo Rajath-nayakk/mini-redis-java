@@ -53,3 +53,4 @@ class RespEncoderTest {
 
     @Test
     void testEncodeEmptyAndNullArray() {
+        assertEquals("*0\r\n", new String(RespEncoder.encode(RespValue.array(List.of())), StandardCharsets.UTF_8));
