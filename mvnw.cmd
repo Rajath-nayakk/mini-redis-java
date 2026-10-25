@@ -91,3 +91,4 @@ if (-not (Test-Path -Path $MAVEN_M2_PATH)) {
 $MAVEN_WRAPPER_DISTS = $null
 if ((Get-Item $MAVEN_M2_PATH).Target[0] -eq $null) {
   $MAVEN_WRAPPER_DISTS = "$MAVEN_M2_PATH/wrapper/dists"
+} else {
