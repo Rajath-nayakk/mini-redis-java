@@ -17,3 +17,4 @@ public class CommandDispatcher {
         this.engine = Objects.requireNonNull(engine, "StorageEngine cannot be null");
     }
 
+    public RespValue dispatch(RespValue request) {
