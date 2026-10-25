@@ -224,3 +224,4 @@ fi
 
 # If specified, validate the SHA-256 sum of the Maven distribution zip file
 if [ -n "${distributionSha256Sum-}" ]; then
+  distributionSha256Result=false
