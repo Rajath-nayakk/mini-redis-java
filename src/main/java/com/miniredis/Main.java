@@ -25,3 +25,4 @@ public final class Main {
         }
     }
 
+    private static void printBanner(ServerConfig config) {
