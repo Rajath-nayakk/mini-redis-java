@@ -17,3 +17,4 @@ public final class Main {
         try {
             ServerConfig config = ServerConfig.parseArgs(args);
             printBanner(config);
+
