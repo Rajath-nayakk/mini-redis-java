@@ -14,3 +14,4 @@ public interface StorageEngine {
     int append(String key, String value);
     int strlen(String key);
     long incr(String key);
+    long incrBy(String key, long delta);
