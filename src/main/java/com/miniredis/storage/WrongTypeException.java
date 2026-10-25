@@ -10,3 +10,4 @@ public class WrongTypeException extends StorageException {
         super(DEFAULT_MESSAGE);
     }
 
+    public WrongTypeException(String message) {
