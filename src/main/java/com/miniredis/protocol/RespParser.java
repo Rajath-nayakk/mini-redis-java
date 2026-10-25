@@ -21,3 +21,4 @@ public class RespParser {
 
     public RespParser() {
         this(DEFAULT_MAX_BULK_STRING_LENGTH, DEFAULT_MAX_ARRAY_LENGTH);
+    }
