@@ -150,3 +150,4 @@ exec_maven() {
   exec "$MAVEN_HOME/bin/$MVN_CMD" "$@" || die "cannot exec $MAVEN_HOME/bin/$MVN_CMD"
 }
 
+if [ -d "$MAVEN_HOME" ]; then
