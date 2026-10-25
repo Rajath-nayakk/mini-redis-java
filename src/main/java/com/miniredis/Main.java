@@ -22,3 +22,4 @@ public final class Main {
             System.err.println("Fatal error: " + e.getMessage());
             e.printStackTrace();
             System.exit(1);
+        }
