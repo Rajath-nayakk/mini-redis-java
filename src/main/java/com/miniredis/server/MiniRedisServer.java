@@ -34,3 +34,4 @@ public class MiniRedisServer {
         this.config = config;
         this.dispatcher = dispatcher;
     }
+
