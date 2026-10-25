@@ -144,3 +144,4 @@ public final class ServerConfig {
         public Builder persistenceEnabled(boolean persistenceEnabled) { this.persistenceEnabled = persistenceEnabled; return this; }
         public Builder aofSyncPolicy(String aofSyncPolicy) { this.aofSyncPolicy = aofSyncPolicy; return this; }
         public Builder cleanupIntervalMs(long cleanupIntervalMs) { this.cleanupIntervalMs = cleanupIntervalMs; return this; }
+        public Builder maxMemoryBytes(long maxMemoryBytes) { this.maxMemoryBytes = maxMemoryBytes; return this; }
