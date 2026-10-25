@@ -52,3 +52,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testSetAndGet() {
