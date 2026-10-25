@@ -129,3 +129,4 @@ class CommandDispatcherTest {
         assertEquals(RespType.ERROR, wrongArgs.getType());
         assertTrue(((RespValue.RespError) wrongArgs).message().contains("wrong number of arguments"));
     }
+}
