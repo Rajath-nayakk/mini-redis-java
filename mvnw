@@ -87,3 +87,4 @@ hash_string() {
     str="${str#?}"
   done
   printf %x\\n $h
+}
