@@ -100,3 +100,4 @@ public interface RespValue {
         public RespType getType() {
             return RespType.BULK_STRING;
         }
+
