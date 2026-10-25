@@ -18,3 +18,4 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Multi-client TCP server for MiniRedis.
  * Manages ServerSocket, bounded thread pool, connection limits, and graceful shutdown.
  */
+public class MiniRedisServer {
