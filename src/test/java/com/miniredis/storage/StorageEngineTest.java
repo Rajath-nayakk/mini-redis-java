@@ -153,3 +153,4 @@ class StorageEngineTest {
         assertEquals(3, userKeys.size());
         assertTrue(userKeys.contains("user:1"));
         assertTrue(userKeys.contains("user:2"));
+        assertTrue(userKeys.contains("user:3:profile"));
