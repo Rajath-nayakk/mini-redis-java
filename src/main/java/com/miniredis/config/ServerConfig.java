@@ -66,3 +66,4 @@ public final class ServerConfig {
         }
         if (dataDir == null) {
             throw new IllegalArgumentException("Data directory cannot be null");
+        }
