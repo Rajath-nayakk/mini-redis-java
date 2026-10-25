@@ -200,3 +200,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public Set<String> keys(String globPattern) {
+        if (globPattern == null || globPattern.isEmpty()) {
