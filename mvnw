@@ -117,3 +117,4 @@ while IFS="=" read -r key value; do
 done <"$scriptDir/.mvn/wrapper/maven-wrapper.properties"
 [ -n "${distributionUrl-}" ] || die "cannot read distributionUrl property in $scriptDir/.mvn/wrapper/maven-wrapper.properties"
 
+case "${distributionUrl##*/}" in
