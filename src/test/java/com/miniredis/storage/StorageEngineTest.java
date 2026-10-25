@@ -82,3 +82,4 @@ class StorageEngineTest {
         executor.shutdown();
         assertTrue(completed, "All increment threads should finish within timeout");
 
+        long expected = (long) threads * incrementsPerThread;
