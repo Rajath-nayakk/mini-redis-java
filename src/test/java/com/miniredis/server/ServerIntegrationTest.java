@@ -165,3 +165,4 @@ class ServerIntegrationTest {
 
             InputStream in = socket.getInputStream();
             byte[] buf = new byte[256];
+            int read = in.read(buf);
