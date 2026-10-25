@@ -93,3 +93,4 @@ verbose() { :; }
 [ "${MVNW_VERBOSE-}" != true ] || verbose() { printf %s\\n "${1-}"; }
 
 die() {
+  printf %s\\n "$1" >&2
