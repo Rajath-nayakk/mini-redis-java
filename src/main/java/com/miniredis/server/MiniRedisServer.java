@@ -109,3 +109,4 @@ public class MiniRedisServer {
                     s.close();
                 }
             } catch (IOException ignored) {
+            }
