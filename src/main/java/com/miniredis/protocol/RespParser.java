@@ -169,3 +169,4 @@ public class RespParser {
     }
 
     private RespValue.RespArray parseArray() {
+        int crlfIndex = findCrlf(readPos + 1);
