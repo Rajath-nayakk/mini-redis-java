@@ -58,3 +58,4 @@ class RespEncoderTest {
     }
 
     @Test
+    void testRoundTrip() {
