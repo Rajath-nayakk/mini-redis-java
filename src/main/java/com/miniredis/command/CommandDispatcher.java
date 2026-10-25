@@ -64,3 +64,4 @@ public class CommandDispatcher {
             return RespValue.error(e.getMessage());
         } catch (StorageException e) {
             return RespValue.error("ERR " + e.getMessage());
+        } catch (Exception e) {
