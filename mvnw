@@ -223,3 +223,4 @@ elif set_java_home; then
 fi
 
 # If specified, validate the SHA-256 sum of the Maven distribution zip file
+if [ -n "${distributionSha256Sum-}" ]; then
