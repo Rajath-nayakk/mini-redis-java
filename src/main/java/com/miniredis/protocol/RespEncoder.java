@@ -61,3 +61,4 @@ public final class RespEncoder {
                 if (bs.isNull()) {
                     out.write(NULL_BULK_STRING);
                 } else {
+                    out.write(PREFIX_BULK_STRING);
