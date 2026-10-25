@@ -131,3 +131,4 @@ public final class ServerConfig {
         private Path dataDir = Paths.get(DEFAULT_DATA_DIR);
         private boolean persistenceEnabled = DEFAULT_PERSISTENCE_ENABLED;
         private String aofSyncPolicy = DEFAULT_AOF_SYNC_POLICY;
+        private long cleanupIntervalMs = DEFAULT_CLEANUP_INTERVAL_MS;
