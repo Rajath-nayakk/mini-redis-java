@@ -248,3 +248,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
     exit 1
   fi
 fi
+
