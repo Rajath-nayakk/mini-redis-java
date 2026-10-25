@@ -122,3 +122,4 @@ public final class ServerConfig {
     public long getMaxMemoryBytes() { return maxMemoryBytes; }
     public String getLogLevel() { return logLevel; }
 
+    public static final class Builder {
