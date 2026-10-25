@@ -77,3 +77,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Invalid AOF sync policy: " + aofSyncPolicy + ". Must be 'always', 'everysec', or 'no'");
         }
     }
+
