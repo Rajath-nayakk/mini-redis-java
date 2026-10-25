@@ -72,3 +72,4 @@ class ServerConfigTest {
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().maxRequestSize(0).build());
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().timeoutMs(-1).build());
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().cleanupIntervalMs(0).build());
+        assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().maxMemoryBytes(-10).build());
