@@ -14,3 +14,4 @@ public final class Main {
             ServerConfig config = ServerConfig.parseArgs(args);
             printBanner(config);
             System.out.println("[MiniRedis] Configuration validated successfully.");
+            System.out.println("[MiniRedis] Ready for client connections (networking scheduled for Phase 5).");
