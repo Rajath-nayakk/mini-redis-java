@@ -124,3 +124,4 @@ maven-mvnd-*bin.*)
   *AMD64:CYGWIN* | *AMD64:MINGW*) distributionPlatform=windows-amd64 ;;
   :Darwin*x86_64) distributionPlatform=darwin-amd64 ;;
   :Darwin*arm64) distributionPlatform=darwin-aarch64 ;;
+  :Linux*x86_64*) distributionPlatform=linux-amd64 ;;
