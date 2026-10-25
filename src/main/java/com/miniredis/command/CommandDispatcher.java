@@ -144,3 +144,4 @@ public class CommandDispatcher {
         } catch (NumberFormatException e) {
             return RespValue.error(InvalidIntegerException.DEFAULT_MESSAGE);
         }
+        long result = engine.incrBy(args.get(0), delta);
