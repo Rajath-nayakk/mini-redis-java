@@ -121,3 +121,4 @@ class CommandDispatcherTest {
 
     @Test
     void testUnknownCommandAndWrongArgs() {
+        RespValue unk = dispatcher.dispatch(cmd("UNKNOWNCMD", "arg"));
