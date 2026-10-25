@@ -9,3 +9,4 @@ target/
 *.ipr
 *.iws
 
+# Operating system files
