@@ -9,3 +9,4 @@ import java.util.Objects;
  */
 public final class ServerConfig {
 
+    public static final String DEFAULT_HOST = "127.0.0.1";
