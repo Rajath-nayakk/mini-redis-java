@@ -13,3 +13,4 @@
     <description>Educational Redis-inspired in-memory database in Java from scratch</description>
 
     <properties>
+        <java.version>21</java.version>
