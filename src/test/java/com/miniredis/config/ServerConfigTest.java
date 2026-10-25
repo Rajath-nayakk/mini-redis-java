@@ -77,3 +77,4 @@ class ServerConfigTest {
     }
 
     @Test
+    void testParseArgs() {
