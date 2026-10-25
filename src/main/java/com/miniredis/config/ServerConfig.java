@@ -22,3 +22,4 @@ public final class ServerConfig {
     public static final String DEFAULT_LOG_LEVEL = "notice";
 
     private final String host;
+    private final int port;
