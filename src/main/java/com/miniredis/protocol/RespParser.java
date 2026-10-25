@@ -40,3 +40,4 @@ public class RespParser {
         }
         ensureCapacity(length);
         System.arraycopy(data, offset, buffer, writePos, length);
+        writePos += length;
