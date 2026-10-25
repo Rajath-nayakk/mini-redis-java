@@ -29,3 +29,4 @@ public final class RespEncoder {
         } catch (IOException e) {
             throw new RuntimeException("Encoding failure", e);
         }
+        return baos.toByteArray();
