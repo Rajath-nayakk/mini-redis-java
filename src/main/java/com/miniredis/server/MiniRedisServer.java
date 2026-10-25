@@ -128,3 +128,4 @@ public class MiniRedisServer {
         return (serverSocket != null && serverSocket.isBound()) ? serverSocket.getLocalPort() : config.getPort();
     }
 
+    public int getActiveClientCount() {
