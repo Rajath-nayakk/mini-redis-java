@@ -113,3 +113,4 @@ public interface RespValue {
         public int hashCode() {
             return Arrays.hashCode(data);
         }
+    }
