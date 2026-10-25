@@ -50,3 +50,11 @@
 - Added comprehensive test suites: RespParserTest (15 tests), RespEncoderTest (8 tests), CommandDispatcherTest (9 tests).
 - Created docs/RESP_PROTOCOL.md protocol specification.
 - Verification: mvnw.cmd clean verify passed with all 52 tests passing.
+
+## Phase 4 — Multi-Threaded TCP Server
+- Date: 2026-10-25
+- Implemented com.miniredis.server.ClientSession managing per-client request parsing, command dispatching, response encoding, protocol error reporting, and graceful connection teardown.
+- Implemented com.miniredis.server.MiniRedisServer multi-threaded TCP server using Java standard networking (ServerSocket, daemon thread pooling, dynamic port binding, client limit enforcement, and clean termination).
+- Updated com.miniredis.Main to bootstrap ServerConfig, ConcurrentStorageEngine, CommandDispatcher, MiniRedisServer, and register JVM shutdown hook.
+- Added comprehensive integration test suite com.miniredis.server.ServerIntegrationTest testing PING/PONG, SET/GET roundtrips, multi-request sessions, simultaneous concurrent clients, dynamic client cleanup, protocol error resilience, malformed request recovery, and graceful shutdown.
+- Verification: mvnw.cmd clean verify passed with all 60 tests passing.
