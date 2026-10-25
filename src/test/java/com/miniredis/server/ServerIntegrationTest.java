@@ -41,3 +41,4 @@ class ServerIntegrationTest {
         if (server != null) {
             server.stop();
         }
+    }
