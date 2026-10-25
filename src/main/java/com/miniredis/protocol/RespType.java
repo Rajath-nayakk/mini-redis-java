@@ -5,3 +5,4 @@ package com.miniredis.protocol;
  */
 public enum RespType {
     SIMPLE_STRING, // +
+    ERROR,         // -
