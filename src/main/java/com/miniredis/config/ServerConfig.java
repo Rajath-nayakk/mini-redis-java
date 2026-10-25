@@ -106,3 +106,4 @@ public final class ServerConfig {
             } else if ("--appendonly".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.persistenceEnabled(Boolean.parseBoolean(args[++i]));
             }
+        }
