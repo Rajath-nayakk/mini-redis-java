@@ -65,3 +65,4 @@ class CommandDispatcherTest {
         assertEquals(RespType.BULK_STRING, missResp.getType());
         assertTrue(((RespValue.RespBulkString) missResp).isNull());
     }
+
