@@ -202,3 +202,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public Set<String> keys(String globPattern) {
         if (globPattern == null || globPattern.isEmpty()) {
             return Collections.emptySet();
+        }
