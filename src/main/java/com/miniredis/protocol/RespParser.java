@@ -62,3 +62,4 @@ public class RespParser {
         }
     }
 
+    private RespValue parseValue() {
