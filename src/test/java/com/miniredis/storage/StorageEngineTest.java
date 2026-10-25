@@ -101,3 +101,4 @@ class StorageEngineTest {
         assertThrows(NumericOverflowException.class, () -> engine.incr("overflowKey"));
         assertThrows(NumericOverflowException.class, () -> engine.incrBy("overflowKey", 10));
     }
+
