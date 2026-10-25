@@ -39,3 +39,4 @@ class StorageEngineTest {
         assertEquals(0, engine.strlen("missing"));
         assertEquals(5, engine.append("msg", "Hello"));
         assertEquals("Hello", engine.get("msg"));
+        assertEquals(11, engine.append("msg", " World"));
