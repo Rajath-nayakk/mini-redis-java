@@ -265,3 +265,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     sb.append('\\').append(c);
                     break;
                 default:
+                    sb.append(c);
