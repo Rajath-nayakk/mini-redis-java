@@ -47,3 +47,4 @@ public final class RespEncoder {
             case ERROR -> {
                 RespValue.RespError err = (RespValue.RespError) value;
                 out.write(PREFIX_ERROR);
+                out.write(err.message().getBytes(StandardCharsets.UTF_8));
