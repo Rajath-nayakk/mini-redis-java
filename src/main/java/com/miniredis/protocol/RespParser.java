@@ -59,3 +59,4 @@ public class RespParser {
         } catch (ProtocolException e) {
             readPos = savedReadPos;
             throw e;
+        }
