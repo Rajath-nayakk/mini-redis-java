@@ -16,3 +16,4 @@ public final class RespEncoder {
     private static final byte PREFIX_INTEGER = ':';
     private static final byte PREFIX_BULK_STRING = '$';
     private static final byte PREFIX_ARRAY = '*';
+    private static final byte[] NULL_BULK_STRING = "$-1\r\n".getBytes(StandardCharsets.US_ASCII);
