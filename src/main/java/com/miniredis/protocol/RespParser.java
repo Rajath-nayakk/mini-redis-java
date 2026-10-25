@@ -107,3 +107,4 @@ public class RespParser {
         return new RespValue.RespError(msg);
     }
 
+    private RespValue.RespInteger parseInteger() {
