@@ -49,3 +49,4 @@ class CommandDispatcherTest {
 
         RespValue r2 = dispatcher.dispatch(cmd("ECHO"));
         assertEquals(RespType.ERROR, r2.getType());
+    }
