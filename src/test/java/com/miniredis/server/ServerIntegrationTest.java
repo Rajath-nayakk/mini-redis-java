@@ -116,3 +116,4 @@ class ServerIntegrationTest {
 
             RespValue g1 = sendAndReceive(c2, "*2\r\n$3\r\nGET\r\n$5\r\nuser1\r\n");
             RespValue g2 = sendAndReceive(c1, "*2\r\n$3\r\nGET\r\n$5\r\nuser2\r\n");
+
