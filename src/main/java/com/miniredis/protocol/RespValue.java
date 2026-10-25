@@ -34,3 +34,4 @@ public interface RespValue {
         return new RespBulkString(bytes);
     }
 
+    static RespBulkString bulkString(String string) {
