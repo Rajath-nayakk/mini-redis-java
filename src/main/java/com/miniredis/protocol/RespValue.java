@@ -88,3 +88,4 @@ public interface RespValue {
     record RespBulkString(byte[] data) implements RespValue {
         public static final RespBulkString NULL = new RespBulkString(null);
 
+        public boolean isNull() {
