@@ -79,3 +79,4 @@ class ServerIntegrationTest {
             RespValue resp = sendAndReceive(socket, "*1\r\n$4\r\nPING\r\n");
             assertNotNull(resp);
             assertEquals(RespType.SIMPLE_STRING, resp.getType());
+            assertEquals("PONG", ((RespValue.RespSimpleString) resp).value());
