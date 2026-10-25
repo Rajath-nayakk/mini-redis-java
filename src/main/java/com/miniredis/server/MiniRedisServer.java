@@ -39,3 +39,4 @@ public class MiniRedisServer {
     public synchronized void start() throws IOException {
         if (running) {
             return;
+        }
