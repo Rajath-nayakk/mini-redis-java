@@ -134,3 +134,4 @@ class StorageEngineTest {
 
         List<String> values = engine.mget(List.of("alpha", "missing", "gamma"));
         assertEquals(List.of("1", "", "3").size(), values.size());
+        assertEquals("1", values.get(0));
