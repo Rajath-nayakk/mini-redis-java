@@ -207,3 +207,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         Set<String> matched = new HashSet<>();
         for (String key : store.keySet()) {
             if (pattern.matcher(key).matches()) {
+                matched.add(key);
