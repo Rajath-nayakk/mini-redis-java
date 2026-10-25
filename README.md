@@ -54,3 +54,4 @@ redis-cli -p 6379
 - [ ] Phase 3: RESP2 protocol parser & serializer
 - [ ] Phase 4: Command execution engine
 - [ ] Phase 5: TCP server & socket integration tests
+- [ ] Phase 6: TTL expiration & background sweeper
