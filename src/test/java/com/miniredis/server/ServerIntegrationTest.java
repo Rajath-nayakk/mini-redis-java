@@ -139,3 +139,4 @@ class ServerIntegrationTest {
     @Test
     void testInvalidCommandsReturnProtocolErrors() throws Exception {
         try (Socket socket = connect()) {
+            RespValue err = sendAndReceive(socket, "*1\r\n$7\r\nBOGUSCMD\r\n");
