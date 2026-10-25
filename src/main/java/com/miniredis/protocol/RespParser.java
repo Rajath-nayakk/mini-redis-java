@@ -201,3 +201,4 @@ public class RespParser {
         for (int i = 0; i < arrayCount; i++) {
             RespValue elem = parseValue();
             if (elem == null) {
+                // Not all elements are available yet
