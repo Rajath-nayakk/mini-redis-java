@@ -62,3 +62,4 @@ class RespEncoderTest {
         RespValue.RespArray original = RespValue.array(List.of(
                 RespValue.bulkString("MGET"),
                 RespValue.bulkString("user:1"),
+                RespValue.bulkString("user:2"),
