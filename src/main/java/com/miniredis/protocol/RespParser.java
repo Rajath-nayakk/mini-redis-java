@@ -236,3 +236,4 @@ public class RespParser {
                 System.arraycopy(buffer, 0, newBuf, 0, writePos);
                 buffer = newBuf;
             }
+        }
