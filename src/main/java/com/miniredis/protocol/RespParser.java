@@ -243,3 +243,4 @@ public class RespParser {
         if (readPos >= writePos) {
             readPos = 0;
             writePos = 0;
+        } else if (readPos >= 4096 && readPos >= buffer.length / 2) {
