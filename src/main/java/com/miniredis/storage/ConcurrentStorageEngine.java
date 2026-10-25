@@ -54,3 +54,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         RedisValue updated = store.compute(key, (k, old) -> {
             if (old == null) {
                 return new StringValue(value);
+            }
