@@ -20,3 +20,4 @@ class ServerConfigTest {
         assertEquals("everysec", config.getAofSyncPolicy());
         assertEquals(100L, config.getCleanupIntervalMs());
         assertEquals(0L, config.getMaxMemoryBytes());
+        assertEquals("notice", config.getLogLevel());
