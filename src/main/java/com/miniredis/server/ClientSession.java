@@ -33,3 +33,4 @@ public class ClientSession implements Runnable {
     @Override
     public void run() {
         try (socket;
+             InputStream in = socket.getInputStream();
