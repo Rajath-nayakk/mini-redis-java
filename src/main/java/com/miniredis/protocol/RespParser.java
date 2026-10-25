@@ -70,3 +70,4 @@ public class RespParser {
         switch (prefix) {
             case '+':
                 return parseSimpleString();
+            case '-':
