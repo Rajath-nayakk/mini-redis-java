@@ -24,3 +24,4 @@ public class MiniRedisServer {
     private final CommandDispatcher dispatcher;
     private final AtomicInteger activeClients = new AtomicInteger(0);
     private final Set<Socket> activeSockets = ConcurrentHashMap.newKeySet();
+
