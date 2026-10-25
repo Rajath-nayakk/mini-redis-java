@@ -14,3 +14,4 @@ class RespEncoderTest {
         byte[] encoded = RespEncoder.encode(RespValue.ok());
         assertEquals("+OK\r\n", new String(encoded, StandardCharsets.UTF_8));
     }
+
