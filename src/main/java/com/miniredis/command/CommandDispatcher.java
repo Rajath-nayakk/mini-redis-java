@@ -110,3 +110,4 @@ public class CommandDispatcher {
         return RespValue.integer(deleted);
     }
 
+    private RespValue handleExists(List<String> args) {
