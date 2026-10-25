@@ -18,3 +18,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 - **Maven**: Apache Maven 3.8+ (or Maven Wrapper)
 - **Git**: Git 2.30+
 
+## Building the Project
