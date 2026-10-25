@@ -15,3 +15,4 @@ public enum RedisType {
 
     RedisType(String code) {
         this.code = code;
+    }
