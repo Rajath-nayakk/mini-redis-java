@@ -215,3 +215,4 @@ elif set_java_home; then
 	  }
 	}
 	END
+  # For Cygwin/MinGW, switch paths to Windows format before running javac and java
