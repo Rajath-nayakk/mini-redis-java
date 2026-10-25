@@ -135,3 +135,4 @@ public class RespParser {
         int bulkLength;
         try {
             bulkLength = Integer.parseInt(lenStr);
+        } catch (NumberFormatException e) {
