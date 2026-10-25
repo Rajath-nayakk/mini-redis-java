@@ -43,3 +43,4 @@ public class ClientSession implements Runnable {
                 parser.append(buffer, 0, bytesRead);
 
                 try {
+                    RespValue request;
