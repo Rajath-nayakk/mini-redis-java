@@ -31,3 +31,4 @@ class StorageEngineTest {
         assertNull(engine.getSet("counter", "100"), "getSet on missing key returns null");
         assertEquals("100", engine.get("counter"));
         assertEquals("100", engine.getSet("counter", "200"), "getSet returns previous value");
+        assertEquals("200", engine.get("counter"));
