@@ -182,3 +182,4 @@ class StorageEngineTest {
         assertEquals(RedisType.STRING, engine.type("str"));
     }
 
+    @Test
