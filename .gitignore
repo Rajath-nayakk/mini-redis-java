@@ -15,3 +15,4 @@ Thumbs.db
 
 # Runtime logs and dumps
 *.log
+hs_err_pid*
