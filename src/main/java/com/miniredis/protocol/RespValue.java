@@ -26,3 +26,4 @@ public interface RespValue {
         return new RespError(message);
     }
 
+    static RespInteger integer(long value) {
