@@ -115,3 +115,4 @@ public final class ServerConfig {
     public int getMaxClients() { return maxClients; }
     public int getMaxRequestSize() { return maxRequestSize; }
     public int getTimeoutMs() { return timeoutMs; }
+    public Path getDataDir() { return dataDir; }
