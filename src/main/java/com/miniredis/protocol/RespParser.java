@@ -197,3 +197,4 @@ public class RespParser {
         int currentReadPos = crlfIndex + 2;
         readPos = currentReadPos;
 
+        List<RespValue> elements = new ArrayList<>(arrayCount);
