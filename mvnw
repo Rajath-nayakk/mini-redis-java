@@ -213,3 +213,4 @@ elif set_java_home; then
 	    setDefault( new Downloader() );
 	    java.nio.file.Files.copy( java.net.URI.create( args[0] ).toURL().openStream(), java.nio.file.Paths.get( args[1] ).toAbsolutePath().normalize() );
 	  }
+	}
