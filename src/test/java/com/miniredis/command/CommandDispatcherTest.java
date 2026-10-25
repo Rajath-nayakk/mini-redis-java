@@ -26,3 +26,4 @@ class CommandDispatcherTest {
         }
         return RespValue.array(list);
     }
+
