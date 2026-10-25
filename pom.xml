@@ -63,3 +63,4 @@
                 <version></version>
                 <executions>
                     <execution>
+                        <goals>
