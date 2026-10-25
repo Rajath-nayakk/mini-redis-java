@@ -52,3 +52,4 @@ class ServerConfigTest {
         assertEquals("debug", config.getLogLevel());
     }
 
+    @Test
