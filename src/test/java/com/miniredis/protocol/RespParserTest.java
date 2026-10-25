@@ -71,3 +71,4 @@ class RespParserTest {
     }
 
     @Test
+    void testParseUnicodeBulkString() {
