@@ -108,3 +108,4 @@ class CommandDispatcherTest {
         assertTrue(((RespValue.RespError) err).message().contains("not an integer"));
 
         RespValue err2 = dispatcher.dispatch(cmd("INCRBY", "key", "notanumber"));
+        assertEquals(RespType.ERROR, err2.getType());
