@@ -34,3 +34,4 @@ class ServerConfigTest {
                 .dataDir(Paths.get("/custom/data"))
                 .persistenceEnabled(true)
                 .aofSyncPolicy("always")
+                .cleanupIntervalMs(50L)
