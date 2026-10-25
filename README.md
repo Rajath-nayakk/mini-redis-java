@@ -51,3 +51,4 @@ redis-cli -p 6379
 - [x] Phase 0: Workspace inspection & environment validation
 - [x] Phase 1: Buildable foundation, configuration & tests
 - [ ] Phase 2: In-memory storage engine
+- [ ] Phase 3: RESP2 protocol parser & serializer
