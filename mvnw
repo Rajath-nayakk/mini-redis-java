@@ -40,3 +40,4 @@ CYGWIN* | MINGW*)
   native_path() { cygpath --path --windows "$1"; }
   ;;
 esac
+
