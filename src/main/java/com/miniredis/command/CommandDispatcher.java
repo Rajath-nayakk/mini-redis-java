@@ -111,3 +111,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleExists(List<String> args) {
+        if (args.isEmpty()) {
