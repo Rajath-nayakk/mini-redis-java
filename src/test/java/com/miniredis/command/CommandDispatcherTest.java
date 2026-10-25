@@ -21,3 +21,4 @@ class CommandDispatcherTest {
 
     private RespValue cmd(String... parts) {
         List<RespValue> list = new java.util.ArrayList<>();
+        for (String p : parts) {
