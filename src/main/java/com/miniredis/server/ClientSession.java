@@ -49,3 +49,4 @@ public class ClientSession implements Runnable {
                         byte[] responseBytes = RespEncoder.encode(response);
                         out.write(responseBytes);
                         out.flush();
+                    }
