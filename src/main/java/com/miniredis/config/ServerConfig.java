@@ -34,3 +34,4 @@ public final class ServerConfig {
     private final String logLevel;
 
     private ServerConfig(Builder builder) {
+        this.host = builder.host;
