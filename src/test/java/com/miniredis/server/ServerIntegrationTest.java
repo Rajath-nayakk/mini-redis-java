@@ -73,3 +73,4 @@ class ServerIntegrationTest {
     void testPingReturnsPong() throws Exception {
         try (Socket socket = connect()) {
             RespValue resp = sendAndReceive(socket, "*1\r\n$4\r\nPING\r\n");
+            assertNotNull(resp);
