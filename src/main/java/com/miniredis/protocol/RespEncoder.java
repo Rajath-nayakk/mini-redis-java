@@ -67,3 +67,4 @@ public final class RespEncoder {
                     out.write(bs.data());
                     out.write(CRLF);
                 }
+            }
