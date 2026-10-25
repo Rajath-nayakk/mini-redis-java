@@ -88,3 +88,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testInvalidInteger() {
