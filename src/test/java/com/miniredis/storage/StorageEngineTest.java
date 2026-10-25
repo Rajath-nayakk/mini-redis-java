@@ -162,3 +162,4 @@ class StorageEngineTest {
         assertFalse(singleDigitUsers.contains("user:3:profile"));
     }
 
+    @Test
