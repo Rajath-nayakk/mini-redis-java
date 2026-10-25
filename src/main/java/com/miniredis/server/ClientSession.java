@@ -60,3 +60,4 @@ public class ClientSession implements Runnable {
                 }
             } catch (IOException ignored) {
             }
+        } catch (SocketException e) {
