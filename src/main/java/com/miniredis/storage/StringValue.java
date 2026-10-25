@@ -16,3 +16,4 @@ public final class StringValue implements RedisValue {
         this.bytes = value.getBytes(StandardCharsets.UTF_8);
     }
 
+    public String getValue() {
