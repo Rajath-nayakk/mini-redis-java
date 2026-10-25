@@ -34,3 +34,4 @@ class StorageEngineTest {
         assertEquals("200", engine.get("counter"));
     }
 
+    @Test
