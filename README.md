@@ -7,3 +7,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 ## Features & Architectural Goals
 - **Core In-Memory Storage**: Fast key-value storage engine supporting strings, lists, sets, and hashes.
 - **RESP2 Protocol**: Compliant Redis Serialization Protocol (RESP2) parsing binary-safe bulk strings.
+- **TCP Networking**: Multithreaded network layer listening on loopback (127.0.0.1:6379).
