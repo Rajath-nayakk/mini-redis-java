@@ -83,3 +83,4 @@ public class MiniRedisServer {
         }
     }
 
+    public void onClientDisconnected(Socket socket) {
