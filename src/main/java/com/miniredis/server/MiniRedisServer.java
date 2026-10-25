@@ -90,3 +90,4 @@ public class MiniRedisServer {
         activeClients.decrementAndGet();
     }
 
+    public synchronized void stop() {
