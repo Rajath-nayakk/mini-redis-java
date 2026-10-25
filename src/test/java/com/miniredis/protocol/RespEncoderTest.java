@@ -45,3 +45,4 @@ class RespEncoderTest {
         RespValue.RespArray array = RespValue.array(List.of(
                 RespValue.bulkString("SET"),
                 RespValue.bulkString("k"),
+                RespValue.bulkString("v")
