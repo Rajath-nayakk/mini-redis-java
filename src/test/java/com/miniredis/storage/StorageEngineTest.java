@@ -28,3 +28,4 @@ class StorageEngineTest {
 
     @Test
     void testGetSet() {
+        assertNull(engine.getSet("counter", "100"), "getSet on missing key returns null");
