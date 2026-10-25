@@ -175,3 +175,4 @@ class ServerIntegrationTest {
         try (Socket healthyClient = connect()) {
             RespValue ping = sendAndReceive(healthyClient, "*1\r\n$4\r\nPING\r\n");
             assertNotNull(ping);
+            assertEquals("PONG", ((RespValue.RespSimpleString) ping).value());
