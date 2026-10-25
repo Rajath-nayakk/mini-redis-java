@@ -33,3 +33,4 @@
 - Implemented RedisType enum (STRING, LIST, SET, HASH, ZSET, NONE).
 - Implemented typed RedisValue interface and StringValue binary-safe value model.
 - Implemented storage exceptions: StorageException, WrongTypeException, InvalidIntegerException, NumericOverflowException.
+- Implemented StorageEngine interface and ConcurrentStorageEngine backed by ConcurrentHashMap.
