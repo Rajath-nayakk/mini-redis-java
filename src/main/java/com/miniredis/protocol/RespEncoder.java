@@ -74,3 +74,4 @@ public final class RespEncoder {
                     out.write(NULL_ARRAY);
                 } else {
                     out.write(PREFIX_ARRAY);
+                    out.write(Integer.toString(arr.elements().size()).getBytes(StandardCharsets.US_ASCII));
