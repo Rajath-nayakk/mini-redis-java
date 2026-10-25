@@ -12,3 +12,4 @@ public interface StorageEngine {
     String get(String key);
     String getSet(String key, String value);
     int append(String key, String value);
+    int strlen(String key);
