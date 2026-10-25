@@ -58,3 +58,4 @@ public class CommandDispatcher {
                 case "INCRBY" -> handleIncrBy(args);
                 case "DECR" -> handleDecr(args);
                 case "DECRBY" -> handleDecrBy(args);
+                default -> RespValue.error("ERR unknown command '" + commandName + "'");
