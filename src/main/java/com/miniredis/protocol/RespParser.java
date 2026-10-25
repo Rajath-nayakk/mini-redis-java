@@ -53,3 +53,4 @@ public class RespParser {
             if (value != null) {
                 compactIfNeeded();
                 return value;
+            }
