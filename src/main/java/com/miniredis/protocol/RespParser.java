@@ -150,3 +150,4 @@ public class RespParser {
             throw new ProtocolException("Bulk string length " + bulkLength + " exceeds limit " + maxBulkStringLength);
         }
 
+        int payloadStart = crlfIndex + 2;
