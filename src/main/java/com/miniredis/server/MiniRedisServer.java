@@ -32,3 +32,4 @@ public class MiniRedisServer {
 
     public MiniRedisServer(ServerConfig config, CommandDispatcher dispatcher) {
         this.config = config;
+        this.dispatcher = dispatcher;
