@@ -205,3 +205,4 @@ elif set_java_home; then
 	public class Downloader extends java.net.Authenticator
 	{
 	  protected java.net.PasswordAuthentication getPasswordAuthentication()
+	  {
