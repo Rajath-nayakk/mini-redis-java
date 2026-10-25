@@ -47,3 +47,4 @@ public class CommandDispatcher {
 
         try {
             return switch (upperCommand) {
+                case "PING" -> handlePing(args);
