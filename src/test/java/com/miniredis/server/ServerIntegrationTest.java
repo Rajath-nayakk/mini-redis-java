@@ -186,3 +186,4 @@ class ServerIntegrationTest {
         Socket client = connect();
         assertTrue(server.isRunning());
 
+        server.stop();
