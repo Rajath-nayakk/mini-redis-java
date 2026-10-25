@@ -71,3 +71,4 @@ public class RespParser {
             case '+':
                 return parseSimpleString();
             case '-':
+                return parseError();
