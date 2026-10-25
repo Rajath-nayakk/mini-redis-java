@@ -38,3 +38,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         StringValue newVal = new StringValue(value);
         RedisValue oldVal = store.put(key, newVal);
         if (oldVal == null) {
+            return null;
