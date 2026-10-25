@@ -92,3 +92,4 @@ class RespParserTest {
         RespValue.RespArray array = (RespValue.RespArray) parser.parseNext();
         assertNotNull(array);
         assertEquals(2, array.elements().size());
+        assertEquals("GET", ((RespValue.RespBulkString) array.elements().get(0)).asUtf8String());
