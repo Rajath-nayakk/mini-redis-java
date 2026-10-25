@@ -86,3 +86,4 @@ public class CommandDispatcher {
         return RespValue.bulkString(args.get(0));
     }
 
+    private RespValue handleSet(List<String> args) {
