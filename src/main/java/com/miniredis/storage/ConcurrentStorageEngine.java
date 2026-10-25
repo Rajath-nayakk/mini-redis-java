@@ -25,3 +25,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         if (val == null) {
             return null;
         }
+        if (!(val instanceof StringValue stringVal)) {
