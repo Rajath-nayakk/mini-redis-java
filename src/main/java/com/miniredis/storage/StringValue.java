@@ -53,3 +53,4 @@ public final class StringValue implements RedisValue {
 
     @Override
     public String toString() {
+        return value;
