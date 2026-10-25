@@ -155,3 +155,4 @@ class ServerIntegrationTest {
             assertNotNull(ping);
             assertEquals("PONG", ((RespValue.RespSimpleString) ping).value());
         }
+    }
