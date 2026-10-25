@@ -82,3 +82,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     }
 
     @Override
+    public long incrBy(String key, long delta) {
