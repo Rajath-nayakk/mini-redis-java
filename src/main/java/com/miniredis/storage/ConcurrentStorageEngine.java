@@ -132,3 +132,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         if (keys == null || keys.isEmpty()) {
             return 0;
         }
+        int count = 0;
