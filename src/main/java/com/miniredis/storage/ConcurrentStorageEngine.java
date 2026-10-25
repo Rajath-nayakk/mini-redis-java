@@ -171,3 +171,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             RedisValue val = (key != null) ? store.get(key) : null;
             if (val instanceof StringValue stringVal) {
                 result.add(stringVal.getValue());
+            } else {
