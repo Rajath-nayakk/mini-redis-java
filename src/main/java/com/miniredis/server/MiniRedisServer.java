@@ -78,3 +78,4 @@ public class MiniRedisServer {
                         byte[] err = RespEncoder.encode(RespValue.error("ERR max number of clients reached"));
                         out.write(err);
                         out.flush();
+                    }
