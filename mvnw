@@ -200,3 +200,4 @@ elif [ -z "${MVNW_USERNAME-}" ] && command -v curl >/dev/null; then
 elif set_java_home; then
   verbose "Falling back to use Java to download"
   javaSource="$TMP_DOWNLOAD_DIR/Downloader.java"
+  targetZip="$TMP_DOWNLOAD_DIR/$distributionUrlName"
