@@ -103,3 +103,4 @@ public interface RespValue {
 
         @Override
         public boolean equals(Object o) {
+            if (this == o) return true;
