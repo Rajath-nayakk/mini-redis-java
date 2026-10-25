@@ -182,3 +182,4 @@ try {
     Write-Error "fail to move MAVEN_HOME"
   }
 } finally {
+  try { Remove-Item $TMP_DOWNLOAD_DIR -Recurse -Force | Out-Null }
