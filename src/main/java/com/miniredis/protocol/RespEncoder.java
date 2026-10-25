@@ -51,3 +51,4 @@ public final class RespEncoder {
                 out.write(CRLF);
             }
             case INTEGER -> {
+                RespValue.RespInteger integer = (RespValue.RespInteger) value;
