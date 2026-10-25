@@ -24,3 +24,4 @@ mvn clean verify
 ```
 
 ## Running the Server
+```bash
