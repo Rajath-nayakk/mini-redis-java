@@ -281,3 +281,4 @@ if [ -z "$actualDistributionDir" ]; then
   set -f
 fi
 
+if [ -z "$actualDistributionDir" ]; then
