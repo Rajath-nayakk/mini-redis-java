@@ -23,3 +23,4 @@ public final class RespEncoder {
     }
 
     public static byte[] encode(RespValue value) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
