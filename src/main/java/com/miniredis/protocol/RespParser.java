@@ -55,3 +55,4 @@ public class RespParser {
                 return value;
             }
             readPos = savedReadPos;
+            return null;
