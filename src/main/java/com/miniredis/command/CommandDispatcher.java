@@ -53,3 +53,4 @@ public class CommandDispatcher {
                 case "GET" -> handleGet(args);
                 case "DEL" -> handleDel(args);
                 case "EXISTS" -> handleExists(args);
+                case "DBSIZE" -> handleDbsize(args);
