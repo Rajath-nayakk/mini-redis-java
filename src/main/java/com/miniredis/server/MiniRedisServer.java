@@ -36,3 +36,4 @@ public class MiniRedisServer {
         this.dispatcher = Objects.requireNonNull(dispatcher, "CommandDispatcher cannot be null");
     }
 
+    public synchronized void start() throws IOException {
