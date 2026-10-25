@@ -36,3 +36,4 @@ public class ClientSession implements Runnable {
              InputStream in = socket.getInputStream();
              OutputStream out = socket.getOutputStream()) {
 
+            byte[] buffer = new byte[8192];
