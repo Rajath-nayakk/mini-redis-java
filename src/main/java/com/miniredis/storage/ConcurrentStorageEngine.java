@@ -60,3 +60,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             }
             return new StringValue(strOld.getValue() + value);
         });
+        return ((StringValue) updated).length();
