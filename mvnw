@@ -173,3 +173,4 @@ mkdir -p -- "${MAVEN_HOME%/*}"
 # Download and Install Apache Maven
 verbose "Couldn't find MAVEN_HOME, downloading and installing it ..."
 verbose "Downloading from: $distributionUrl"
+verbose "Downloading to: $TMP_DOWNLOAD_DIR/$distributionUrlName"
