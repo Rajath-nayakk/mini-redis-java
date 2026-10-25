@@ -57,3 +57,4 @@ public interface RespValue {
                 throw new IllegalArgumentException("Simple string cannot contain CRLF");
             }
         }
+
