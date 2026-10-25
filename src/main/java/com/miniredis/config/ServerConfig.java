@@ -129,3 +129,4 @@ public final class ServerConfig {
         private int maxRequestSize = DEFAULT_MAX_REQUEST_SIZE;
         private int timeoutMs = DEFAULT_TIMEOUT_MS;
         private Path dataDir = Paths.get(DEFAULT_DATA_DIR);
+        private boolean persistenceEnabled = DEFAULT_PERSISTENCE_ENABLED;
