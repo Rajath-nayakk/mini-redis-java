@@ -67,3 +67,4 @@ public interface RespValue {
     record RespError(String message) implements RespValue {
         public RespError {
             Objects.requireNonNull(message, "Error message cannot be null");
+            if (message.indexOf('\r') != -1 || message.indexOf('\n') != -1) {
