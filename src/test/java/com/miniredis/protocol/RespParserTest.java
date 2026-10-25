@@ -34,3 +34,4 @@ class RespParserTest {
         assertEquals(RespType.ERROR, val.getType());
         assertEquals("ERR unknown command", ((RespValue.RespError) val).message());
     }
+
