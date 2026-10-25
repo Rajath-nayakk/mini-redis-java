@@ -22,3 +22,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public String get(String key) {
         Objects.requireNonNull(key, "Key cannot be null");
         RedisValue val = store.get(key);
+        if (val == null) {
