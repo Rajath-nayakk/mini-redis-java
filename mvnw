@@ -203,3 +203,4 @@ elif set_java_home; then
   targetZip="$TMP_DOWNLOAD_DIR/$distributionUrlName"
   cat >"$javaSource" <<-END
 	public class Downloader extends java.net.Authenticator
+	{
