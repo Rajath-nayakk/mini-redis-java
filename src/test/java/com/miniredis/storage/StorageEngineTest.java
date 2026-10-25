@@ -75,3 +75,4 @@ class StorageEngineTest {
                     doneLatch.countDown();
                 }
             });
+        }
