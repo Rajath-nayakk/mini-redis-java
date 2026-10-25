@@ -58,3 +58,4 @@ if (!$distributionUrl) {
 
 switch -wildcard -casesensitive ( $($distributionUrl -replace '^.*/','') ) {
   "maven-mvnd-*" {
+    $USE_MVND = $true
