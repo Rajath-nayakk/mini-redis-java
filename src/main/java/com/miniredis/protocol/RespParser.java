@@ -46,3 +46,4 @@ public class RespParser {
     public RespValue parseNext() {
         if (available() == 0) {
             return null;
+        }
