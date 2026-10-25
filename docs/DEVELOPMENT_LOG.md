@@ -32,3 +32,4 @@
 - Configured official Maven Wrapper (mvnw, mvnw.cmd, .mvn/wrapper/maven-wrapper.properties using Maven 3.9.6).
 - Implemented RedisType enum (STRING, LIST, SET, HASH, ZSET, NONE).
 - Implemented typed RedisValue interface and StringValue binary-safe value model.
+- Implemented storage exceptions: StorageException, WrongTypeException, InvalidIntegerException, NumericOverflowException.
