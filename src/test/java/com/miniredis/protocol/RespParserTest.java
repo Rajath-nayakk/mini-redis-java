@@ -84,3 +84,4 @@ class RespParserTest {
         assertEquals(unicode, bs.asUtf8String());
     }
 
+    @Test
