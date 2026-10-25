@@ -155,3 +155,4 @@ public class RespParser {
         if (writePos - payloadStart < requiredBytes) {
             // Incomplete payload, wait for more data without allocating array
             return null;
+        }
