@@ -61,3 +61,4 @@ public final class ServerConfig {
         if (maxRequestSize <= 0) {
             throw new IllegalArgumentException("Max request size must be positive: " + maxRequestSize);
         }
+        if (timeoutMs < 0) {
