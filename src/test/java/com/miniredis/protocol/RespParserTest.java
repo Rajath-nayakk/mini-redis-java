@@ -167,3 +167,4 @@ class RespParserTest {
 
     @Test
     void testUnexpectedPrefix() {
+        parser.append("!UNKNOWN\r\n".getBytes(StandardCharsets.UTF_8));
