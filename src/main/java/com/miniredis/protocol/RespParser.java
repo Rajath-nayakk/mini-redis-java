@@ -149,3 +149,4 @@ public class RespParser {
         if (bulkLength > maxBulkStringLength) {
             throw new ProtocolException("Bulk string length " + bulkLength + " exceeds limit " + maxBulkStringLength);
         }
+
