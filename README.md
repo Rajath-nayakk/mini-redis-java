@@ -22,3 +22,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 ```bash
 mvn clean verify
 ```
+
