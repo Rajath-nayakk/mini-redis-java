@@ -60,3 +60,4 @@ class RespParserTest {
         assertEquals("", bs.asUtf8String());
         assertEquals(0, bs.data().length);
     }
+
