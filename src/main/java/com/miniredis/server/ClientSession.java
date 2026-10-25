@@ -17,3 +17,4 @@ import java.net.SocketException;
  * Manages request parsing, command execution, response serialization, and connection lifecycle.
  */
 public class ClientSession implements Runnable {
+
