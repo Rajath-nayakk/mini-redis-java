@@ -46,3 +46,4 @@ public final class StringValue implements RedisValue {
         return Objects.equals(value, that.value);
     }
 
+    @Override
