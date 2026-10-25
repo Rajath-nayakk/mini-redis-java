@@ -285,3 +285,4 @@ if [ -z "$actualDistributionDir" ]; then
   verbose "Contents of $TMP_DOWNLOAD_DIR:"
   verbose "$(ls -la "$TMP_DOWNLOAD_DIR")"
   die "Could not find Maven distribution directory in extracted archive"
+fi
