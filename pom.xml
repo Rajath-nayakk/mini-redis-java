@@ -49,3 +49,4 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version></version>
             </plugin>
+            <plugin>
