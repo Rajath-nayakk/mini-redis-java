@@ -27,3 +27,4 @@ class RespEncoderTest {
         assertEquals(":-5\r\n", new String(RespEncoder.encode(RespValue.integer(-5)), StandardCharsets.UTF_8));
         assertEquals(":0\r\n", new String(RespEncoder.encode(RespValue.integer(0)), StandardCharsets.UTF_8));
     }
+
