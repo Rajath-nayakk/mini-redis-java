@@ -42,3 +42,4 @@ public final class ServerConfig {
         this.dataDir = builder.dataDir;
         this.persistenceEnabled = builder.persistenceEnabled;
         this.aofSyncPolicy = builder.aofSyncPolicy;
+        this.cleanupIntervalMs = builder.cleanupIntervalMs;
