@@ -166,3 +166,4 @@ if TMP_DOWNLOAD_DIR="$(mktemp -d)" && [ -d "$TMP_DOWNLOAD_DIR" ]; then
   trap clean HUP INT TERM EXIT
 else
   die "cannot create temp dir"
+fi
