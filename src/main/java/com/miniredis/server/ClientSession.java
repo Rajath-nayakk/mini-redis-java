@@ -61,3 +61,4 @@ public class ClientSession implements Runnable {
             } catch (IOException ignored) {
             }
         } catch (SocketException e) {
+            // Normal socket termination upon client disconnect or server shutdown
