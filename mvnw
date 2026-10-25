@@ -278,3 +278,4 @@ if [ -z "$actualDistributionDir" ]; then
       fi
     fi
   done
+  set -f
