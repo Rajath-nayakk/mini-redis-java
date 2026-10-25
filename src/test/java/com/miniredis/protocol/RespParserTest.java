@@ -117,3 +117,4 @@ class RespParserTest {
             int len = Math.min(3, full.length - 1 - i);
             parser.append(full, i, len);
             assertNull(parser.parseNext(), "Should not parse until entire frame arrives");
+        }
