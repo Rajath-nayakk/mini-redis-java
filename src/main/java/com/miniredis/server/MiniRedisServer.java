@@ -64,3 +64,4 @@ public class MiniRedisServer {
                 if (!running) {
                     try {
                         clientSocket.close();
+                    } catch (IOException ignored) {
