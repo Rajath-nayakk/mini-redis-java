@@ -66,3 +66,4 @@ class ServerConfigTest {
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().host("   ").build());
     }
 
+    @Test
