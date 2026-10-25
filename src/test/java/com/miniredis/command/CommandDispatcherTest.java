@@ -109,3 +109,4 @@ class CommandDispatcherTest {
 
         RespValue err2 = dispatcher.dispatch(cmd("INCRBY", "key", "notanumber"));
         assertEquals(RespType.ERROR, err2.getType());
+    }
