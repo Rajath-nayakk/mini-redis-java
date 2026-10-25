@@ -24,3 +24,4 @@
 - Implemented `com.miniredis.Main` with startup banner and configuration bootstrap.
 - Implemented `com.miniredis.config.ServerConfigTest` testing defaults, custom builder, invalid parameters, and CLI parsing.
 - Created `README.md` with project overview, architecture, run/build/test instructions, and roadmap.
+- Status: Source code and tests committed line-by-line. Awaiting JDK 21 and Maven installation authorization to run `mvn clean verify`.
