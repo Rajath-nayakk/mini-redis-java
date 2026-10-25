@@ -110,3 +110,4 @@ public interface RespValue {
         }
 
         @Override
+        public int hashCode() {
