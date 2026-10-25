@@ -128,3 +128,4 @@ public final class ServerConfig {
         private int maxClients = DEFAULT_MAX_CLIENTS;
         private int maxRequestSize = DEFAULT_MAX_REQUEST_SIZE;
         private int timeoutMs = DEFAULT_TIMEOUT_MS;
+        private Path dataDir = Paths.get(DEFAULT_DATA_DIR);
