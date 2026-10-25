@@ -158,3 +158,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 count++;
             }
         }
+        return count;
