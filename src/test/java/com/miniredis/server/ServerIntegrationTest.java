@@ -70,3 +70,4 @@ class ServerIntegrationTest {
     }
 
     @Test
+    void testPingReturnsPong() throws Exception {
