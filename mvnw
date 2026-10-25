@@ -60,3 +60,4 @@ set_java_home() {
       fi
     fi
   else
+    JAVACMD="$(
