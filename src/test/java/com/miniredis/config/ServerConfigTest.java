@@ -75,3 +75,4 @@ class ServerConfigTest {
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().maxMemoryBytes(-10).build());
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().aofSyncPolicy("unknown").build());
     }
+
