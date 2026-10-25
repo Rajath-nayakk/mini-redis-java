@@ -203,3 +203,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         if (globPattern == null || globPattern.isEmpty()) {
             return Collections.emptySet();
         }
+        Pattern pattern = globToRegex(globPattern);
