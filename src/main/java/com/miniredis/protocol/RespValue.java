@@ -19,3 +19,4 @@ public interface RespValue {
     }
 
     static RespSimpleString simpleString(String value) {
+        return new RespSimpleString(value);
