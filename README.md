@@ -14,3 +14,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 - **Educational Transactions**: MULTI, EXEC, and DISCARD sequence isolation.
 
 ## Prerequisites
+- **Java**: Java 21 LTS (or compatible JDK 21+)
