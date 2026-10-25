@@ -52,3 +52,4 @@ public class CommandDispatcher {
                 case "SET" -> handleSet(args);
                 case "GET" -> handleGet(args);
                 case "DEL" -> handleDel(args);
+                case "EXISTS" -> handleExists(args);
