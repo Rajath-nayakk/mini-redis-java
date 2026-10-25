@@ -21,3 +21,4 @@
 - Date: 2026-10-25
 - Created `pom.xml` with Java 21 compilation, JUnit 5 Jupiter, Surefire, Exec, and JaCoCo plugins.
 - Implemented `com.miniredis.config.ServerConfig` with validation, defaults, builder, and CLI argument parsing.
+- Implemented `com.miniredis.Main` with startup banner and configuration bootstrap.
