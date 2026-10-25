@@ -27,3 +27,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testGetSet() {
