@@ -28,3 +28,4 @@ public interface StorageEngine {
     long dbsize();
     void flushDb();
     long approximateMemoryBytes();
+}
