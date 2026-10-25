@@ -79,3 +79,4 @@ public class CommandDispatcher {
         return RespValue.error("ERR wrong number of arguments for 'ping' command");
     }
 
+    private RespValue handleEcho(List<String> args) {
