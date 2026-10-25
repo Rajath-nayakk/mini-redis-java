@@ -95,3 +95,4 @@ public class RespParser {
         return new RespValue.RespSimpleString(str);
     }
 
+    private RespValue.RespError parseError() {
