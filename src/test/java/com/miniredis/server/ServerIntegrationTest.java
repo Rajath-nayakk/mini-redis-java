@@ -26,6 +26,7 @@ class ServerIntegrationTest {
     void setUp() throws Exception {
         try (java.net.ServerSocket ss = new java.net.ServerSocket(0)) {
             port = ss.getLocalPort();
+        }
         ServerConfig config = ServerConfig.builder()
                 .host("127.0.0.1")
                 .port(port)
