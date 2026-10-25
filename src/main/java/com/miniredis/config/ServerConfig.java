@@ -88,3 +88,4 @@ public final class ServerConfig {
 
     public static ServerConfig parseArgs(String[] args) {
         Builder builder = builder();
+        if (args == null) {
