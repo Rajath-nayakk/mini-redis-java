@@ -126,3 +126,4 @@ class CommandDispatcherTest {
         assertTrue(((RespValue.RespError) unk).message().contains("unknown command"));
 
         RespValue wrongArgs = dispatcher.dispatch(cmd("GET", "k1", "k2"));
+        assertEquals(RespType.ERROR, wrongArgs.getType());
