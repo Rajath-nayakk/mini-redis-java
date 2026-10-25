@@ -83,3 +83,4 @@ public interface RespValue {
         public RespType getType() {
             return RespType.INTEGER;
         }
+    }
