@@ -124,3 +124,4 @@ public class RespParser {
         }
     }
 
+    private RespValue.RespBulkString parseBulkString() {
