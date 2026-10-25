@@ -104,3 +104,4 @@ public class CommandDispatcher {
 
     private RespValue handleDel(List<String> args) {
         if (args.isEmpty()) {
+            return RespValue.error("ERR wrong number of arguments for 'del' command");
