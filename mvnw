@@ -99,3 +99,4 @@ die() {
 
 trim() {
   # MWRAPPER-139:
+  #   Trims trailing and leading whitespace, carriage returns, tabs, and linefeeds.
