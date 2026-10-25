@@ -151,3 +151,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public int del(List<String> keys) {
         if (keys == null || keys.isEmpty()) {
             return 0;
+        }
