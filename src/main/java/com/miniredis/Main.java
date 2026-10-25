@@ -7,3 +7,4 @@ import com.miniredis.storage.ConcurrentStorageEngine;
 import com.miniredis.storage.StorageEngine;
 
 /**
+ * Main entry point for the MiniRedis database server.
