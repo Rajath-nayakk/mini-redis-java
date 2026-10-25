@@ -33,3 +33,4 @@ public final class ServerConfig {
     private final long maxMemoryBytes;
     private final String logLevel;
 
+    private ServerConfig(Builder builder) {
