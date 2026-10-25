@@ -4,3 +4,4 @@ import com.miniredis.command.CommandDispatcher;
 import com.miniredis.config.ServerConfig;
 import com.miniredis.protocol.RespParser;
 import com.miniredis.protocol.RespType;
+import com.miniredis.protocol.RespValue;
