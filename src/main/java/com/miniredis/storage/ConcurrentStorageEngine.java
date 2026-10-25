@@ -85,3 +85,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public long incrBy(String key, long delta) {
         Objects.requireNonNull(key, "Key cannot be null");
         final long[] resultHolder = new long[1];
+        store.compute(key, (k, old) -> {
