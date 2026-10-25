@@ -26,3 +26,4 @@ class ServerIntegrationTest {
     @BeforeEach
     void setUp() throws Exception {
         try (java.net.ServerSocket ss = new java.net.ServerSocket(0)) {
+            port = ss.getLocalPort();
