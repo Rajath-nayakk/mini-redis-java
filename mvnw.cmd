@@ -186,3 +186,4 @@ try {
   catch { Write-Warning "Cannot remove $TMP_DOWNLOAD_DIR" }
 }
 
+Write-Output "MVN_CMD=$MAVEN_HOME/bin/$MVN_CMD"
