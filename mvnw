@@ -206,3 +206,4 @@ elif set_java_home; then
 	{
 	  protected java.net.PasswordAuthentication getPasswordAuthentication()
 	  {
+	    return new java.net.PasswordAuthentication( System.getenv( "MVNW_USERNAME" ), System.getenv( "MVNW_PASSWORD" ).toCharArray() );
