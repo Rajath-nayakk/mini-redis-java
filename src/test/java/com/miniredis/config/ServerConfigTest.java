@@ -38,3 +38,4 @@ class ServerConfigTest {
                 .maxMemoryBytes(100_000_000L)
                 .logLevel("debug")
                 .build();
+
