@@ -87,3 +87,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleSet(List<String> args) {
+        if (args.size() != 2) {
