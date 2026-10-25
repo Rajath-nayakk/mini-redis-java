@@ -228,3 +228,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         long total = 0L;
         for (Map.Entry<String, RedisValue> entry : store.entrySet()) {
             total += 32L + entry.getKey().length() * 2L + entry.getValue().estimatedMemoryBytes();
+        }
