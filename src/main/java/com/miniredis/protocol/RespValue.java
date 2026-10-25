@@ -43,3 +43,4 @@ public interface RespValue {
     }
 
     static RespArray array(List<RespValue> elements) {
+        return new RespArray(elements);
