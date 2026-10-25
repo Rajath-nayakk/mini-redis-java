@@ -8,3 +8,4 @@
 
 ### Environment Discovery
 - Git: Available (version 2.53.0.2).
+- Java: Not detected on system PATH or default directories.
