@@ -33,3 +33,4 @@ Or with custom arguments:
 mvn exec:java -Dexec.mainClass="com.miniredis.Main" -Dexec.args="--port 6380 --dir ./data"
 ```
 
+## Testing
