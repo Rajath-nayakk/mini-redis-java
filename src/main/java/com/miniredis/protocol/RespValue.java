@@ -48,3 +48,4 @@ public interface RespValue {
 
     static RespArray nullArray() {
         return RespArray.NULL;
+    }
