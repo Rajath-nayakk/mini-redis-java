@@ -166,3 +166,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         if (keys == null || keys.isEmpty()) {
             return Collections.emptyList();
         }
+        List<String> result = new ArrayList<>(keys.size());
