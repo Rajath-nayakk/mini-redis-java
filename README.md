@@ -17,3 +17,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 - **Java**: Java 21 LTS (or compatible JDK 21+)
 - **Maven**: Apache Maven 3.8+ (or Maven Wrapper)
 - **Git**: Git 2.30+
+
