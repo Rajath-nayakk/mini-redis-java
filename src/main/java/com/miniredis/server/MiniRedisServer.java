@@ -46,3 +46,4 @@ public class MiniRedisServer {
 
         clientExecutor = Executors.newFixedThreadPool(config.getMaxClients());
         running = true;
+
