@@ -181,3 +181,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     @Override
     public void mset(Map<String, String> entries) {
         if (entries == null || entries.isEmpty()) {
+            return;
