@@ -146,3 +146,4 @@ public class CommandDispatcher {
         }
         long result = engine.incrBy(args.get(0), delta);
         return RespValue.integer(result);
+    }
