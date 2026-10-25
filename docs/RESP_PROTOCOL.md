@@ -7,3 +7,4 @@ All RESP messages are framed by a type identifier prefix byte and terminated wit
 
 | Prefix | Type | Wire Example | Description |
 |---|---|---|---|
+| `+` | Simple String | `+OK\r\n` | Single-line ASCII/UTF-8 status reply (cannot contain CRLF) |
