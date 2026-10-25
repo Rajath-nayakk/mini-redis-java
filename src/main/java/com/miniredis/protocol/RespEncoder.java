@@ -10,3 +10,4 @@ import java.nio.charset.StandardCharsets;
  */
 public final class RespEncoder {
 
+    private static final byte[] CRLF = "\r\n".getBytes(StandardCharsets.US_ASCII);
