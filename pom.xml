@@ -30,3 +30,4 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version></version>
+            <scope>test</scope>
