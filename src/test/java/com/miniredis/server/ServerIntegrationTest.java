@@ -161,3 +161,4 @@ class ServerIntegrationTest {
             // Send malformed non-RESP bytes
             OutputStream out = socket.getOutputStream();
             out.write("INVALID PROTOCOL BYTES\r\n".getBytes(StandardCharsets.UTF_8));
+            out.flush();
