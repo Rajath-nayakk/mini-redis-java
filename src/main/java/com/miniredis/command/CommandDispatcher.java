@@ -94,3 +94,4 @@ public class CommandDispatcher {
         return RespValue.ok();
     }
 
+    private RespValue handleGet(List<String> args) {
