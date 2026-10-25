@@ -18,3 +18,4 @@ All RESP messages are framed by a type identifier prefix byte and terminated wit
 ## 2. Streaming Parser Architecture
 The `RespParser` class decodes incoming byte streams incrementally:
 1. **Partial Reads**: If an incoming network buffer contains only part of a command (e.g. split across TCP packets), `parseNext()` returns `null` without consuming the partial bytes.
+2. **Multi-Command Buffers**: If multiple complete commands arrive in a single network read, consecutive calls to `parseNext()` yield each command sequentially.
