@@ -74,3 +74,4 @@ class RespEncoderTest {
         assertNotNull(decoded);
         assertEquals(RespType.ARRAY, decoded.getType());
         RespValue.RespArray decodedArr = (RespValue.RespArray) decoded;
+        assertEquals(4, decodedArr.elements().size());
