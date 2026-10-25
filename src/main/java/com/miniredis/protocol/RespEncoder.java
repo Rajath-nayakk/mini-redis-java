@@ -40,3 +40,4 @@ public final class RespEncoder {
         switch (value.getType()) {
             case SIMPLE_STRING -> {
                 RespValue.RespSimpleString ss = (RespValue.RespSimpleString) value;
+                out.write(PREFIX_SIMPLE_STRING);
