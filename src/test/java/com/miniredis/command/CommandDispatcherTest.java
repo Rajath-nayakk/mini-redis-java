@@ -112,3 +112,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testNumericOverflowErrors() {
