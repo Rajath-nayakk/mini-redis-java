@@ -107,3 +107,4 @@ trim() {
 
 scriptDir="$(dirname "$0")"
 scriptName="$(basename "$0")"
+
