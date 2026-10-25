@@ -60,3 +60,4 @@ class RespEncoderTest {
     @Test
     void testRoundTrip() {
         RespValue.RespArray original = RespValue.array(List.of(
+                RespValue.bulkString("MGET"),
