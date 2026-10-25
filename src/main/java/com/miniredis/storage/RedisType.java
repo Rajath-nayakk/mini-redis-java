@@ -5,3 +5,4 @@ package com.miniredis.storage;
  */
 public enum RedisType {
     STRING("string"),
+    LIST("list"),
