@@ -133,3 +133,4 @@ class ServerIntegrationTest {
         s.close();
         // Allow session cleanup
         Thread.sleep(100);
+        assertEquals(0, server.getActiveClientCount());
