@@ -190,3 +190,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public RedisType type(String key) {
+        Objects.requireNonNull(key, "Key cannot be null");
