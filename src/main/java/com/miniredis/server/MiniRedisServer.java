@@ -124,3 +124,4 @@ public class MiniRedisServer {
         } catch (IOException ignored) {
         }
 
+        for (Socket s : activeSockets) {
