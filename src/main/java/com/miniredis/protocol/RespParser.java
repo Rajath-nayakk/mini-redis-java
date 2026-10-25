@@ -122,3 +122,4 @@ public class RespParser {
         } catch (NumberFormatException e) {
             throw new ProtocolException("Invalid RESP integer value: " + str);
         }
+    }
