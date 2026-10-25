@@ -167,3 +167,4 @@ if TMP_DOWNLOAD_DIR="$(mktemp -d)" && [ -d "$TMP_DOWNLOAD_DIR" ]; then
 else
   die "cannot create temp dir"
 fi
+
