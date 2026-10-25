@@ -118,3 +118,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         if (delta == Long.MIN_VALUE) {
             throw new NumericOverflowException();
         }
+        return incrBy(key, -delta);
