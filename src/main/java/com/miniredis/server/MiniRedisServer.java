@@ -35,3 +35,4 @@ public class MiniRedisServer {
         this.dispatcher = dispatcher;
     }
 
+    public synchronized void start() throws IOException {
