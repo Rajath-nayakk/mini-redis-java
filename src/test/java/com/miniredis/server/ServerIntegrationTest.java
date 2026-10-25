@@ -60,3 +60,4 @@ class ServerIntegrationTest {
             if (read == -1) {
                 break;
             }
+            parser.append(buf, 0, read);
