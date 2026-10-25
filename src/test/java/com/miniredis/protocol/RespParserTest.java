@@ -68,3 +68,4 @@ class RespParserTest {
         assertNotNull(bs);
         assertTrue(bs.isNull());
         assertNull(bs.asUtf8String());
+    }
