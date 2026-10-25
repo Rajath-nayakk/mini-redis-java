@@ -232,3 +232,4 @@ public class RespParser {
             }
             if (buffer.length - writePos < needed) {
                 int newCap = Math.max(buffer.length * 2, writePos + needed);
+                byte[] newBuf = new byte[newCap];
