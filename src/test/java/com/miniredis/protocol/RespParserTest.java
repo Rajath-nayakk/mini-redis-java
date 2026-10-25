@@ -29,3 +29,4 @@ class RespParserTest {
     @Test
     void testParseError() {
         parser.append("-ERR unknown command\r\n".getBytes(StandardCharsets.UTF_8));
+        RespValue val = parser.parseNext();
