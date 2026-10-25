@@ -226,3 +226,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     @Override
     public long approximateMemoryBytes() {
         long total = 0L;
+        for (Map.Entry<String, RedisValue> entry : store.entrySet()) {
