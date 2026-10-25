@@ -130,3 +130,4 @@ maven-mvnd-*bin.*)
     distributionPlatform=linux-amd64
     ;;
   esac
+  distributionUrl="${distributionUrl%-bin.*}-$distributionPlatform.zip"
