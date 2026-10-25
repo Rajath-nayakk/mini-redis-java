@@ -9,3 +9,4 @@ import java.util.*;
  */
 public class RespParser {
 
+    public static final int DEFAULT_MAX_BULK_STRING_LENGTH = 512 * 1024 * 1024; // 512MB
