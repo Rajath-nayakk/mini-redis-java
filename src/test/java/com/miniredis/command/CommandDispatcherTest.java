@@ -104,3 +104,4 @@ class CommandDispatcherTest {
     void testInvalidIntegerErrors() {
         dispatcher.dispatch(cmd("SET", "nan", "text"));
         RespValue err = dispatcher.dispatch(cmd("INCR", "nan"));
+        assertEquals(RespType.ERROR, err.getType());
