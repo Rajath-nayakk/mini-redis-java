@@ -166,3 +166,4 @@ class RespParserTest {
     }
 
     @Test
+    void testUnexpectedPrefix() {
