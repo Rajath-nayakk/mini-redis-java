@@ -68,3 +68,4 @@
                         </goals>
                     </execution>
                     <execution>
+                        <id>report</id>
