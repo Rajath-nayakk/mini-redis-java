@@ -46,3 +46,4 @@ class RespParserTest {
 
     @Test
     void testParseBulkString() {
+        parser.append("$5\r\nhello\r\n".getBytes(StandardCharsets.UTF_8));
