@@ -99,3 +99,4 @@ class RespParserTest {
     @Test
     void testParseEmptyAndNullArray() {
         parser.append("*0\r\n*-1\r\n".getBytes(StandardCharsets.UTF_8));
+        RespValue.RespArray empty = (RespValue.RespArray) parser.parseNext();
