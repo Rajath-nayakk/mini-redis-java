@@ -83,3 +83,4 @@ class CommandDispatcherTest {
         assertEquals(0L, ((RespValue.RespInteger) ex2).value());
     }
 
+    @Test
