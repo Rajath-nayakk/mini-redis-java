@@ -68,3 +68,4 @@ class RespEncoderTest {
         byte[] encoded = RespEncoder.encode(original);
 
         RespParser parser = new RespParser();
+        parser.append(encoded);
