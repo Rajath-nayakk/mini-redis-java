@@ -16,3 +16,4 @@ class RespParserTest {
         parser = new RespParser();
     }
 
+    @Test
