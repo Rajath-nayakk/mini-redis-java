@@ -253,3 +253,4 @@ public class RespParser {
 
     public int getUnparsedBytesCount() {
         return available();
+    }
