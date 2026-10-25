@@ -46,3 +46,4 @@
 - Implemented ProtocolException domain exception for wire-level violations.
 - Implemented RespEncoder for serializing typed RESP values into RESP2 byte format.
 - Implemented streaming RespParser: handles partial input across multiple reads, multi-command buffers, max length bounds, and frame validation.
+- Implemented CommandDispatcher in com.miniredis.command: dispatches PING, ECHO, SET, GET, DEL, EXISTS, DBSIZE, INCR, INCRBY, DECR, DECRBY with exception-to-error mapping.
