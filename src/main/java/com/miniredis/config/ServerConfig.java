@@ -147,3 +147,4 @@ public final class ServerConfig {
         public Builder maxMemoryBytes(long maxMemoryBytes) { this.maxMemoryBytes = maxMemoryBytes; return this; }
         public Builder logLevel(String logLevel) { this.logLevel = logLevel; return this; }
 
+        public ServerConfig build() {
