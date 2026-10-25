@@ -18,3 +18,4 @@ class CommandDispatcherTest {
     void setUp() {
         dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
     }
+
