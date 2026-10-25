@@ -82,3 +82,4 @@ public final class ServerConfig {
         return new Builder();
     }
 
+    public static ServerConfig defaultConfig() {
