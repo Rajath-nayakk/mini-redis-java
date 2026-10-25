@@ -11,3 +11,4 @@ public class WrongTypeException extends StorageException {
     }
 
     public WrongTypeException(String message) {
+        super(message);
