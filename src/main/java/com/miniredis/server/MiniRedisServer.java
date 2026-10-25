@@ -48,3 +48,4 @@ public class MiniRedisServer {
         running = true;
 
         listenerThread = new Thread(this::listenLoop, "miniredis-listener");
+        listenerThread.setDaemon(true);
