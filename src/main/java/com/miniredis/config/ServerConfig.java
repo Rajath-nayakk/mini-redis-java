@@ -141,3 +141,4 @@ public final class ServerConfig {
         public Builder maxRequestSize(int maxRequestSize) { this.maxRequestSize = maxRequestSize; return this; }
         public Builder timeoutMs(int timeoutMs) { this.timeoutMs = timeoutMs; return this; }
         public Builder dataDir(Path dataDir) { this.dataDir = dataDir; return this; }
+        public Builder persistenceEnabled(boolean persistenceEnabled) { this.persistenceEnabled = persistenceEnabled; return this; }
