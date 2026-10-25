@@ -51,3 +51,4 @@ class RespParserTest {
         assertNotNull(bs);
         assertEquals("hello", bs.asUtf8String());
     }
+
