@@ -93,3 +93,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 }
                 try {
                     current = Long.parseLong(stringVal.getValue());
+                } catch (NumberFormatException e) {
