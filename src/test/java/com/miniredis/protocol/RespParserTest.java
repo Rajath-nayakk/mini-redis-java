@@ -120,3 +120,4 @@ class RespParserTest {
         }
 
         // Send last byte
+        parser.append(full, full.length - 1, 1);
