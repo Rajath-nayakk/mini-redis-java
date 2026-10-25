@@ -50,3 +50,4 @@ public class CommandDispatcher {
                 case "PING" -> handlePing(args);
                 case "ECHO" -> handleEcho(args);
                 case "SET" -> handleSet(args);
+                case "GET" -> handleGet(args);
