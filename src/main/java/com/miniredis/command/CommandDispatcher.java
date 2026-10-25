@@ -62,3 +62,4 @@ public class CommandDispatcher {
             };
         } catch (WrongTypeException | InvalidIntegerException | NumericOverflowException e) {
             return RespValue.error(e.getMessage());
+        } catch (StorageException e) {
