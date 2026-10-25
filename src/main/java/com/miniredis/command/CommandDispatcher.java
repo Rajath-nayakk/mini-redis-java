@@ -117,3 +117,4 @@ public class CommandDispatcher {
         int count = engine.exists(args);
         return RespValue.integer(count);
     }
+
