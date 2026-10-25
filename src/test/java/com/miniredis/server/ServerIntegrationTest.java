@@ -16,3 +16,4 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.nio.charset.StandardCharsets;
 
+import static org.junit.jupiter.api.Assertions.*;
