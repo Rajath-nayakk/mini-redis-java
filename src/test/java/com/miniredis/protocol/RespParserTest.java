@@ -19,3 +19,4 @@ class RespParserTest {
     @Test
     void testParseSimpleString() {
         parser.append("+OK\r\n".getBytes(StandardCharsets.UTF_8));
+        RespValue val = parser.parseNext();
