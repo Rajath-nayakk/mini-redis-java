@@ -92,3 +92,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     throw new WrongTypeException();
                 }
                 try {
+                    current = Long.parseLong(stringVal.getValue());
