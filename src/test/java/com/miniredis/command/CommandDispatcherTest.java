@@ -70,3 +70,4 @@ class CommandDispatcherTest {
     void testDelAndExists() {
         dispatcher.dispatch(cmd("SET", "k1", "v1"));
         dispatcher.dispatch(cmd("SET", "k2", "v2"));
+
