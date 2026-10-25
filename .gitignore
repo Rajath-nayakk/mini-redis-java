@@ -14,3 +14,4 @@ target/
 Thumbs.db
 
 # Runtime logs and dumps
+*.log
