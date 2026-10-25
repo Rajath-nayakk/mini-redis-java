@@ -30,3 +30,4 @@ public final class RespEncoder {
             throw new RuntimeException("Encoding failure", e);
         }
         return baos.toByteArray();
+    }
