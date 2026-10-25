@@ -37,3 +37,4 @@ public class CommandDispatcher {
             }
         }
 
+        String commandName = tokens.get(0);
