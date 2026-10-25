@@ -44,3 +44,4 @@ public class ClientSession implements Runnable {
 
                 try {
                     RespValue request;
+                    while ((request = parser.parseNext()) != null) {
