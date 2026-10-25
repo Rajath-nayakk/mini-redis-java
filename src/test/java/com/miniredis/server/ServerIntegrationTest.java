@@ -172,3 +172,4 @@ class ServerIntegrationTest {
         }
 
         // Verify server is healthy and accepts new clients
+        try (Socket healthyClient = connect()) {
