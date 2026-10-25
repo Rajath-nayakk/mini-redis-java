@@ -54,3 +54,4 @@ set_java_home() {
       JAVACCMD="$JAVA_HOME/bin/javac"
 
       if [ ! -x "$JAVACMD" ] || [ ! -x "$JAVACCMD" ]; then
+        echo "The JAVA_HOME environment variable is not defined correctly, so mvnw cannot run." >&2
