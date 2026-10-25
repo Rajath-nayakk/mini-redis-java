@@ -71,3 +71,4 @@ public interface RespValue {
                 throw new IllegalArgumentException("Error message cannot contain CRLF");
             }
         }
+
