@@ -69,3 +69,4 @@ class ServerIntegrationTest {
         return null;
     }
 
+    @Test
