@@ -26,3 +26,4 @@ public final class Main {
     }
 
     private static void printBanner(ServerConfig config) {
+        System.out.println("                _       _ _____          _ _       ");
