@@ -250,3 +250,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
 fi
 
 # unzip and move
+if command -v unzip >/dev/null; then
