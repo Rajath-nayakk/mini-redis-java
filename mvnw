@@ -270,3 +270,4 @@ fi
 if [ -z "$actualDistributionDir" ]; then
   # enable globbing to iterate over items
   set +f
+  for dir in "$TMP_DOWNLOAD_DIR"/*; do
