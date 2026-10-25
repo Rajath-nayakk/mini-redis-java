@@ -62,3 +62,4 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version></version>
                 <executions>
+                    <execution>
