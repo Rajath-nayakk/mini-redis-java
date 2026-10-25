@@ -155,3 +155,4 @@ if [ -d "$MAVEN_HOME" ]; then
   exec_maven "$@"
 fi
 
+case "${distributionUrl-}" in
