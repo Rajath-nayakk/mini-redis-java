@@ -138,3 +138,4 @@ public class RespParser {
         } catch (NumberFormatException e) {
             throw new ProtocolException("Invalid bulk string length: " + lenStr);
         }
+
