@@ -245,3 +245,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
   if [ $distributionSha256Result = false ]; then
     echo "Error: Failed to validate Maven distribution SHA-256, your Maven distribution might be compromised." >&2
     echo "If you updated your Maven version, you need to update the specified distributionSha256Sum property." >&2
+    exit 1
