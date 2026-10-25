@@ -268,3 +268,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     sb.append(c);
             }
         }
+        sb.append("$");
