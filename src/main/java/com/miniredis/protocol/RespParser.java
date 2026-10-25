@@ -38,3 +38,4 @@ public class RespParser {
         if (data == null || length <= 0) {
             return;
         }
+        ensureCapacity(length);
