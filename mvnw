@@ -97,3 +97,4 @@ die() {
   exit 1
 }
 
+trim() {
