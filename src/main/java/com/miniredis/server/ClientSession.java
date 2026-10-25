@@ -30,3 +30,4 @@ public class ClientSession implements Runnable {
         this.parser = new RespParser(maxRequestSize, RespParser.DEFAULT_MAX_ARRAY_LENGTH);
     }
 
+    @Override
