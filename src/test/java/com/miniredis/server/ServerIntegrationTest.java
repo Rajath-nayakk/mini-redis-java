@@ -156,3 +156,4 @@ class ServerIntegrationTest {
     }
 
     @Test
+    void testMalformedRequestsDoNotCrashServer() throws Exception {
