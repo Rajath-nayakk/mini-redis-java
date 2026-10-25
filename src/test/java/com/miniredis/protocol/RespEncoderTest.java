@@ -41,3 +41,4 @@ class RespEncoderTest {
     }
 
     @Test
+    void testEncodeArray() {
