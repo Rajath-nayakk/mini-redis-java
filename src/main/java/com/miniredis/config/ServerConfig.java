@@ -91,3 +91,4 @@ public final class ServerConfig {
         if (args == null) {
             return builder.build();
         }
+        for (int i = 0; i < args.length; i++) {
