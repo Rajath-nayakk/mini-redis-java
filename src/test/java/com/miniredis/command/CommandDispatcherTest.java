@@ -43,3 +43,4 @@ class CommandDispatcherTest {
 
     @Test
     void testEcho() {
+        RespValue r1 = dispatcher.dispatch(cmd("ECHO", "test-message"));
