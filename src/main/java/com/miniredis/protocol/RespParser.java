@@ -25,3 +25,4 @@ public class RespParser {
 
     public RespParser(int maxBulkStringLength, int maxArrayLength) {
         this.maxBulkStringLength = maxBulkStringLength;
+        this.maxArrayLength = maxArrayLength;
