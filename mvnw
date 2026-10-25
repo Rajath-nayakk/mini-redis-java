@@ -210,3 +210,4 @@ elif set_java_home; then
 	  }
 	  public static void main( String[] args ) throws Exception
 	  {
+	    setDefault( new Downloader() );
