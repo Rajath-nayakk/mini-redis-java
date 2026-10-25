@@ -38,6 +38,7 @@ public final class Main {
                 System.out.println("[MiniRedis] Replayed " + replayed + " commands from AOF.");
             }
 
+            java.util.concurrent.CountDownLatch stopLatch = new java.util.concurrent.CountDownLatch(1);
             final AofManager finalAof = aofManager;
             CommandDispatcher dispatcher = new CommandDispatcher(engine, aofManager, config.getRequirePass());
             MiniRedisServer server = new MiniRedisServer(config, dispatcher);
@@ -52,10 +53,17 @@ public final class Main {
                     }
                 }
                 System.out.println("[MiniRedis] Server stopped.");
+                stopLatch.countDown();
             }));
 
             server.start();
             System.out.println("[MiniRedis] Server started on " + config.getHost() + ":" + server.getPort());
+
+            try {
+                stopLatch.await();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
         } catch (IllegalArgumentException e) {
             System.err.println("Configuration error: " + e.getMessage());
             System.exit(1);

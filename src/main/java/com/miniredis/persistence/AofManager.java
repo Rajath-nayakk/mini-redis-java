@@ -5,7 +5,6 @@ import com.miniredis.protocol.ProtocolException;
 import com.miniredis.protocol.RespEncoder;
 import com.miniredis.protocol.RespParser;
 import com.miniredis.protocol.RespValue;
-import com.miniredis.storage.ConcurrentStorageEngine;
 import com.miniredis.storage.StorageEngine;
 
 import java.io.*;
@@ -235,6 +234,9 @@ public class AofManager implements Closeable {
                             }
                             writeCommandList(tempChan, cmd);
                         }
+                    }
+                    case ZSET, NONE -> {
+                        // ZSET not yet supported; NONE represents nonexistent/expired key
                     }
                 }
 
