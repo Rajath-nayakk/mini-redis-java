@@ -12,3 +12,4 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CommandDispatcherTest {
 
+    private CommandDispatcher dispatcher;
