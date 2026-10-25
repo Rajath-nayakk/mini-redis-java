@@ -124,3 +124,4 @@ class CommandDispatcherTest {
         RespValue unk = dispatcher.dispatch(cmd("UNKNOWNCMD", "arg"));
         assertEquals(RespType.ERROR, unk.getType());
         assertTrue(((RespValue.RespError) unk).message().contains("unknown command"));
+
