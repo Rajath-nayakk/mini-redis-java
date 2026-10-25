@@ -123,3 +123,4 @@ class ServerIntegrationTest {
 
             assertEquals("Alice", ((RespValue.RespBulkString) g1).asUtf8String());
             assertEquals("Bob", ((RespValue.RespBulkString) g2).asUtf8String());
+        }
