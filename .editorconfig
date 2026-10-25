@@ -11,3 +11,4 @@ insert_final_newline = true
 [*.{xml,yml,yaml,json,md}]
 indent_size = 2
 
+[*.sh]
