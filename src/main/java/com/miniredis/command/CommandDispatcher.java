@@ -29,3 +29,4 @@ public class CommandDispatcher {
         List<String> tokens = new ArrayList<>(elements.size());
         for (RespValue elem : elements) {
             if (elem instanceof RespValue.RespBulkString bulkStr) {
+                tokens.add(bulkStr.asUtf8String());
