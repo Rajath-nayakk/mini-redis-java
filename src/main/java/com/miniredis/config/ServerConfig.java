@@ -123,3 +123,4 @@ public final class ServerConfig {
     public String getLogLevel() { return logLevel; }
 
     public static final class Builder {
+        private String host = DEFAULT_HOST;
