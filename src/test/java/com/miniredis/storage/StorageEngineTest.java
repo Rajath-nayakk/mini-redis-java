@@ -107,3 +107,4 @@ class StorageEngineTest {
         engine.set("underflowKey", String.valueOf(Long.MIN_VALUE));
         assertThrows(NumericOverflowException.class, () -> engine.decr("underflowKey"));
         assertThrows(NumericOverflowException.class, () -> engine.decrBy("underflowKey", 10));
+    }
