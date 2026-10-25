@@ -223,3 +223,4 @@ public class RespParser {
     }
 
     private void ensureCapacity(int needed) {
+        if (buffer.length - writePos < needed) {
