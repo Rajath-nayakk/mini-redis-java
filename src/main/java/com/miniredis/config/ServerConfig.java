@@ -114,3 +114,4 @@ public final class ServerConfig {
     public int getPort() { return port; }
     public int getMaxClients() { return maxClients; }
     public int getMaxRequestSize() { return maxRequestSize; }
+    public int getTimeoutMs() { return timeoutMs; }
