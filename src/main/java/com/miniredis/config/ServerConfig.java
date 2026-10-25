@@ -52,3 +52,4 @@ public final class ServerConfig {
         if (host == null || host.trim().isEmpty()) {
             throw new IllegalArgumentException("Host cannot be null or empty");
         }
+        if (port < 1 || port > 65535) {
