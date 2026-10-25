@@ -14,3 +14,4 @@ All RESP messages are framed by a type identifier prefix byte and terminated wit
 | `$` | Null Bulk String | `$-1\r\n` | Represents a non-existent or null key |
 | `*` | Array | `*2\r\n$3\r\nGET\r\n$3\r\nfoo\r\n` | Sequence of RESP elements |
 | `*` | Null Array | `*-1\r\n` | Represents a null array |
+
