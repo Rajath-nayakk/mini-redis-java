@@ -74,3 +74,4 @@ public class CommandDispatcher {
             return RespValue.pong();
         }
         if (args.size() == 1) {
+            return RespValue.bulkString(args.get(0));
