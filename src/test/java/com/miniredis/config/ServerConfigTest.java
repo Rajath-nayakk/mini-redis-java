@@ -86,3 +86,4 @@ class ServerConfigTest {
                 "--appendonly", "true",
                 "--dir", "mydata"
         };
+        ServerConfig config = ServerConfig.parseArgs(args);
