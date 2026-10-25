@@ -126,3 +126,4 @@ public class CommandDispatcher {
         return RespValue.integer(size);
     }
 
+    private RespValue handleIncr(List<String> args) {
