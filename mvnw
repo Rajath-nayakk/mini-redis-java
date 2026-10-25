@@ -129,3 +129,4 @@ maven-mvnd-*bin.*)
     echo "Cannot detect native platform for mvnd on $(uname)-$(uname -m), use pure java version" >&2
     distributionPlatform=linux-amd64
     ;;
+  esac
