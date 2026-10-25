@@ -99,3 +99,4 @@ public class MiniRedisServer {
         try {
             if (serverSocket != null && !serverSocket.isClosed()) {
                 serverSocket.close();
+            }
