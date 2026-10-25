@@ -18,3 +18,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testBasicGetSet() {
