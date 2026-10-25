@@ -126,3 +126,4 @@ public final class ServerConfig {
         private String host = DEFAULT_HOST;
         private int port = DEFAULT_PORT;
         private int maxClients = DEFAULT_MAX_CLIENTS;
+        private int maxRequestSize = DEFAULT_MAX_REQUEST_SIZE;
