@@ -220,3 +220,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public void flushDb() {
+        store.clear();
