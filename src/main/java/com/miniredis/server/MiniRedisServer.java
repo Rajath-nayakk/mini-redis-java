@@ -47,3 +47,4 @@ public class MiniRedisServer {
 
         clientExecutor = Executors.newFixedThreadPool(config.getMaxClients(), r -> {
             Thread t = new Thread(r, "miniredis-client");
+            t.setDaemon(true);
