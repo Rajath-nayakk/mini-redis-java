@@ -72,3 +72,4 @@ class CommandDispatcherTest {
         dispatcher.dispatch(cmd("SET", "k2", "v2"));
 
         RespValue ex1 = dispatcher.dispatch(cmd("EXISTS", "k1", "k2", "k3"));
+        assertEquals(RespType.INTEGER, ex1.getType());
