@@ -168,3 +168,4 @@ else
   die "cannot create temp dir"
 fi
 
+mkdir -p -- "${MAVEN_HOME%/*}"
