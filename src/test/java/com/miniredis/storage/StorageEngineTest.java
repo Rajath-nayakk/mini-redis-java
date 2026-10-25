@@ -163,3 +163,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testDbsizeAndFlushDb() {
