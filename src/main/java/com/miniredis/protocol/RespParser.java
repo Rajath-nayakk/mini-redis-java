@@ -43,3 +43,4 @@ public class RespParser {
         writePos += length;
     }
 
+    public RespValue parseNext() {
