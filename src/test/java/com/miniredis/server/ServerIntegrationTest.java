@@ -20,3 +20,4 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ServerIntegrationTest {
 
+    private MiniRedisServer server;
