@@ -101,3 +101,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 long newVal = Math.addExact(current, delta);
                 resultHolder[0] = newVal;
                 return new StringValue(String.valueOf(newVal));
+            } catch (ArithmeticException e) {
