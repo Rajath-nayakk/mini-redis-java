@@ -156,3 +156,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         for (String key : keys) {
             if (key != null && store.remove(key) != null) {
                 count++;
+            }
