@@ -49,3 +49,4 @@ class ServerIntegrationTest {
 
     private RespValue sendAndReceive(Socket socket, String respCommand) throws Exception {
         OutputStream out = socket.getOutputStream();
+        out.write(respCommand.getBytes(StandardCharsets.UTF_8));
