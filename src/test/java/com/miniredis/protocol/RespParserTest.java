@@ -97,3 +97,4 @@ class RespParserTest {
     }
 
     @Test
+    void testParseEmptyAndNullArray() {
