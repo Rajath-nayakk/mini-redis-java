@@ -116,3 +116,4 @@ class StorageEngineTest {
 
         engine.set("k1", "v1");
         engine.set("k2", "v2");
+        assertTrue(engine.exists("k1"));
