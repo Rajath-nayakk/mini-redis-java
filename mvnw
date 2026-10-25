@@ -234,3 +234,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
       distributionSha256Result=true
     fi
   elif command -v shasum >/dev/null; then
+    if echo "$distributionSha256Sum  $TMP_DOWNLOAD_DIR/$distributionUrlName" | shasum -a 256 -c >/dev/null 2>&1; then
