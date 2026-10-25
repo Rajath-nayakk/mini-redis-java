@@ -85,3 +85,4 @@ public interface RespValue {
         }
     }
 
+    record RespBulkString(byte[] data) implements RespValue {
