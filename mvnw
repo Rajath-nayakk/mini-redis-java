@@ -53,3 +53,4 @@ set_java_home() {
       JAVACMD="$JAVA_HOME/bin/java"
       JAVACCMD="$JAVA_HOME/bin/javac"
 
+      if [ ! -x "$JAVACMD" ] || [ ! -x "$JAVACCMD" ]; then
