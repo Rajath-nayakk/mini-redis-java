@@ -29,3 +29,4 @@ class ServerConfigTest {
                 .host("192.168.1.10")
                 .port(6380)
                 .maxClients(500)
+                .maxRequestSize(5 * 1024 * 1024)
