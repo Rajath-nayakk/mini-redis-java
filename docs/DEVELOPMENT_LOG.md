@@ -28,3 +28,4 @@
 
 ## Phase 2 â€” In-Memory Storage Engine
 - Date: 2026-10-25
+- Configured JDK 21 LTS (Temurin-21.0.12.1+1) and verified java, javac, and JAVA_HOME.
