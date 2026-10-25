@@ -191,3 +191,4 @@ public class RespParser {
             throw new ProtocolException("Negative array length invalid: " + arrayCount);
         }
         if (arrayCount > maxArrayLength) {
+            throw new ProtocolException("Array length " + arrayCount + " exceeds limit " + maxArrayLength);
