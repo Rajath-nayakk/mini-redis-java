@@ -101,3 +101,4 @@ class ServerIntegrationTest {
     @Test
     void testMultipleRequestsOverOneConnection() throws Exception {
         try (Socket socket = connect()) {
+            for (int i = 0; i < 5; i++) {
