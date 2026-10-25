@@ -49,3 +49,4 @@ public final class ServerConfig {
     }
 
     public void validate() {
+        if (host == null || host.trim().isEmpty()) {
