@@ -198,3 +198,4 @@ public class RespParser {
         readPos = currentReadPos;
 
         List<RespValue> elements = new ArrayList<>(arrayCount);
+        for (int i = 0; i < arrayCount; i++) {
