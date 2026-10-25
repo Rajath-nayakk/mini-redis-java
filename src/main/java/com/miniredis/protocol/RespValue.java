@@ -90,3 +90,4 @@ public interface RespValue {
 
         public boolean isNull() {
             return data == null;
+        }
