@@ -73,3 +73,4 @@ public class CommandDispatcher {
         if (args.isEmpty()) {
             return RespValue.pong();
         }
+        if (args.size() == 1) {
