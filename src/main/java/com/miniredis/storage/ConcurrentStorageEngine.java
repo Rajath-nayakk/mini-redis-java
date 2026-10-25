@@ -88,3 +88,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         store.compute(key, (k, old) -> {
             long current = 0L;
             if (old != null) {
+                if (!(old instanceof StringValue stringVal)) {
