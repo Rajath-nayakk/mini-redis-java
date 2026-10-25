@@ -98,3 +98,4 @@ die() {
 }
 
 trim() {
+  # MWRAPPER-139:
