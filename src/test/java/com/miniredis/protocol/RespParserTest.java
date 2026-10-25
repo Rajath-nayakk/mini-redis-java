@@ -109,3 +109,4 @@ class RespParserTest {
         assertTrue(nullArr.isNull());
     }
 
+    @Test
