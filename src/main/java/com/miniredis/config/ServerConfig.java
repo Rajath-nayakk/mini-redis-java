@@ -112,3 +112,4 @@ public final class ServerConfig {
 
     public String getHost() { return host; }
     public int getPort() { return port; }
+    public int getMaxClients() { return maxClients; }
