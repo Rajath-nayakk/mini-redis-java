@@ -215,3 +215,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public long dbsize() {
+        return store.size();
