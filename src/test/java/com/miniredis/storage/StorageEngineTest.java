@@ -169,3 +169,4 @@ class StorageEngineTest {
         engine.set("k2", "v2");
         assertEquals(2L, engine.dbsize());
 
+        engine.flushDb();
