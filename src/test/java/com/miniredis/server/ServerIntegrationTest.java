@@ -102,3 +102,4 @@ class ServerIntegrationTest {
                 assertNotNull(resp);
                 assertEquals("msg-" + i, ((RespValue.RespBulkString) resp).asUtf8String());
             }
+        }
