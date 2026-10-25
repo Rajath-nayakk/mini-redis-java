@@ -152,3 +152,4 @@ public class MiniRedisServer {
     public int getActiveClientCount() {
         return Math.max(0, activeClients.get());
     }
+
