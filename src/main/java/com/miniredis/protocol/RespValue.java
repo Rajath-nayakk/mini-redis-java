@@ -108,3 +108,4 @@ public interface RespValue {
             RespBulkString that = (RespBulkString) o;
             return Arrays.equals(data, that.data);
         }
+
