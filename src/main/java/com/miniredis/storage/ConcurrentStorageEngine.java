@@ -15,3 +15,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public void set(String key, String value) {
         Objects.requireNonNull(key, "Key cannot be null");
         Objects.requireNonNull(value, "Value cannot be null");
+        store.put(key, new StringValue(value));
