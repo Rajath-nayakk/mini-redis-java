@@ -282,3 +282,4 @@ if [ -z "$actualDistributionDir" ]; then
 fi
 
 if [ -z "$actualDistributionDir" ]; then
+  verbose "Contents of $TMP_DOWNLOAD_DIR:"
