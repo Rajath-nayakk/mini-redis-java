@@ -145,3 +145,4 @@ public class RespParser {
         }
         if (bulkLength < -1) {
             throw new ProtocolException("Negative bulk string length invalid: " + bulkLength);
+        }
