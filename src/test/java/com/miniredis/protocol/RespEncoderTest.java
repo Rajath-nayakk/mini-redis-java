@@ -40,3 +40,4 @@ class RespEncoderTest {
         assertEquals("$-1\r\n", new String(encoded, StandardCharsets.UTF_8));
     }
 
+    @Test
