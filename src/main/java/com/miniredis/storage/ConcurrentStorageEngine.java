@@ -51,3 +51,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public int append(String key, String value) {
         Objects.requireNonNull(key, "Key cannot be null");
         Objects.requireNonNull(value, "Value cannot be null");
+        RedisValue updated = store.compute(key, (k, old) -> {
