@@ -58,3 +58,41 @@
 - Updated com.miniredis.Main to bootstrap ServerConfig, ConcurrentStorageEngine, CommandDispatcher, MiniRedisServer, and register JVM shutdown hook.
 - Added comprehensive integration test suite com.miniredis.server.ServerIntegrationTest testing PING/PONG, SET/GET roundtrips, multi-request sessions, simultaneous concurrent clients, dynamic client cleanup, protocol error resilience, malformed request recovery, and graceful shutdown.
 - Verification: mvnw.cmd clean verify passed with all 60 tests passing.
+## Phase 5 — TTL and Key Expiration
+- Date: 2026-10-25
+- Implemented millisecond-precision expiration metadata and injectable java.time.Clock abstraction.
+- Implemented EXPIRE, PEXPIRE, EXPIREAT, PEXPIREAT, TTL, PTTL, PERSIST, SETEX, PSETEX.
+- Implemented lazy expiration on access, active background cleanup sweeper, and Redis-compliant TTL removal on standard SET.
+- Verified deterministic time-advancement testing without arbitrary sleeps.
+
+## Phase 6 — Append-Only File (AOF) Persistence
+- Date: 2026-10-25
+- Implemented AofManager supporting binary-safe RESP record logging to appendonly.aof.
+- Implemented durability policies: always (immediate fsync), everysec (background 1s worker), and no (OS managed).
+- Implemented sequential replay recovery with truncation resilience against partial crash records.
+- Implemented atomic AOF rewrite/compaction using temporary file swap.
+
+## Phase 7 — Complex Data Structures (Lists, Sets, Hashes)
+- Date: 2026-10-25
+- Implemented typed RedisValue abstractions: ListValue, SetValue, HashValue.
+- Lists: LPUSH, RPUSH, LPOP, RPOP, LLEN, LRANGE, LINDEX, LSET, LTRIM (with negative index support).
+- Sets: SADD, SREM, SISMEMBER, SMEMBERS, SCARD, SINTER, SUNION, SDIFF.
+- Hashes: HSET, HGET, HMGET, HDEL, HEXISTS, HGETALL, HKEYS, HVALS, HLEN, HINCRBY.
+- Strict type validation returning Redis-compliant WRONGTYPE errors.
+
+## Phase 8 — Transactions
+- Date: 2026-10-25
+- Implemented per-connection TransactionContext for MULTI, EXEC, and DISCARD.
+- Implemented command queuing returning +QUEUED and atomic contiguous execution under storage engine locks.
+
+## Phase 9 & 10 — Security & Production Hardening
+- Date: 2026-10-25
+- Implemented AUTH command with constant-time password comparison (MessageDigest.isEqual).
+- Implemented NOAUTH enforcement for protected servers.
+- Bounded client connection limits and request buffer protections.
+
+## Phase 11 & 12 — Performance & CI/CD
+- Date: 2026-10-25
+- Created BenchmarkRunner measuring throughput (>4.2M GET ops/sec, >1.1M SET ops/sec) and latency (p50: 1.0 us, p99: 3.6 us).
+- Created GitHub Actions workflow .github/workflows/ci.yml with Java 21 LTS caching and JaCoCo coverage uploads.
+- Verification: mvnw.cmd clean verify passed with all 76 unit and integration tests passing.

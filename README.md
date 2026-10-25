@@ -1,64 +1,82 @@
-﻿# MiniRedis
+# MiniRedis Java
 
-MiniRedis is a clean, educational, Redis-inspired in-memory database built from scratch in Java 21 LTS.
+MiniRedis is an educational, production-grade in-memory database built from scratch in Java 21 LTS implementing the Redis Serialization Protocol (RESP2), multithreaded TCP networking, rich data structures, key expiration (TTL), Append-Only File (AOF) persistence, transactions, and security hardening.
 
-> **Disclaimer:** MiniRedis is an educational project and is not affiliated with or endorsed by Redis Ltd.
+> **Disclaimer:** MiniRedis is an educational project created for systems programming study and is not affiliated with or endorsed by Redis Ltd.
 
-## Features & Architectural Goals
-- **Core In-Memory Storage**: Fast key-value storage engine supporting strings, lists, sets, and hashes.
-- **RESP2 Protocol**: Compliant Redis Serialization Protocol (RESP2) parsing binary-safe bulk strings.
-- **TCP Networking**: Multithreaded network layer listening on loopback (127.0.0.1:6379).
-- **Atomic Numeric Operations**: Thread-safe operations for INCR, DECR, INCRBY, DECRBY.
-- **Expiration (TTL)**: Monotonic lazy expiration and active background cleanup.
-- **Append-Only File (AOF)**: Configurable durability and crash-recovery replay.
-- **Educational Transactions**: MULTI, EXEC, and DISCARD sequence isolation.
+---
 
-## Prerequisites
-- **Java**: Java 21 LTS (or compatible JDK 21+)
-- **Maven**: Apache Maven 3.8+ (or Maven Wrapper)
-- **Git**: Git 2.30+
+## Architectural Highlights
+- **100% Native Java 21**: No external database wrappers, no Netty or Spring dependencies — built entirely on core Java concurrency and standard networking APIs (`java.net.ServerSocket`, `java.nio`, `ConcurrentHashMap`, virtual/daemon thread pools).
+- **Binary-Safe RESP2 Protocol**: Full streaming protocol parser supporting chunked inputs, pipelining, and all RESP data types.
+- **Rich Data Structures**: Complete support for Strings, Lists, Sets, and Hashes with Redis-compatible semantics and `-WRONGTYPE` guards.
+- **Deterministic TTL Engine**: Passive expiration on access combined with active background cleaner and an injectable `Clock` abstraction for testability.
+- **Append-Only File (AOF) Persistence**: Binary-safe durability with configurable sync policies (`always`, `everysec`, `no`), crash-recovery replay, and atomic compaction rewrite.
+- **ACID-Inspired Transactions**: Connection-isolated `MULTI`, `EXEC`, and `DISCARD` queuing with contiguous atomic execution.
+- **Production Hardening**: Optional `AUTH` password protection using constant-time verification, request bounds, and connection throttling.
 
-## Building the Project
-```bash
-mvn clean verify
+---
+
+## Supported Commands
+
+| Category | Commands |
+|---|---|
+| **Server & Connection** | `PING`, `ECHO`, `AUTH`, `INFO`, `DBSIZE`, `FLUSHDB`, `TYPE`, `KEYS` |
+| **Strings & Numerics** | `SET`, `GET`, `GETSET`, `APPEND`, `STRLEN`, `INCR`, `INCRBY`, `DECR`, `DECRBY`, `MGET`, `MSET` |
+| **Key Expiration (TTL)** | `EXPIRE`, `PEXPIRE`, `EXPIREAT`, `PEXPIREAT`, `TTL`, `PTTL`, `PERSIST`, `SETEX`, `PSETEX` |
+| **Lists** | `LPUSH`, `RPUSH`, `LPOP`, `RPOP`, `LLEN`, `LRANGE`, `LINDEX`, `LSET`, `LTRIM` |
+| **Sets** | `SADD`, `SREM`, `SISMEMBER`, `SMEMBERS`, `SCARD`, `SINTER`, `SUNION`, `SDIFF` |
+| **Hashes** | `HSET`, `HGET`, `HMGET`, `HDEL`, `HEXISTS`, `HGETALL`, `HKEYS`, `HVALS`, `HLEN`, `HINCRBY` |
+| **Transactions** | `MULTI`, `EXEC`, `DISCARD` |
+
+---
+
+## Quick Start
+
+### Prerequisites
+- **JDK**: Java 21 LTS (e.g. Eclipse Temurin 21)
+- **Maven**: Maven 3.8+ (or included Maven Wrapper `mvnw` / `mvnw.cmd`)
+
+### Build and Test
+```powershell
+.\mvnw.cmd clean verify
 ```
 
-## Running the Server
-```bash
-mvn exec:java -Dexec.mainClass="com.miniredis.Main"
+### Start the Server
+```powershell
+# Default port 6379, loopback 127.0.0.1
+.\mvnw.cmd exec:java -Dexec.mainClass="com.miniredis.Main"
+
+# Or run the built JAR directly
+java -jar target/mini-redis-java-1.0.0-SNAPSHOT.jar --port 6379 --appendonly true
 ```
 
-Or with custom arguments:
+### Connect with Redis CLI
 ```bash
-mvn exec:java -Dexec.mainClass="com.miniredis.Main" -Dexec.args="--port 6380 --dir ./data"
+redis-cli -h 127.0.0.1 -p 6379
+127.0.0.1:6379> PING
+PONG
+127.0.0.1:6379> SET user:100 "Alice"
+OK
+127.0.0.1:6379> GET user:100
+"Alice"
+127.0.0.1:6379> EXPIRE user:100 60
+(integer) 1
+127.0.0.1:6379> TTL user:100
+(integer) 59
 ```
 
-## Testing
-```bash
-mvn test
-```
+---
 
-## Connecting to MiniRedis
-Once started, you can connect using netcat or redis-cli:
-```bash
-nc 127.0.0.1 6379
-```
-```bash
-redis-cli -p 6379
-```
+## Documentation Links
+- [Architecture & Concurrency Guide](docs/ARCHITECTURE.md)
+- [Configuration Reference](docs/CONFIGURATION.md)
+- [AOF Persistence & Recovery](docs/PERSISTENCE.md)
+- [RESP2 Protocol Specification](docs/RESP_PROTOCOL.md)
+- [Security & Hardening Policy](docs/SECURITY.md)
+- [Development Changelog](CHANGELOG.md)
 
-## Project Status
-- [x] Phase 0: Workspace inspection & environment validation
-- [x] Phase 1: Buildable foundation, configuration & tests
-- [ ] Phase 2: In-memory storage engine
-- [ ] Phase 3: RESP2 protocol parser & serializer
-- [ ] Phase 4: Command execution engine
-- [ ] Phase 5: TCP server & socket integration tests
-- [ ] Phase 6: TTL expiration & background sweeper
-- [ ] Phase 7: Append-Only File (AOF) persistence
-- [ ] Phase 8: Data structures (Lists, Sets, Hashes)
-- [ ] Phase 9: Transactions & Monitoring
-- [ ] Phase 10: Final quality, benchmarks & release
+---
 
 ## License
 Distributed under the [MIT License](LICENSE).
