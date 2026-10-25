@@ -101,3 +101,4 @@ public class MiniRedisServer {
                 serverSocket.close();
             }
         } catch (IOException ignored) {
+        }
