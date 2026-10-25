@@ -73,3 +73,4 @@ public final class RespEncoder {
                 if (arr.isNull()) {
                     out.write(NULL_ARRAY);
                 } else {
+                    out.write(PREFIX_ARRAY);
