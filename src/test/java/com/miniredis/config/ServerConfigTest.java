@@ -60,3 +60,4 @@ class ServerConfigTest {
     }
 
     @Test
+    void testInvalidHost() {
