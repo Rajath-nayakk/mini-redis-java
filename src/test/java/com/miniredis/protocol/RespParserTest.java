@@ -148,3 +148,4 @@ class RespParserTest {
         assertThrows(ProtocolException.class, () -> parser.parseNext());
     }
 
+    @Test
