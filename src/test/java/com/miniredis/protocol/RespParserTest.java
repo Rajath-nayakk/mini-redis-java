@@ -96,3 +96,4 @@ class RespParserTest {
         assertEquals("user", ((RespValue.RespBulkString) array.elements().get(1)).asUtf8String());
     }
 
+    @Test
