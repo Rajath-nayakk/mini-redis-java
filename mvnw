@@ -108,3 +108,4 @@ trim() {
 scriptDir="$(dirname "$0")"
 scriptName="$(basename "$0")"
 
+# parse distributionUrl and optional distributionSha256Sum, requires .mvn/wrapper/maven-wrapper.properties
