@@ -8,3 +8,4 @@ public class NumericOverflowException extends StorageException {
 
     public NumericOverflowException() {
         super(DEFAULT_MESSAGE);
+    }
