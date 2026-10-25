@@ -18,3 +18,4 @@ class RespEncoderTest {
     @Test
     void testEncodeError() {
         byte[] encoded = RespEncoder.encode(RespValue.error("ERR unknown"));
+        assertEquals("-ERR unknown\r\n", new String(encoded, StandardCharsets.UTF_8));
