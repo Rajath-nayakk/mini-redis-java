@@ -65,3 +65,4 @@ class StorageEngineTest {
         for (int i = 0; i < threads; i++) {
             executor.submit(() -> {
                 try {
+                    startLatch.await();
