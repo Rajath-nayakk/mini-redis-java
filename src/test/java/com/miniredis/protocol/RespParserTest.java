@@ -147,3 +147,4 @@ class RespParserTest {
         parser.append("$3\r\nfooXX".getBytes(StandardCharsets.UTF_8));
         assertThrows(ProtocolException.class, () -> parser.parseNext());
     }
+
