@@ -21,3 +21,4 @@ public class ClientSession implements Runnable {
     private final Socket socket;
     private final CommandDispatcher dispatcher;
     private final MiniRedisServer server;
+    private final RespParser parser;
