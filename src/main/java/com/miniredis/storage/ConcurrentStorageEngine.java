@@ -129,3 +129,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public int exists(List<String> keys) {
+        if (keys == null || keys.isEmpty()) {
