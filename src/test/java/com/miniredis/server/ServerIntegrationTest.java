@@ -55,3 +55,4 @@ class ServerIntegrationTest {
         InputStream in = socket.getInputStream();
         RespParser parser = new RespParser();
         byte[] buf = new byte[1024];
+        while (!socket.isClosed()) {
