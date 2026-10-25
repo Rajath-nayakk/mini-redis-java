@@ -72,3 +72,4 @@ public final class RespEncoder {
                 RespValue.RespArray arr = (RespValue.RespArray) value;
                 if (arr.isNull()) {
                     out.write(NULL_ARRAY);
+                } else {
