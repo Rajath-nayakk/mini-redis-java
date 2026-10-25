@@ -71,3 +71,4 @@ set_java_home() {
       'command' -v javac
     )" || :
 
+    if [ ! -x "${JAVACMD-}" ] || [ ! -x "${JAVACCMD-}" ]; then
