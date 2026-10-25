@@ -49,3 +49,4 @@
 - Implemented CommandDispatcher in com.miniredis.command: dispatches PING, ECHO, SET, GET, DEL, EXISTS, DBSIZE, INCR, INCRBY, DECR, DECRBY with exception-to-error mapping.
 - Added comprehensive test suites: RespParserTest (15 tests), RespEncoderTest (8 tests), CommandDispatcherTest (9 tests).
 - Created docs/RESP_PROTOCOL.md protocol specification.
+- Verification: mvnw.cmd clean verify passed with all 52 tests passing.
