@@ -117,3 +117,4 @@ public final class ServerConfig {
     public int getTimeoutMs() { return timeoutMs; }
     public Path getDataDir() { return dataDir; }
     public boolean isPersistenceEnabled() { return persistenceEnabled; }
+    public String getAofSyncPolicy() { return aofSyncPolicy; }
