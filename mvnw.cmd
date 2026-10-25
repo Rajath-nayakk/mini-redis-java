@@ -57,3 +57,4 @@ if (!$distributionUrl) {
 }
 
 switch -wildcard -casesensitive ( $($distributionUrl -replace '^.*/','') ) {
+  "maven-mvnd-*" {
