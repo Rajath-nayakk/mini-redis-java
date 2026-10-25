@@ -27,3 +27,4 @@ mvn clean verify
 ```bash
 mvn exec:java -Dexec.mainClass="com.miniredis.Main"
 ```
+
