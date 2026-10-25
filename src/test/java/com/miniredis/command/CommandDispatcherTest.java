@@ -84,3 +84,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testDbsize() {
