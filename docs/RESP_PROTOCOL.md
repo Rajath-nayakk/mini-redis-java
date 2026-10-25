@@ -6,3 +6,4 @@ MiniRedis implements the RESP2 wire protocol for communication between clients a
 All RESP messages are framed by a type identifier prefix byte and terminated with CRLF (`\r\n` or `0x0D 0x0A`):
 
 | Prefix | Type | Wire Example | Description |
+|---|---|---|---|
