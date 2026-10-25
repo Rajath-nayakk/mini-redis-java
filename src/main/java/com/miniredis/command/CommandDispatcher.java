@@ -158,3 +158,4 @@ public class CommandDispatcher {
 
     private RespValue handleDecrBy(List<String> args) {
         if (args.size() != 2) {
+            return RespValue.error("ERR wrong number of arguments for 'decrby' command");
