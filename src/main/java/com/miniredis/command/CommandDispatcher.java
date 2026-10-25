@@ -71,3 +71,4 @@ public class CommandDispatcher {
 
     private RespValue handlePing(List<String> args) {
         if (args.isEmpty()) {
+            return RespValue.pong();
