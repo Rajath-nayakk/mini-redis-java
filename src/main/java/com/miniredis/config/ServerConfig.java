@@ -62,3 +62,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Max request size must be positive: " + maxRequestSize);
         }
         if (timeoutMs < 0) {
+            throw new IllegalArgumentException("Timeout cannot be negative: " + timeoutMs);
