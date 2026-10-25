@@ -98,3 +98,4 @@ public final class ServerConfig {
             } else if ("--host".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.host(args[++i]);
             } else if ("--dir".equalsIgnoreCase(arg) && i + 1 < args.length) {
+                builder.dataDir(Paths.get(args[++i]));
