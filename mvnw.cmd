@@ -139,3 +139,4 @@ $distributionSha256Sum = (Get-Content -Raw "$scriptDir/.mvn/wrapper/maven-wrappe
 if ($distributionSha256Sum) {
   if ($USE_MVND) {
     Write-Error "Checksum validation is not supported for maven-mvnd. `nPlease disable validation by removing 'distributionSha256Sum' from your maven-wrapper.properties."
+  }
