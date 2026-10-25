@@ -56,3 +56,4 @@ public class ClientSession implements Runnable {
                     byte[] errBytes = RespEncoder.encode(RespValue.error("ERR Protocol error: " + e.getMessage()));
                     OutputStream out = socket.getOutputStream();
                     out.write(errBytes);
+                    out.flush();
