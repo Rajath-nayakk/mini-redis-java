@@ -12,3 +12,4 @@ All RESP messages are framed by a type identifier prefix byte and terminated wit
 | `:` | Integer | `:1000\r\n` | 64-bit signed integer |
 | `$` | Bulk String | `$5\r\nhello\r\n` | Binary-safe payload with byte-length declaration |
 | `$` | Null Bulk String | `$-1\r\n` | Represents a non-existent or null key |
+| `*` | Array | `*2\r\n$3\r\nGET\r\n$3\r\nfoo\r\n` | Sequence of RESP elements |
