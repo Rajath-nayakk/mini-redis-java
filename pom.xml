@@ -31,3 +31,4 @@
             <artifactId>junit-jupiter</artifactId>
             <version></version>
             <scope>test</scope>
+        </dependency>
