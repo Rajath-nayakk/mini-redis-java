@@ -26,7 +26,7 @@ class ServerIntegrationTest {
     void setUp() throws Exception {
         ServerConfig config = ServerConfig.builder()
                 .host("127.0.0.1")
-                .port(0) // Ephemeral port assigned by OS
+                .port(port)
                 .maxClients(100)
                 .build();
         CommandDispatcher dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
