@@ -119,3 +119,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             throw new NumericOverflowException();
         }
         return incrBy(key, -delta);
+    }
