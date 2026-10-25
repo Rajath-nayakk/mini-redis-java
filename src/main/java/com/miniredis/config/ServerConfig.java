@@ -63,3 +63,4 @@ public final class ServerConfig {
         }
         if (timeoutMs < 0) {
             throw new IllegalArgumentException("Timeout cannot be negative: " + timeoutMs);
+        }
