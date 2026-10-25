@@ -28,9 +28,19 @@ Measured over 100,000 concurrent operations across 4 worker threads:
 - **Latency p95**: **2,200 ns** (2.2 μs)
 - **Latency p99**: **3,600 ns** (3.6 μs)
 
+## 4. In-Memory vs. Real TCP Round-Trip Characteristics
+> [!NOTE]
+> **Measurement Scope Distinction**:
+> The figures in Sections 1-3 measure in-process, direct JVM memory operations and parsing throughput. They quantify raw algorithm efficiency without OS network stack interference.
+>
+> In real production TCP networking:
+> - **Loopback Latency**: Individual sequential TCP request/response round-trips over loopback (`127.0.0.1`) incur ~100–300 μs due to TCP framing, socket buffers, and OS thread context switching.
+> - **Pipelining**: MiniRedis fully supports RESP2 pipelining (multiple frames packed into a single network packet). Under pipelining, TCP throughput approaches raw parsing limits by amortizing OS syscall and packet overhead over batches of commands.
+
 ## How to Reproduce
 Run the benchmark harness directly via Java:
 ```powershell
 .\mvnw.cmd test-compile
 java -cp "target/classes;target/test-classes" com.miniredis.benchmark.BenchmarkRunner
 ```
+

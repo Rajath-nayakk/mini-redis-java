@@ -15,6 +15,15 @@ public final class Main {
     public static final String VERSION = "1.0.0-SNAPSHOT";
 
     public static void main(String[] args) {
+        if (args != null) {
+            for (String arg : args) {
+                if ("--help".equalsIgnoreCase(arg) || "-h".equalsIgnoreCase(arg)) {
+                    printHelp();
+                    return;
+                }
+            }
+        }
+
         try {
             ServerConfig config = ServerConfig.parseArgs(args);
             printBanner(config);
@@ -55,6 +64,21 @@ public final class Main {
             e.printStackTrace();
             System.exit(1);
         }
+    }
+
+    private static void printHelp() {
+        System.out.println("MiniRedis " + VERSION);
+        System.out.println("Usage: java -jar mini-redis-java.jar [options]");
+        System.out.println();
+        System.out.println("Options:");
+        System.out.println("  --port <port>             TCP port to listen on (default: 6379)");
+        System.out.println("  --host <host>             Network interface IP to bind to (default: 127.0.0.1)");
+        System.out.println("  --dir <path>              Data directory for AOF persistence (default: data)");
+        System.out.println("  --max-clients <num>       Maximum simultaneous connections (default: 1000)");
+        System.out.println("  --max-memory <bytes>      Maximum database memory in bytes (default: 0 = unlimited)");
+        System.out.println("  --appendonly <true|false> Enable Append-Only File persistence (default: false)");
+        System.out.println("  --requirepass <password>  Require authentication password");
+        System.out.println("  --help, -h                Display this help message and exit");
     }
 
     private static void printBanner(ServerConfig config) {

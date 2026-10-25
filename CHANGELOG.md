@@ -22,3 +22,10 @@ All notable changes to MiniRedis will be documented in this file.
   - Resource cleanup and graceful shutdown hooks.
 - **Phase 11**: Repeatable latency and throughput benchmarking harness (`BenchmarkRunner`).
 - **Phase 12**: GitHub Actions CI workflow for Java 21 build, test verification, and JaCoCo coverage uploads.
+- **Quality Audit & Packaging Hardening**:
+  - Configured `maven-jar-plugin` with `Main-Class` manifest attribute for runnable JAR packaging.
+  - Added `--help` and `-h` CLI usage options to `Main.java`.
+  - Synchronized standalone command execution with `engine` monitor in `CommandDispatcher` to guarantee strict transaction atomicity against concurrent client commands.
+  - Added regression test suites for TCP pipelining, `DISCARD`, concurrent transaction isolation, and TTL preservation across AOF restart (expanding test suite to 82 passing tests).
+  - Clarified in-process vs. real TCP networking and loopback latency characteristics in `docs/PERFORMANCE.md`.
+

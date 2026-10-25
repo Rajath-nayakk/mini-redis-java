@@ -100,4 +100,23 @@ class AofManagerTest {
         assertEquals(List.of("1", "2", "3"), fresh.lrange("log", 0, -1));
         assertEquals("v1", fresh.hget("hash", "f1"));
     }
+
+    @Test
+    void testTtlPreservationAcrossAofRestart() throws IOException {
+        engine.setex("expiring_key", 100, "alive");
+        engine.set("permanent_key", "forever");
+
+        // Trigger compaction rewrite
+        aof.rewrite(engine);
+
+        // Replay compacted AOF into clean storage engine
+        StorageEngine fresh = new ConcurrentStorageEngine();
+        aof.replay(fresh);
+
+        assertEquals("alive", fresh.get("expiring_key"));
+        assertEquals("forever", fresh.get("permanent_key"));
+        long remainingTtl = fresh.ttl("expiring_key");
+        assertTrue(remainingTtl > 0 && remainingTtl <= 100, "Remaining TTL must be preserved across AOF restart");
+        assertEquals(-1, fresh.ttl("permanent_key"), "Permanent key must have no expiration (-1)");
+    }
 }

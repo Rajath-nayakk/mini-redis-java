@@ -131,7 +131,9 @@ public class CommandDispatcher {
             }
         }
 
-        return executeCommand(request, upperCommand, commandName, args);
+        synchronized (engine) {
+            return executeCommand(request, upperCommand, commandName, args);
+        }
     }
 
     private RespValue executeCommand(RespValue request) {

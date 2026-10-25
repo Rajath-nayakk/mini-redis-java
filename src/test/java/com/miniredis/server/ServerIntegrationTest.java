@@ -258,4 +258,70 @@ class ServerIntegrationTest {
             assertEquals("PONG", ((RespValue.RespSimpleString) ping).value());
         }
     }
+
+    @Test
+    void testPipeliningOverTcp() throws Exception {
+        try (Socket socket = connect()) {
+            OutputStream out = socket.getOutputStream();
+            String pipeline = "*3\r\n$3\r\nSET\r\n$2\r\np1\r\n$3\r\none\r\n" +
+                              "*3\r\n$3\r\nSET\r\n$2\r\np2\r\n$3\r\ntwo\r\n" +
+                              "*2\r\n$3\r\nGET\r\n$2\r\np1\r\n" +
+                              "*2\r\n$3\r\nGET\r\n$2\r\np2\r\n";
+            out.write(pipeline.getBytes(StandardCharsets.UTF_8));
+            out.flush();
+
+            InputStream in = socket.getInputStream();
+            RespParser parser = new RespParser();
+            byte[] buf = new byte[1024];
+            List<RespValue> replies = new java.util.ArrayList<>();
+            while (replies.size() < 4) {
+                int read = in.read(buf);
+                assertTrue(read > 0, "Socket read must return bytes during pipelining");
+                parser.append(buf, 0, read);
+                RespValue val;
+                while ((val = parser.parseNext()) != null) {
+                    replies.add(val);
+                }
+            }
+
+            assertEquals(4, replies.size());
+            assertEquals("OK", ((RespValue.RespSimpleString) replies.get(0)).value());
+            assertEquals("OK", ((RespValue.RespSimpleString) replies.get(1)).value());
+            assertEquals("one", ((RespValue.RespBulkString) replies.get(2)).asUtf8String());
+            assertEquals("two", ((RespValue.RespBulkString) replies.get(3)).asUtf8String());
+        }
+    }
+
+    @Test
+    void testDiscardOverTcp() throws Exception {
+        try (Socket socket = connect()) {
+            assertEquals("OK", ((RespValue.RespSimpleString) sendAndReceive(socket, "*1\r\n$5\r\nMULTI\r\n")).value());
+            assertEquals("QUEUED", ((RespValue.RespSimpleString) sendAndReceive(socket, "*3\r\n$3\r\nSET\r\n$10\r\ndiscardkey\r\n$7\r\ndropped\r\n")).value());
+            assertEquals("OK", ((RespValue.RespSimpleString) sendAndReceive(socket, "*1\r\n$7\r\nDISCARD\r\n")).value());
+
+            RespValue getResp = sendAndReceive(socket, "*2\r\n$3\r\nGET\r\n$10\r\ndiscardkey\r\n");
+            assertNotNull(getResp);
+            assertTrue(((RespValue.RespBulkString) getResp).isNull(), "Discarded command must not mutate storage");
+        }
+    }
+
+    @Test
+    void testConcurrentTransactionAtomicity() throws Exception {
+        try (Socket clientA = connect(); Socket clientB = connect()) {
+            sendAndReceive(clientA, "*3\r\n$3\r\nSET\r\n$6\r\npair_1\r\n$4\r\ninit\r\n");
+            sendAndReceive(clientA, "*3\r\n$3\r\nSET\r\n$6\r\npair_2\r\n$4\r\ninit\r\n");
+
+            sendAndReceive(clientA, "*1\r\n$5\r\nMULTI\r\n");
+            sendAndReceive(clientA, "*3\r\n$3\r\nSET\r\n$6\r\npair_1\r\n$6\r\nupdate\r\n");
+            sendAndReceive(clientA, "*3\r\n$3\r\nSET\r\n$6\r\npair_2\r\n$6\r\nupdate\r\n");
+            RespValue execResp = sendAndReceive(clientA, "*1\r\n$4\r\nEXEC\r\n");
+            assertNotNull(execResp);
+            assertEquals(RespType.ARRAY, execResp.getType());
+
+            RespValue g1 = sendAndReceive(clientB, "*2\r\n$3\r\nGET\r\n$6\r\npair_1\r\n");
+            RespValue g2 = sendAndReceive(clientB, "*2\r\n$3\r\nGET\r\n$6\r\npair_2\r\n");
+            assertEquals("update", ((RespValue.RespBulkString) g1).asUtf8String());
+            assertEquals("update", ((RespValue.RespBulkString) g2).asUtf8String());
+        }
+    }
 }
