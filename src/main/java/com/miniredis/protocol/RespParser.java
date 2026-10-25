@@ -188,3 +188,4 @@ public class RespParser {
             return RespValue.RespArray.NULL;
         }
         if (arrayCount < -1) {
+            throw new ProtocolException("Negative array length invalid: " + arrayCount);
