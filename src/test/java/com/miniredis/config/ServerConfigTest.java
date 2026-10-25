@@ -92,3 +92,4 @@ class ServerConfigTest {
         assertEquals(250, config.getMaxClients());
         assertEquals(50_000_000L, config.getMaxMemoryBytes());
         assertTrue(config.isPersistenceEnabled());
+        assertEquals(Paths.get("mydata"), config.getDataDir());
