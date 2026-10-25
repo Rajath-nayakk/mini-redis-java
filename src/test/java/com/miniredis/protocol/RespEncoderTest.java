@@ -46,3 +46,4 @@ class RespEncoderTest {
                 RespValue.bulkString("SET"),
                 RespValue.bulkString("k"),
                 RespValue.bulkString("v")
+        ));
