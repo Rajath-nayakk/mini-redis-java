@@ -23,3 +23,4 @@ public class RespParser {
         this(DEFAULT_MAX_BULK_STRING_LENGTH, DEFAULT_MAX_ARRAY_LENGTH);
     }
 
+    public RespParser(int maxBulkStringLength, int maxArrayLength) {
