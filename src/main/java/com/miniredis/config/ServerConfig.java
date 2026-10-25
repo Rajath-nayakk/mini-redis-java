@@ -41,3 +41,4 @@ public final class ServerConfig {
         this.timeoutMs = builder.timeoutMs;
         this.dataDir = builder.dataDir;
         this.persistenceEnabled = builder.persistenceEnabled;
+        this.aofSyncPolicy = builder.aofSyncPolicy;
