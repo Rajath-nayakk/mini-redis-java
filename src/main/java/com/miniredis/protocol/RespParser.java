@@ -109,3 +109,4 @@ public class RespParser {
 
     private RespValue.RespInteger parseInteger() {
         int crlfIndex = findCrlf(readPos + 1);
+        if (crlfIndex == -1) {
