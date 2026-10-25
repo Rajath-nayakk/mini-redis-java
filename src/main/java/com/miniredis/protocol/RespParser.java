@@ -16,3 +16,4 @@ public class RespParser {
     private final int maxArrayLength;
 
     private byte[] buffer = new byte[4096];
+    private int readPos = 0;
