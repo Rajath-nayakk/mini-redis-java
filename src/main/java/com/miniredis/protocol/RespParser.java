@@ -48,3 +48,4 @@ public class RespParser {
             return null;
         }
         int savedReadPos = readPos;
+        try {
