@@ -115,3 +115,4 @@ class RespParserTest {
         // Feed 3 bytes at a time
         for (int i = 0; i < full.length - 1; i += 3) {
             int len = Math.min(3, full.length - 1 - i);
+            parser.append(full, i, len);
