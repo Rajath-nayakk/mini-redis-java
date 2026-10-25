@@ -130,3 +130,4 @@ public class CommandDispatcher {
         if (args.size() != 1) {
             return RespValue.error("ERR wrong number of arguments for 'incr' command");
         }
+        long result = engine.incr(args.get(0));
