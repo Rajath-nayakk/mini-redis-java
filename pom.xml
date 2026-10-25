@@ -54,3 +54,4 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version></version>
                 <configuration>
+                    <mainClass>com.miniredis.Main</mainClass>
