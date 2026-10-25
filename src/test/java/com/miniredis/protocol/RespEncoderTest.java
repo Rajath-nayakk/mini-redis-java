@@ -11,3 +11,4 @@ class RespEncoderTest {
 
     @Test
     void testEncodeSimpleString() {
+        byte[] encoded = RespEncoder.encode(RespValue.ok());
