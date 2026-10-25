@@ -148,3 +148,4 @@ public final class ServerConfig {
         public Builder logLevel(String logLevel) { this.logLevel = logLevel; return this; }
 
         public ServerConfig build() {
+            return new ServerConfig(this);
