@@ -192,3 +192,4 @@ public class RespParser {
         }
         if (arrayCount > maxArrayLength) {
             throw new ProtocolException("Array length " + arrayCount + " exceeds limit " + maxArrayLength);
+        }
