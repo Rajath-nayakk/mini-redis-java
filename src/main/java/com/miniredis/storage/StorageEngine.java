@@ -18,3 +18,4 @@ public interface StorageEngine {
     long decr(String key);
     long decrBy(String key, long delta);
     boolean exists(String key);
+    int exists(List<String> keys);
