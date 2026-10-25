@@ -6,3 +6,4 @@
 
     <groupId>com.miniredis</groupId>
     <artifactId>mini-redis-java</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
