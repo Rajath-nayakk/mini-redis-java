@@ -145,3 +145,4 @@ if ($distributionSha256Sum) {
     Write-Error "Error: Failed to validate Maven distribution SHA-256, your Maven distribution might be compromised. If you updated your Maven version, you need to update the specified distributionSha256Sum property."
   }
 }
+
