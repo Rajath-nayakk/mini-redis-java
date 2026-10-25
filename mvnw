@@ -267,3 +267,4 @@ if [ -d "$TMP_DOWNLOAD_DIR/$distributionUrlNameMain" ]; then
 fi
 
 # If not found, search for any directory with the Maven executable (for snapshots)
+if [ -z "$actualDistributionDir" ]; then
