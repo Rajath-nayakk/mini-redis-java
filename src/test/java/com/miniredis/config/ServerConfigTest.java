@@ -36,3 +36,4 @@ class ServerConfigTest {
                 .aofSyncPolicy("always")
                 .cleanupIntervalMs(50L)
                 .maxMemoryBytes(100_000_000L)
+                .logLevel("debug")
