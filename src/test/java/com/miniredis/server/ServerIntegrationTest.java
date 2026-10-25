@@ -185,3 +185,4 @@ class ServerIntegrationTest {
 
         // Client read should detect closure (EOF -1)
         InputStream in = client.getInputStream();
+        int b = in.read();
