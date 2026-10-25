@@ -62,3 +62,4 @@ class ServerConfigTest {
     @Test
     void testInvalidHost() {
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().host(null).build());
+        assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().host("").build());
