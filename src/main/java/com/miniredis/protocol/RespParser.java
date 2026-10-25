@@ -180,3 +180,4 @@ public class RespParser {
         try {
             arrayCount = Integer.parseInt(countStr);
         } catch (NumberFormatException e) {
+            throw new ProtocolException("Invalid array length: " + countStr);
