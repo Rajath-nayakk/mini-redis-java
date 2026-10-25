@@ -38,3 +38,4 @@ public final class StringValue implements RedisValue {
         return 24L + bytes.length;
     }
 
+    @Override
