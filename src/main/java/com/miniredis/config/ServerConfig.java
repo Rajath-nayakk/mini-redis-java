@@ -28,3 +28,4 @@ public final class ServerConfig {
     private final int timeoutMs;
     private final Path dataDir;
     private final boolean persistenceEnabled;
+    private final String aofSyncPolicy;
