@@ -94,3 +94,4 @@ class ServerConfigTest {
         assertTrue(config.isPersistenceEnabled());
         assertEquals(Paths.get("mydata"), config.getDataDir());
     }
+}
