@@ -139,3 +139,4 @@ class StorageEngineTest {
         assertEquals("3", values.get(2));
     }
 
+    @Test
