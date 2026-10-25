@@ -20,3 +20,4 @@ public final class StringValue implements RedisValue {
         return value;
     }
 
+    public byte[] getBytes() {
