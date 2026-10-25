@@ -237,3 +237,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         for (int i = 0; i < glob.length(); i++) {
             char c = glob.charAt(i);
             switch (c) {
+                case '*':
