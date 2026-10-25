@@ -47,3 +47,4 @@ public final class Main {
         System.out.println("/ /\\/\\ \\ (_) | | |_ /\\| |  _  // _ \\/ _` | / __|  ");
         System.out.println("\\/    \\/\\___/  |_(_)\\__/ |_| \\_\\\\___/\\__,_|_\\___|  ");
         System.out.println("                                                   ");
+        System.out.println("* Educational Redis-inspired in-memory database in Java");
