@@ -53,3 +53,4 @@ class CommandDispatcherTest {
 
     @Test
     void testSetAndGet() {
+        RespValue setResp = dispatcher.dispatch(cmd("SET", "mykey", "myval"));
