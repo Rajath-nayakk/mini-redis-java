@@ -172,3 +172,4 @@ public class RespParser {
         int crlfIndex = findCrlf(readPos + 1);
         if (crlfIndex == -1) {
             return null;
+        }
