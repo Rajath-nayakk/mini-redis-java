@@ -33,3 +33,4 @@ public class CommandDispatcher {
             } else if (elem instanceof RespValue.RespSimpleString ss) {
                 tokens.add(ss.value());
             } else {
+                return RespValue.error("ERR Protocol error: command elements must be strings");
