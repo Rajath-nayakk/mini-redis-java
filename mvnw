@@ -260,3 +260,4 @@ fi
 actualDistributionDir=""
 
 # First try the expected directory name (for regular distributions)
+if [ -d "$TMP_DOWNLOAD_DIR/$distributionUrlNameMain" ]; then
