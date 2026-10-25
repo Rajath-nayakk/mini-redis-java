@@ -25,3 +25,4 @@ public class CommandDispatcher {
         if (elements == null || elements.isEmpty()) {
             return RespValue.error("ERR Protocol error: empty command");
         }
+
