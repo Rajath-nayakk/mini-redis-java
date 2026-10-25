@@ -10,3 +10,4 @@ public interface RespValue {
 
     RespType getType();
 
+    static RespSimpleString ok() {
