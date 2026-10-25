@@ -78,3 +78,4 @@ public final class RespEncoder {
                     out.write(CRLF);
                     for (RespValue elem : arr.elements()) {
                         encode(elem, out);
+                    }
