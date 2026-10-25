@@ -62,3 +62,4 @@ public final class RespEncoder {
                     out.write(NULL_BULK_STRING);
                 } else {
                     out.write(PREFIX_BULK_STRING);
+                    out.write(Integer.toString(bs.data().length).getBytes(StandardCharsets.US_ASCII));
