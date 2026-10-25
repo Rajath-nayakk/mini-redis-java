@@ -83,3 +83,4 @@ class RespParserTest {
         assertNotNull(bs);
         assertEquals(unicode, bs.asUtf8String());
     }
+
