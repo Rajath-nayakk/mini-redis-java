@@ -136,3 +136,4 @@ class ServerIntegrationTest {
         assertEquals(1, server.getActiveClientCount());
 
         s.close();
+        for (int i = 0; i < 50 && server.getActiveClientCount() > 0; i++) {
