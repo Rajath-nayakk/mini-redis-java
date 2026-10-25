@@ -254,3 +254,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     break;
                 case '.':
                 case '(':
+                case ')':
