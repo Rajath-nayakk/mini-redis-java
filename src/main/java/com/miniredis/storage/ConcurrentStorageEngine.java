@@ -230,3 +230,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             total += 32L + entry.getKey().length() * 2L + entry.getValue().estimatedMemoryBytes();
         }
         return total;
+    }
