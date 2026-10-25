@@ -28,3 +28,4 @@ mvn clean verify
 mvn exec:java -Dexec.mainClass="com.miniredis.Main"
 ```
 
+Or with custom arguments:
