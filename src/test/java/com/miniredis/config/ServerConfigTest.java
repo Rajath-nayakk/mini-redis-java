@@ -24,3 +24,4 @@ class ServerConfigTest {
     }
 
     @Test
+    void testCustomBuilder() {
