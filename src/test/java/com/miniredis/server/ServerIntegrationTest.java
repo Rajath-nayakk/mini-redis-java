@@ -23,3 +23,4 @@ class ServerIntegrationTest {
     private int port;
 
     @BeforeEach
+    void setUp() throws Exception {
