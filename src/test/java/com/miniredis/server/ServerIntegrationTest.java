@@ -168,3 +168,4 @@ class ServerIntegrationTest {
             int read = in.read(buf);
             assertTrue(read > 0, "Server should reply with error before closing malformed connection");
             String response = new String(buf, 0, read, StandardCharsets.UTF_8);
+            assertTrue(response.startsWith("-ERR Protocol error"));
