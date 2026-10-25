@@ -148,3 +148,4 @@ class ServerIntegrationTest {
             assertEquals(RespType.ERROR, err.getType());
             assertTrue(((RespValue.RespError) err).message().contains("unknown command"));
 
+            // Connection should remain usable
