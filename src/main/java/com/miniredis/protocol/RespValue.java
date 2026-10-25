@@ -13,3 +13,4 @@ public interface RespValue {
     static RespSimpleString ok() {
         return new RespSimpleString("OK");
     }
+
