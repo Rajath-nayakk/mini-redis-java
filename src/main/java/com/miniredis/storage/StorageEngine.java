@@ -16,3 +16,4 @@ public interface StorageEngine {
     long incr(String key);
     long incrBy(String key, long delta);
     long decr(String key);
+    long decrBy(String key, long delta);
