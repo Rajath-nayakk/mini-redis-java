@@ -42,3 +42,4 @@ public final class RespEncoder {
                 RespValue.RespSimpleString ss = (RespValue.RespSimpleString) value;
                 out.write(PREFIX_SIMPLE_STRING);
                 out.write(ss.value().getBytes(StandardCharsets.UTF_8));
+                out.write(CRLF);
