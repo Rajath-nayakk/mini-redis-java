@@ -43,3 +43,4 @@ public final class ServerConfig {
         this.persistenceEnabled = builder.persistenceEnabled;
         this.aofSyncPolicy = builder.aofSyncPolicy;
         this.cleanupIntervalMs = builder.cleanupIntervalMs;
+        this.maxMemoryBytes = builder.maxMemoryBytes;
