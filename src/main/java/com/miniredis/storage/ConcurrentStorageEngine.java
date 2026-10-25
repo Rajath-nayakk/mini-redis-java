@@ -135,3 +135,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         int count = 0;
         for (String key : keys) {
             if (key != null && store.containsKey(key)) {
+                count++;
