@@ -135,3 +135,4 @@ class RespParserTest {
         parser.append(multi.getBytes(StandardCharsets.UTF_8));
 
         RespValue cmd1 = parser.parseNext();
+        assertNotNull(cmd1);
