@@ -45,3 +45,4 @@ public final class ServerConfig {
         this.cleanupIntervalMs = builder.cleanupIntervalMs;
         this.maxMemoryBytes = builder.maxMemoryBytes;
         this.logLevel = builder.logLevel;
+        validate();
