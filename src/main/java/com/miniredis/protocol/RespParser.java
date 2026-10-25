@@ -15,3 +15,4 @@ public class RespParser {
     private final int maxBulkStringLength;
     private final int maxArrayLength;
 
+    private byte[] buffer = new byte[4096];
