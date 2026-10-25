@@ -23,3 +23,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 mvn clean verify
 ```
 
+## Running the Server
