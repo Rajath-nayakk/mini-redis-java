@@ -274,3 +274,4 @@ if [ -z "$actualDistributionDir" ]; then
     if [ -d "$dir" ]; then
       if [ -f "$dir/bin/$MVN_CMD" ]; then
         actualDistributionDir="$(basename "$dir")"
+        break
