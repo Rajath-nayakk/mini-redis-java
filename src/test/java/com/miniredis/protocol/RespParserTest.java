@@ -78,3 +78,4 @@ class RespParserTest {
         parser.append(header.getBytes(StandardCharsets.US_ASCII));
         parser.append(bytes);
         parser.append("\r\n".getBytes(StandardCharsets.US_ASCII));
+
