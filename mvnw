@@ -249,3 +249,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
   fi
 fi
 
+# unzip and move
