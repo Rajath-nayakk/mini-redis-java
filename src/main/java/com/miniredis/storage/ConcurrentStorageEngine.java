@@ -261,3 +261,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 case '$':
                 case '@':
                 case '%':
+                case '\\':
