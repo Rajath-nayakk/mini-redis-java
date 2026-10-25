@@ -8,3 +8,4 @@ public class InvalidIntegerException extends StorageException {
 
     public InvalidIntegerException() {
         super(DEFAULT_MESSAGE);
+    }
