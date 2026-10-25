@@ -140,3 +140,4 @@ public final class ServerConfig {
         public Builder maxClients(int maxClients) { this.maxClients = maxClients; return this; }
         public Builder maxRequestSize(int maxRequestSize) { this.maxRequestSize = maxRequestSize; return this; }
         public Builder timeoutMs(int timeoutMs) { this.timeoutMs = timeoutMs; return this; }
+        public Builder dataDir(Path dataDir) { this.dataDir = dataDir; return this; }
