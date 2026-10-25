@@ -187,3 +187,4 @@ class StorageEngineTest {
         assertEquals(0L, engine.approximateMemoryBytes());
         engine.set("mykey", "myvalue");
         assertTrue(engine.approximateMemoryBytes() > 0L);
+    }
