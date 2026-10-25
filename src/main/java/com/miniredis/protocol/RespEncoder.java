@@ -32,3 +32,4 @@ public final class RespEncoder {
         return baos.toByteArray();
     }
 
+    public static void encode(RespValue value, OutputStream out) throws IOException {
