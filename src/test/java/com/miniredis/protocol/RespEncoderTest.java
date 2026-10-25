@@ -52,3 +52,4 @@ class RespEncoderTest {
     }
 
     @Test
+    void testEncodeEmptyAndNullArray() {
