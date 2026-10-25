@@ -114,3 +114,4 @@ class ServerIntegrationTest {
         try (Socket c1 = connect(); Socket c2 = connect()) {
             RespValue r1 = sendAndReceive(c1, "*3\r\n$3\r\nSET\r\n$5\r\nuser1\r\n$5\r\nAlice\r\n");
             RespValue r2 = sendAndReceive(c2, "*3\r\n$3\r\nSET\r\n$5\r\nuser2\r\n$3\r\nBob\r\n");
+
