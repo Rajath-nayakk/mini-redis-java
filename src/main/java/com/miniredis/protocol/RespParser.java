@@ -218,3 +218,4 @@ public class RespParser {
         return -1;
     }
 
+    private int available() {
