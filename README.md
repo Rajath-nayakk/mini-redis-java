@@ -13,3 +13,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 - **Append-Only File (AOF)**: Configurable durability and crash-recovery replay.
 - **Educational Transactions**: MULTI, EXEC, and DISCARD sequence isolation.
 
+## Prerequisites
