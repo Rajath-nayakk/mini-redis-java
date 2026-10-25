@@ -167,3 +167,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             return Collections.emptyList();
         }
         List<String> result = new ArrayList<>(keys.size());
+        for (String key : keys) {
