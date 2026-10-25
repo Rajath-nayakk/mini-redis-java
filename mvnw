@@ -62,3 +62,4 @@ set_java_home() {
   else
     JAVACMD="$(
       'set' +e
+      'unset' -f command 2>/dev/null
