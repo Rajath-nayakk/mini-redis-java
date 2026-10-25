@@ -10,3 +10,4 @@
 - Git: Available (version 2.53.0.2).
 - Java: Not detected on system PATH or default directories.
 - Maven: Not detected on system PATH or default directories.
+- Policy: Strict line-by-line Git commit discipline active.
