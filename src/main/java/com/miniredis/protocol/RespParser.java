@@ -84,3 +84,4 @@ public class RespParser {
     }
 
     private RespValue.RespSimpleString parseSimpleString() {
+        int crlfIndex = findCrlf(readPos + 1);
