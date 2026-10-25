@@ -39,3 +39,4 @@ class RespParserTest {
     void testParseInteger() {
         parser.append(":1000\r\n:-42\r\n:0\r\n".getBytes(StandardCharsets.UTF_8));
         assertEquals(1000L, ((RespValue.RespInteger) parser.parseNext()).value());
+        assertEquals(-42L, ((RespValue.RespInteger) parser.parseNext()).value());
