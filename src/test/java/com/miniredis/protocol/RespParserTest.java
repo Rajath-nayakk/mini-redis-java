@@ -118,3 +118,4 @@ class RespParserTest {
             parser.append(full, i, len);
             assertNull(parser.parseNext(), "Should not parse until entire frame arrives");
         }
+
