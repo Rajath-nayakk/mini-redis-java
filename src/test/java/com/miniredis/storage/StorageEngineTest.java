@@ -175,3 +175,4 @@ class StorageEngineTest {
         assertNull(engine.get("k2"));
     }
 
+    @Test
