@@ -46,3 +46,4 @@ public interface RespValue {
         return new RespArray(elements);
     }
 
+    static RespArray nullArray() {
