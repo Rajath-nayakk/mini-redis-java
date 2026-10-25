@@ -109,3 +109,4 @@ public interface RespValue {
             return Arrays.equals(data, that.data);
         }
 
+        @Override
