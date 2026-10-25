@@ -193,3 +193,4 @@ esac
 
 if [ -z "${MVNW_USERNAME-}" ] && command -v wget >/dev/null; then
   verbose "Found wget ... using wget"
+  wget ${__MVNW_QUIET_WGET:+"$__MVNW_QUIET_WGET"} "$distributionUrl" -O "$TMP_DOWNLOAD_DIR/$distributionUrlName" || die "wget: Failed to fetch $distributionUrl"
