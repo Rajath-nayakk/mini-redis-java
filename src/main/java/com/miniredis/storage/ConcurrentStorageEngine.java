@@ -263,3 +263,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 case '%':
                 case '\\':
                     sb.append('\\').append(c);
+                    break;
