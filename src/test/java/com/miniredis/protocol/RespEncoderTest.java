@@ -31,3 +31,4 @@ class RespEncoderTest {
     @Test
     void testEncodeBulkString() {
         byte[] encoded = RespEncoder.encode(RespValue.bulkString("hello"));
+        assertEquals("$5\r\nhello\r\n", new String(encoded, StandardCharsets.UTF_8));
