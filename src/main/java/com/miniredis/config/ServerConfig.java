@@ -72,3 +72,4 @@ public final class ServerConfig {
         }
         if (maxMemoryBytes < 0) {
             throw new IllegalArgumentException("Max memory cannot be negative: " + maxMemoryBytes);
+        }
