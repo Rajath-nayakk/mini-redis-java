@@ -28,3 +28,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testPing() {
