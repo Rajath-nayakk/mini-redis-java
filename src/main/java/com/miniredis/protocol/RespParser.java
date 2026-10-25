@@ -178,3 +178,4 @@ public class RespParser {
         String countStr = new String(buffer, start, lenStrLen, StandardCharsets.US_ASCII);
         int arrayCount;
         try {
+            arrayCount = Integer.parseInt(countStr);
