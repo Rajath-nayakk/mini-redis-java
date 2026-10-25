@@ -68,3 +68,4 @@ class StorageEngineTest {
                     startLatch.await();
                     for (int j = 0; j < incrementsPerThread; j++) {
                         engine.incr("concurrent-counter");
+                    }
