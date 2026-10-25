@@ -54,3 +54,4 @@ public class ClientSession implements Runnable {
             try {
                 if (!socket.isClosed()) {
                     byte[] errBytes = RespEncoder.encode(RespValue.error("ERR Protocol error: " + e.getMessage()));
+                    OutputStream out = socket.getOutputStream();
