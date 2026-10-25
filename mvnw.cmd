@@ -173,3 +173,4 @@ if (!$actualDistributionDir) {
   Write-Error "Could not find Maven distribution directory in extracted archive"
 }
 
+Write-Verbose "Found extracted Maven distribution directory: $actualDistributionDir"
