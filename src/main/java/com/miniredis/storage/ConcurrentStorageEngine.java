@@ -48,3 +48,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     }
 
     @Override
+    public int append(String key, String value) {
