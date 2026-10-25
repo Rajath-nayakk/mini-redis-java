@@ -15,3 +15,4 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * Multi-client TCP server for MiniRedis.
