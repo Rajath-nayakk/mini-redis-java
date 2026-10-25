@@ -251,3 +251,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     } else {
                         sb.append("\\[");
                     }
+                    break;
