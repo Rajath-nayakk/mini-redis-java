@@ -64,3 +64,4 @@ public final class RespEncoder {
                     out.write(PREFIX_BULK_STRING);
                     out.write(Integer.toString(bs.data().length).getBytes(StandardCharsets.US_ASCII));
                     out.write(CRLF);
+                    out.write(bs.data());
