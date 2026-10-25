@@ -229,3 +229,4 @@ public class RespParser {
                 System.arraycopy(buffer, readPos, buffer, 0, unread);
                 readPos = 0;
                 writePos = unread;
+            }
