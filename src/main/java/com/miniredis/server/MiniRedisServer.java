@@ -47,3 +47,4 @@ public class MiniRedisServer {
         clientExecutor = Executors.newFixedThreadPool(config.getMaxClients());
         running = true;
 
+        listenerThread = new Thread(this::listenLoop, "miniredis-listener");
