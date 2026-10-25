@@ -80,3 +80,4 @@ class StorageEngineTest {
         startLatch.countDown();
         boolean completed = doneLatch.await(10, TimeUnit.SECONDS);
         executor.shutdown();
+        assertTrue(completed, "All increment threads should finish within timeout");
