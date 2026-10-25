@@ -147,3 +147,4 @@ class StorageEngineTest {
         engine.set("user:3:profile", "details");
 
         Set<String> allKeys = engine.keys("*");
+        assertEquals(4, allKeys.size());
