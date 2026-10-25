@@ -68,3 +68,4 @@ public final class RespEncoder {
                     out.write(CRLF);
                 }
             }
+            case ARRAY -> {
