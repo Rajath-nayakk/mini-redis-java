@@ -64,3 +64,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     }
 
     @Override
+    public int strlen(String key) {
