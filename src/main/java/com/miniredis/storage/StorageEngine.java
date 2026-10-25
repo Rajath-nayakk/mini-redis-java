@@ -25,3 +25,4 @@ public interface StorageEngine {
     void mset(Map<String, String> entries);
     RedisType type(String key);
     Set<String> keys(String globPattern);
+    long dbsize();
