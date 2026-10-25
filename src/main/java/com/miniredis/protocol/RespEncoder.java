@@ -12,3 +12,4 @@ public final class RespEncoder {
 
     private static final byte[] CRLF = "\r\n".getBytes(StandardCharsets.US_ASCII);
     private static final byte PREFIX_SIMPLE_STRING = '+';
+    private static final byte PREFIX_ERROR = '-';
