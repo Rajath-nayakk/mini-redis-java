@@ -110,3 +110,4 @@ public final class ServerConfig {
         return builder.build();
     }
 
+    public String getHost() { return host; }
