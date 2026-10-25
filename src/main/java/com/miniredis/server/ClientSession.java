@@ -46,3 +46,4 @@ public class ClientSession implements Runnable {
                     RespValue request;
                     while ((request = parser.parseNext()) != null) {
                         RespValue response = dispatcher.dispatch(request);
+                        byte[] responseBytes = RespEncoder.encode(response);
