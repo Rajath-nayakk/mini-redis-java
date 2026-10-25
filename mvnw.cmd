@@ -119,3 +119,4 @@ trap {
     catch { Write-Warning "Cannot remove $TMP_DOWNLOAD_DIR" }
   }
 }
+
