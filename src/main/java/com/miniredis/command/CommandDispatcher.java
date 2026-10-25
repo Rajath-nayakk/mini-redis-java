@@ -69,3 +69,4 @@ public class CommandDispatcher {
         }
     }
 
+    private RespValue handlePing(List<String> args) {
