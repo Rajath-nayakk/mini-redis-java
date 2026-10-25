@@ -165,3 +165,4 @@ if (!$actualDistributionDir) {
     $testPath = Join-Path $_.FullName "bin/$MVN_CMD"
     if (Test-Path -Path $testPath -PathType Leaf) {
       $actualDistributionDir = $_.Name
+    }
