@@ -10,3 +10,4 @@
     <packaging>jar</packaging>
 
     <name>MiniRedis</name>
+    <description>Educational Redis-inspired in-memory database in Java from scratch</description>
