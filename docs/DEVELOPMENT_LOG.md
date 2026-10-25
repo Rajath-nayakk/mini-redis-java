@@ -11,3 +11,4 @@
 - Java: Not detected on system PATH or default directories.
 - Maven: Not detected on system PATH or default directories.
 - Policy: Strict line-by-line Git commit discipline active.
+- Pre-flight verification: No files were overwritten.
