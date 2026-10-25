@@ -249,3 +249,4 @@ public class RespParser {
             readPos = 0;
             writePos = unread;
         }
+    }
