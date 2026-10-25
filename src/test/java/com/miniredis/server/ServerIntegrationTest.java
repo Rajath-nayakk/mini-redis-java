@@ -154,3 +154,4 @@ class ServerIntegrationTest {
     @Test
     void testMalformedRequestsDoNotCrashServer() throws Exception {
         try (Socket socket = connect()) {
+            // Send malformed non-RESP bytes
