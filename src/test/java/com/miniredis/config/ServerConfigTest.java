@@ -79,3 +79,4 @@ class ServerConfigTest {
     @Test
     void testParseArgs() {
         String[] args = new String[]{
+                "--host", "10.0.0.1",
