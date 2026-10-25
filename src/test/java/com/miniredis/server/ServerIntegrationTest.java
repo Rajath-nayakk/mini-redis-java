@@ -53,3 +53,4 @@ class ServerIntegrationTest {
         out.flush();
 
         InputStream in = socket.getInputStream();
+        RespParser parser = new RespParser();
