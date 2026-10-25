@@ -30,3 +30,4 @@ public class MiniRedisServer {
     private Thread listenerThread;
     private volatile boolean running = false;
 
+    public MiniRedisServer(ServerConfig config, CommandDispatcher dispatcher) {
