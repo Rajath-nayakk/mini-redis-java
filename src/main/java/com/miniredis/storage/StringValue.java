@@ -25,3 +25,4 @@ public final class StringValue implements RedisValue {
     }
 
     public int length() {
+        return bytes.length;
