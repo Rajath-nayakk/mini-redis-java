@@ -179,3 +179,4 @@ public class RespParser {
         int arrayCount;
         try {
             arrayCount = Integer.parseInt(countStr);
+        } catch (NumberFormatException e) {
