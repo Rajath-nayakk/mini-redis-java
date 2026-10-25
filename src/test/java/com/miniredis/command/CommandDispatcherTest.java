@@ -106,3 +106,4 @@ class CommandDispatcherTest {
         RespValue err = dispatcher.dispatch(cmd("INCR", "nan"));
         assertEquals(RespType.ERROR, err.getType());
         assertTrue(((RespValue.RespError) err).message().contains("not an integer"));
+
