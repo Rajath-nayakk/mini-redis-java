@@ -227,3 +227,4 @@ public class RespParser {
             int unread = writePos - readPos;
             if (readPos > 0) {
                 System.arraycopy(buffer, readPos, buffer, 0, unread);
+                readPos = 0;
