@@ -10,3 +10,4 @@ import com.miniredis.storage.StorageEngine;
  * Main entry point for the MiniRedis database server.
  */
 public final class Main {
+
