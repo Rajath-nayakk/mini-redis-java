@@ -127,3 +127,4 @@ class ServerIntegrationTest {
         assertEquals(0, server.getActiveClientCount());
         Socket s = connect();
         // Give listener thread a moment to accept
+        Thread.sleep(50);
