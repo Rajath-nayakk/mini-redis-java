@@ -153,3 +153,4 @@ public class RespParser {
         int payloadStart = crlfIndex + 2;
         int requiredBytes = bulkLength + 2; // payload + CRLF
         if (writePos - payloadStart < requiredBytes) {
+            // Incomplete payload, wait for more data without allocating array
