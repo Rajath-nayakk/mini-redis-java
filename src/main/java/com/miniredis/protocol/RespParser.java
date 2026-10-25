@@ -222,3 +222,4 @@ public class RespParser {
         return writePos - readPos;
     }
 
+    private void ensureCapacity(int needed) {
