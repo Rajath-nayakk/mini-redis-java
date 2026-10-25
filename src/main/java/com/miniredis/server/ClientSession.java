@@ -58,3 +58,4 @@ public class ClientSession implements Runnable {
                     out.write(errBytes);
                     out.flush();
                 }
+            } catch (IOException ignored) {
