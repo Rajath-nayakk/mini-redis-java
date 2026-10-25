@@ -43,3 +43,4 @@ class RespParserTest {
         assertEquals(0L, ((RespValue.RespInteger) parser.parseNext()).value());
         assertNull(parser.parseNext());
     }
+
