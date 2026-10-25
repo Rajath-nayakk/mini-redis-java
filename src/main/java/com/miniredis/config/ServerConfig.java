@@ -96,3 +96,4 @@ public final class ServerConfig {
             if ("--port".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.port(Integer.parseInt(args[++i]));
             } else if ("--host".equalsIgnoreCase(arg) && i + 1 < args.length) {
+                builder.host(args[++i]);
