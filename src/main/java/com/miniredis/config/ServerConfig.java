@@ -105,3 +105,4 @@ public final class ServerConfig {
                 builder.maxMemoryBytes(Long.parseLong(args[++i]));
             } else if ("--appendonly".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.persistenceEnabled(Boolean.parseBoolean(args[++i]));
+            }
