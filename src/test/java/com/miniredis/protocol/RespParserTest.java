@@ -85,3 +85,4 @@ class RespParserTest {
     }
 
     @Test
+    void testParseArray() {
