@@ -26,3 +26,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR Protocol error: empty command");
         }
 
+        List<String> tokens = new ArrayList<>(elements.size());
