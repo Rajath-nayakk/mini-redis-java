@@ -36,3 +36,4 @@ public final class RespEncoder {
         if (value == null) {
             out.write(NULL_BULK_STRING);
             return;
+        }
