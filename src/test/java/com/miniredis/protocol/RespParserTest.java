@@ -45,3 +45,4 @@ class RespParserTest {
     }
 
     @Test
+    void testParseBulkString() {
