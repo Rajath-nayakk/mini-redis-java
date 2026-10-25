@@ -54,3 +54,4 @@ class CommandDispatcherTest {
     @Test
     void testSetAndGet() {
         RespValue setResp = dispatcher.dispatch(cmd("SET", "mykey", "myval"));
+        assertEquals(RespType.SIMPLE_STRING, setResp.getType());
