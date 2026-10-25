@@ -234,3 +234,4 @@ public class RespParser {
                 int newCap = Math.max(buffer.length * 2, writePos + needed);
                 byte[] newBuf = new byte[newCap];
                 System.arraycopy(buffer, 0, newBuf, 0, writePos);
+                buffer = newBuf;
