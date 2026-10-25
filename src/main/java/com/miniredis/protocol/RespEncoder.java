@@ -27,3 +27,4 @@ public final class RespEncoder {
         try {
             encode(value, baos);
         } catch (IOException e) {
+            throw new RuntimeException("Encoding failure", e);
