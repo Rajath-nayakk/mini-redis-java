@@ -238,3 +238,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
       distributionSha256Result=true
     fi
   else
+    echo "Checksum validation was requested but neither 'sha256sum' or 'shasum' are available." >&2
