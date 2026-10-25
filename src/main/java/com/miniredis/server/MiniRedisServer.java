@@ -42,3 +42,4 @@ public class MiniRedisServer {
         }
 
         serverSocket = new ServerSocket();
+        serverSocket.setReuseAddress(true);
