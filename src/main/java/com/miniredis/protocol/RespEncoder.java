@@ -37,3 +37,4 @@ public final class RespEncoder {
             out.write(NULL_BULK_STRING);
             return;
         }
+        switch (value.getType()) {
