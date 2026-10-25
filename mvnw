@@ -51,3 +51,4 @@ set_java_home() {
       JAVACCMD="$JAVA_HOME/jre/sh/javac"
     else
       JAVACMD="$JAVA_HOME/bin/java"
+      JAVACCMD="$JAVA_HOME/bin/javac"
