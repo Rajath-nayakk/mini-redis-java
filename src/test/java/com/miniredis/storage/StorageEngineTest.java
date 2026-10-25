@@ -37,3 +37,4 @@ class StorageEngineTest {
     @Test
     void testAppendAndStrlen() {
         assertEquals(0, engine.strlen("missing"));
+        assertEquals(5, engine.append("msg", "Hello"));
