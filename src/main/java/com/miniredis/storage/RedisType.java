@@ -13,3 +13,4 @@ public enum RedisType {
 
     private final String code;
 
+    RedisType(String code) {
