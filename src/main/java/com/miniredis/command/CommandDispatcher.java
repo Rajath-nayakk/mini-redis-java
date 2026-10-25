@@ -10,3 +10,4 @@ import java.util.*;
  * and maps results and domain exceptions to standard RESP2 replies.
  */
 public class CommandDispatcher {
+
