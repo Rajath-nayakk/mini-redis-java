@@ -65,3 +65,4 @@ public final class RespEncoder {
                     out.write(Integer.toString(bs.data().length).getBytes(StandardCharsets.US_ASCII));
                     out.write(CRLF);
                     out.write(bs.data());
+                    out.write(CRLF);
