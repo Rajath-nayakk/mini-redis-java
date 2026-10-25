@@ -44,3 +44,4 @@ class ServerConfigTest {
         assertEquals(500, config.getMaxClients());
         assertEquals(5 * 1024 * 1024, config.getMaxRequestSize());
         assertEquals(5000, config.getTimeoutMs());
+        assertEquals(Paths.get("/custom/data"), config.getDataDir());
