@@ -57,3 +57,4 @@ public class ClientSession implements Runnable {
                     OutputStream out = socket.getOutputStream();
                     out.write(errBytes);
                     out.flush();
+                }
