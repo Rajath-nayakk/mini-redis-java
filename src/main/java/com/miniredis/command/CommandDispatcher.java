@@ -57,3 +57,4 @@ public class CommandDispatcher {
                 case "INCR" -> handleIncr(args);
                 case "INCRBY" -> handleIncrBy(args);
                 case "DECR" -> handleDecr(args);
+                case "DECRBY" -> handleDecrBy(args);
