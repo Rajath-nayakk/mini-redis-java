@@ -93,3 +93,4 @@ class StorageEngineTest {
         assertThrows(InvalidIntegerException.class, () -> engine.incr("nan"));
         assertThrows(InvalidIntegerException.class, () -> engine.incrBy("nan", 10));
         assertThrows(InvalidIntegerException.class, () -> engine.decr("nan"));
+    }
