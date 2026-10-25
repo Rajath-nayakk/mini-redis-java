@@ -64,3 +64,4 @@ class ServerIntegrationTest {
             RespValue value = parser.parseNext();
             if (value != null) {
                 return value;
+            }
