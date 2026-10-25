@@ -50,3 +50,4 @@ public interface RespValue {
         return RespArray.NULL;
     }
 
+    record RespSimpleString(String value) implements RespValue {
