@@ -10,3 +10,4 @@ target/
 *.iws
 
 # Operating system files
+.DS_Store
