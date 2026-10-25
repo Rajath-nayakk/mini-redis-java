@@ -183,3 +183,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testMemoryEstimation() {
