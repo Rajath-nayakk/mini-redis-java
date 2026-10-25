@@ -194,3 +194,4 @@ public class RespParser {
             throw new ProtocolException("Array length " + arrayCount + " exceeds limit " + maxArrayLength);
         }
 
+        int currentReadPos = crlfIndex + 2;
