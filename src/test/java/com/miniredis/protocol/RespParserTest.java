@@ -160,3 +160,4 @@ class RespParserTest {
 
     @Test
     void testExceedingMaxLengths() {
+        RespParser limitedParser = new RespParser(10, 5);
