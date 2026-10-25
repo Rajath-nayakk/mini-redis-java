@@ -32,3 +32,4 @@ public final class StringValue implements RedisValue {
     public RedisType getType() {
         return RedisType.STRING;
     }
+
