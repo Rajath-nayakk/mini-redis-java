@@ -79,3 +79,4 @@ class StorageEngineTest {
 
         startLatch.countDown();
         boolean completed = doneLatch.await(10, TimeUnit.SECONDS);
+        executor.shutdown();
