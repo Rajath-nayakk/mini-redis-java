@@ -11,3 +11,4 @@ public final class StringValue implements RedisValue {
     private final String value;
     private final byte[] bytes;
 
+    public StringValue(String value) {
