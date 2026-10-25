@@ -15,3 +15,4 @@ class RespEncoderTest {
         assertEquals("+OK\r\n", new String(encoded, StandardCharsets.UTF_8));
     }
 
+    @Test
