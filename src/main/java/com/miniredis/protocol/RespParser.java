@@ -132,3 +132,4 @@ public class RespParser {
         int start = readPos + 1;
         int lenStrLen = crlfIndex - start;
         String lenStr = new String(buffer, start, lenStrLen, StandardCharsets.US_ASCII);
+        int bulkLength;
