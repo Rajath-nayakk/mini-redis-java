@@ -116,3 +116,4 @@ public final class ServerConfig {
     public int getMaxRequestSize() { return maxRequestSize; }
     public int getTimeoutMs() { return timeoutMs; }
     public Path getDataDir() { return dataDir; }
+    public boolean isPersistenceEnabled() { return persistenceEnabled; }
