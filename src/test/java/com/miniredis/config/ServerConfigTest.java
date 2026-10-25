@@ -85,3 +85,4 @@ class ServerConfigTest {
                 "--max-memory", "50000000",
                 "--appendonly", "true",
                 "--dir", "mydata"
+        };
