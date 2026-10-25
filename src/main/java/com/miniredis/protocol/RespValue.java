@@ -93,3 +93,4 @@ public interface RespValue {
         }
 
         public String asUtf8String() {
+            return data == null ? null : new String(data, StandardCharsets.UTF_8);
