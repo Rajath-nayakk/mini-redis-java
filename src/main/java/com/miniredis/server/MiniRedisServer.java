@@ -20,3 +20,4 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class MiniRedisServer {
 
+    private final ServerConfig config;
