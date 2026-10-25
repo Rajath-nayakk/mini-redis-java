@@ -210,3 +210,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 matched.add(key);
             }
         }
+        return Collections.unmodifiableSet(matched);
