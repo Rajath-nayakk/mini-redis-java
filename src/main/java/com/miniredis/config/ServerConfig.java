@@ -35,3 +35,4 @@ public final class ServerConfig {
 
     private ServerConfig(Builder builder) {
         this.host = builder.host;
+        this.port = builder.port;
