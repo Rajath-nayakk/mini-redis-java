@@ -105,3 +105,4 @@ public class MiniRedisServer {
     }
 
     public void onClientDisconnected(Socket socket) {
+        if (socket != null) {
