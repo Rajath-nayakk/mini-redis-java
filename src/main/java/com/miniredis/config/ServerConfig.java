@@ -46,3 +46,4 @@ public final class ServerConfig {
         this.maxMemoryBytes = builder.maxMemoryBytes;
         this.logLevel = builder.logLevel;
         validate();
+    }
