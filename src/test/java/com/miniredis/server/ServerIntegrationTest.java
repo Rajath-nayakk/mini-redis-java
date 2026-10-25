@@ -70,3 +70,4 @@ class ServerIntegrationTest {
                 return value;
             }
         }
+        return null;
