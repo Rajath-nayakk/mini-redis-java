@@ -47,3 +47,4 @@ public final class ServerConfig {
         this.logLevel = builder.logLevel;
         validate();
     }
+
