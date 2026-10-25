@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Multi-threaded TCP server for MiniRedis handling client connections,
- * connection pooling, life-cycle management, and clean shutdown.
+ * connection pooling, life-cycle management, active TTL cleanup, and clean shutdown.
  */
 public class MiniRedisServer {
 
@@ -28,6 +28,7 @@ public class MiniRedisServer {
 
     private ServerSocket serverSocket;
     private ExecutorService clientExecutor;
+    private ScheduledExecutorService cleanupExecutor;
     private Thread listenerThread;
     private volatile boolean running = false;
 
@@ -50,6 +51,21 @@ public class MiniRedisServer {
             t.setDaemon(true);
             return t;
         });
+
+        if (config.getCleanupIntervalMs() > 0) {
+            cleanupExecutor = Executors.newSingleThreadScheduledExecutor(r -> {
+                Thread t = new Thread(r, "miniredis-ttl-cleaner");
+                t.setDaemon(true);
+                return t;
+            });
+            cleanupExecutor.scheduleAtFixedRate(
+                    () -> dispatcher.getEngine().cleanupExpiredKeys(20),
+                    config.getCleanupIntervalMs(),
+                    config.getCleanupIntervalMs(),
+                    TimeUnit.MILLISECONDS
+            );
+        }
+
         running = true;
 
         listenerThread = new Thread(this::listenLoop, "miniredis-listener");
@@ -116,6 +132,15 @@ public class MiniRedisServer {
             return;
         }
         running = false;
+
+        if (cleanupExecutor != null) {
+            cleanupExecutor.shutdownNow();
+            try {
+                cleanupExecutor.awaitTermination(2, TimeUnit.SECONDS);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
 
         try {
             if (serverSocket != null && !serverSocket.isClosed()) {

@@ -20,6 +20,7 @@ public final class ServerConfig {
     public static final long DEFAULT_CLEANUP_INTERVAL_MS = 100L;
     public static final long DEFAULT_MAX_MEMORY_BYTES = 0L; // 0 = unlimited
     public static final String DEFAULT_LOG_LEVEL = "notice";
+    public static final String DEFAULT_REQUIRE_PASS = null;
 
     private final String host;
     private final int port;
@@ -32,6 +33,7 @@ public final class ServerConfig {
     private final long cleanupIntervalMs;
     private final long maxMemoryBytes;
     private final String logLevel;
+    private final String requirePass;
 
     private ServerConfig(Builder builder) {
         this.host = builder.host;
@@ -45,6 +47,7 @@ public final class ServerConfig {
         this.cleanupIntervalMs = builder.cleanupIntervalMs;
         this.maxMemoryBytes = builder.maxMemoryBytes;
         this.logLevel = builder.logLevel;
+        this.requirePass = builder.requirePass;
         validate();
     }
 
@@ -73,8 +76,10 @@ public final class ServerConfig {
         if (maxMemoryBytes < 0) {
             throw new IllegalArgumentException("Max memory cannot be negative: " + maxMemoryBytes);
         }
-        if (!"always".equalsIgnoreCase(aofSyncPolicy) && !"everysec".equalsIgnoreCase(aofSyncPolicy) && !"no".equalsIgnoreCase(aofSyncPolicy)) {
-            throw new IllegalArgumentException("Invalid AOF sync policy: " + aofSyncPolicy + ". Must be 'always', 'everysec', or 'no'");
+        if (!"always".equalsIgnoreCase(aofSyncPolicy)
+                && !"everysec".equalsIgnoreCase(aofSyncPolicy)
+                && !"no".equalsIgnoreCase(aofSyncPolicy)) {
+            throw new IllegalArgumentException("Invalid AOF sync policy (must be always, everysec, or no): " + aofSyncPolicy);
         }
     }
 
@@ -88,9 +93,10 @@ public final class ServerConfig {
 
     public static ServerConfig parseArgs(String[] args) {
         Builder builder = builder();
-        if (args == null) {
+        if (args == null || args.length == 0) {
             return builder.build();
         }
+
         for (int i = 0; i < args.length; i++) {
             String arg = args[i];
             if ("--port".equalsIgnoreCase(arg) && i + 1 < args.length) {
@@ -105,6 +111,8 @@ public final class ServerConfig {
                 builder.maxMemoryBytes(Long.parseLong(args[++i]));
             } else if ("--appendonly".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.persistenceEnabled(Boolean.parseBoolean(args[++i]));
+            } else if ("--requirepass".equalsIgnoreCase(arg) && i + 1 < args.length) {
+                builder.requirePass(args[++i]);
             }
         }
         return builder.build();
@@ -121,6 +129,7 @@ public final class ServerConfig {
     public long getCleanupIntervalMs() { return cleanupIntervalMs; }
     public long getMaxMemoryBytes() { return maxMemoryBytes; }
     public String getLogLevel() { return logLevel; }
+    public String getRequirePass() { return requirePass; }
 
     public static final class Builder {
         private String host = DEFAULT_HOST;
@@ -134,6 +143,7 @@ public final class ServerConfig {
         private long cleanupIntervalMs = DEFAULT_CLEANUP_INTERVAL_MS;
         private long maxMemoryBytes = DEFAULT_MAX_MEMORY_BYTES;
         private String logLevel = DEFAULT_LOG_LEVEL;
+        private String requirePass = DEFAULT_REQUIRE_PASS;
 
         public Builder host(String host) { this.host = host; return this; }
         public Builder port(int port) { this.port = port; return this; }
@@ -146,6 +156,7 @@ public final class ServerConfig {
         public Builder cleanupIntervalMs(long cleanupIntervalMs) { this.cleanupIntervalMs = cleanupIntervalMs; return this; }
         public Builder maxMemoryBytes(long maxMemoryBytes) { this.maxMemoryBytes = maxMemoryBytes; return this; }
         public Builder logLevel(String logLevel) { this.logLevel = logLevel; return this; }
+        public Builder requirePass(String requirePass) { this.requirePass = requirePass; return this; }
 
         public ServerConfig build() {
             return new ServerConfig(this);

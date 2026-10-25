@@ -15,12 +15,14 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.net.SocketException;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ServerIntegrationTest {
 
     private MiniRedisServer server;
+    private CommandDispatcher dispatcher;
     private int port;
 
     @BeforeEach
@@ -33,7 +35,7 @@ class ServerIntegrationTest {
                 .port(port)
                 .maxClients(100)
                 .build();
-        CommandDispatcher dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
+        dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
         server = new MiniRedisServer(config, dispatcher);
         server.start();
         port = server.getPort();
@@ -198,5 +200,62 @@ class ServerIntegrationTest {
             // Socket closure by remote peer can raise SocketException on Windows
         }
         client.close();
+    }
+
+    @Test
+    void testTransactionsOverTcp() throws Exception {
+        try (Socket socket = connect()) {
+            assertEquals("OK", ((RespValue.RespSimpleString) sendAndReceive(socket, "*1\r\n$5\r\nMULTI\r\n")).value());
+            assertEquals("QUEUED", ((RespValue.RespSimpleString) sendAndReceive(socket, "*3\r\n$3\r\nSET\r\n$5\r\ntxkey\r\n$7\r\nval_one\r\n")).value());
+            assertEquals("QUEUED", ((RespValue.RespSimpleString) sendAndReceive(socket, "*2\r\n$3\r\nGET\r\n$5\r\ntxkey\r\n")).value());
+
+            RespValue exec = sendAndReceive(socket, "*1\r\n$4\r\nEXEC\r\n");
+            assertNotNull(exec);
+            assertEquals(RespType.ARRAY, exec.getType());
+            List<RespValue> items = ((RespValue.RespArray) exec).elements();
+            assertEquals(2, items.size());
+            assertEquals("OK", ((RespValue.RespSimpleString) items.get(0)).value());
+            assertEquals("val_one", ((RespValue.RespBulkString) items.get(1)).asUtf8String());
+        }
+    }
+
+    @Test
+    void testListAndHashOverTcp() throws Exception {
+        try (Socket socket = connect()) {
+            RespValue rpush = sendAndReceive(socket, "*4\r\n$5\r\nRPUSH\r\n$4\r\nnums\r\n$1\r\n1\r\n$1\r\n2\r\n");
+            assertEquals(2L, ((RespValue.RespInteger) rpush).value());
+
+            RespValue lpop = sendAndReceive(socket, "*2\r\n$4\r\nLPOP\r\n$4\r\nnums\r\n");
+            assertEquals("1", ((RespValue.RespBulkString) lpop).asUtf8String());
+
+            RespValue hset = sendAndReceive(socket, "*4\r\n$4\r\nHSET\r\n$4\r\nuser\r\n$4\r\nname\r\n$3\r\nBob\r\n");
+            assertEquals(1L, ((RespValue.RespInteger) hset).value());
+
+            RespValue hget = sendAndReceive(socket, "*3\r\n$4\r\nHGET\r\n$4\r\nuser\r\n$4\r\nname\r\n");
+            assertEquals("Bob", ((RespValue.RespBulkString) hget).asUtf8String());
+        }
+    }
+
+    @Test
+    void testAuthOverTcp() throws Exception {
+        dispatcher.setRequirePass("supersecret");
+
+        try (Socket socket = connect()) {
+            // First attempt without AUTH
+            RespValue blocked = sendAndReceive(socket, "*2\r\n$3\r\nGET\r\n$3\r\nfoo\r\n");
+            assertTrue(((RespValue.RespError) blocked).message().contains("NOAUTH"));
+
+            // Wrong password
+            RespValue badAuth = sendAndReceive(socket, "*2\r\n$4\r\nAUTH\r\n$5\r\nwrong\r\n");
+            assertTrue(((RespValue.RespError) badAuth).message().contains("invalid password"));
+
+            // Correct password
+            RespValue goodAuth = sendAndReceive(socket, "*2\r\n$4\r\nAUTH\r\n$11\r\nsupersecret\r\n");
+            assertEquals("OK", ((RespValue.RespSimpleString) goodAuth).value());
+
+            // Protected commands now work
+            RespValue ping = sendAndReceive(socket, "*1\r\n$4\r\nPING\r\n");
+            assertEquals("PONG", ((RespValue.RespSimpleString) ping).value());
+        }
     }
 }

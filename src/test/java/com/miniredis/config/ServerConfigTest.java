@@ -21,6 +21,7 @@ class ServerConfigTest {
         assertEquals(100L, config.getCleanupIntervalMs());
         assertEquals(0L, config.getMaxMemoryBytes());
         assertEquals("notice", config.getLogLevel());
+        assertNull(config.getRequirePass());
     }
 
     @Test
@@ -37,6 +38,7 @@ class ServerConfigTest {
                 .cleanupIntervalMs(50L)
                 .maxMemoryBytes(100_000_000L)
                 .logLevel("debug")
+                .requirePass("secret")
                 .build();
 
         assertEquals("192.168.1.10", config.getHost());
@@ -50,6 +52,7 @@ class ServerConfigTest {
         assertEquals(50L, config.getCleanupIntervalMs());
         assertEquals(100_000_000L, config.getMaxMemoryBytes());
         assertEquals("debug", config.getLogLevel());
+        assertEquals("secret", config.getRequirePass());
     }
 
     @Test
@@ -84,7 +87,8 @@ class ServerConfigTest {
                 "--max-clients", "250",
                 "--max-memory", "50000000",
                 "--appendonly", "true",
-                "--dir", "mydata"
+                "--dir", "mydata",
+                "--requirepass", "mypass"
         };
         ServerConfig config = ServerConfig.parseArgs(args);
         assertEquals("10.0.0.1", config.getHost());
@@ -93,5 +97,6 @@ class ServerConfigTest {
         assertEquals(50_000_000L, config.getMaxMemoryBytes());
         assertTrue(config.isPersistenceEnabled());
         assertEquals(Paths.get("mydata"), config.getDataDir());
+        assertEquals("mypass", config.getRequirePass());
     }
 }

@@ -2,6 +2,7 @@ package com.miniredis;
 
 import com.miniredis.command.CommandDispatcher;
 import com.miniredis.config.ServerConfig;
+import com.miniredis.persistence.AofManager;
 import com.miniredis.server.MiniRedisServer;
 import com.miniredis.storage.ConcurrentStorageEngine;
 import com.miniredis.storage.StorageEngine;
@@ -19,12 +20,28 @@ public final class Main {
             printBanner(config);
 
             StorageEngine engine = new ConcurrentStorageEngine();
-            CommandDispatcher dispatcher = new CommandDispatcher(engine);
+
+            AofManager aofManager = null;
+            if (config.isPersistenceEnabled()) {
+                aofManager = new AofManager(config);
+                aofManager.start();
+                int replayed = aofManager.replay(engine);
+                System.out.println("[MiniRedis] Replayed " + replayed + " commands from AOF.");
+            }
+
+            final AofManager finalAof = aofManager;
+            CommandDispatcher dispatcher = new CommandDispatcher(engine, aofManager, config.getRequirePass());
             MiniRedisServer server = new MiniRedisServer(config, dispatcher);
 
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
                 System.out.println("\n[MiniRedis] Shutting down gracefully...");
                 server.stop();
+                if (finalAof != null) {
+                    try {
+                        finalAof.close();
+                    } catch (Exception ignored) {
+                    }
+                }
                 System.out.println("[MiniRedis] Server stopped.");
             }));
 
