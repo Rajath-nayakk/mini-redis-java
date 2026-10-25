@@ -18,3 +18,4 @@ public final class Main {
             ServerConfig config = ServerConfig.parseArgs(args);
             printBanner(config);
 
+            StorageEngine engine = new ConcurrentStorageEngine();
