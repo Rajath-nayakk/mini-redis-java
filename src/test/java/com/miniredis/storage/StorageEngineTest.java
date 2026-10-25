@@ -178,3 +178,4 @@ class StorageEngineTest {
     @Test
     void testType() {
         assertEquals(RedisType.NONE, engine.type("nonexistent"));
+        engine.set("str", "hello");
