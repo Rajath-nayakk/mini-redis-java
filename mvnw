@@ -61,3 +61,4 @@ set_java_home() {
     fi
   else
     JAVACMD="$(
+      'set' +e
