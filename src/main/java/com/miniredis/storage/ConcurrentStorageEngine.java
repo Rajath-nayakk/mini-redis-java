@@ -269,3 +269,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             }
         }
         sb.append("$");
+        return Pattern.compile(sb.toString());
