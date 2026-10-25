@@ -165,3 +165,4 @@ public class CommandDispatcher {
             delta = Long.parseLong(args.get(1));
         } catch (NumberFormatException e) {
             return RespValue.error(InvalidIntegerException.DEFAULT_MESSAGE);
+        }
