@@ -68,3 +68,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Data directory cannot be null");
         }
         if (cleanupIntervalMs <= 0) {
+            throw new IllegalArgumentException("Cleanup interval must be positive: " + cleanupIntervalMs);
