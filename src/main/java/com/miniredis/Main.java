@@ -33,3 +33,4 @@ public final class Main {
         System.out.println("\\/    \\/\\___/  |_(_)\\__/ |_| \\_\\\\___/\\__,_|_\\___|  ");
         System.out.println("                                                   ");
         System.out.println("* Educational Redis-inspired in-memory database in Java");
+        System.out.println("* MiniRedis version=" + VERSION + ", Java=" + System.getProperty("java.version"));
