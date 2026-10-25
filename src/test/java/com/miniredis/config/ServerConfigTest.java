@@ -16,3 +16,4 @@ class ServerConfigTest {
         assertEquals(10 * 1024 * 1024, config.getMaxRequestSize());
         assertEquals(0, config.getTimeoutMs());
         assertEquals(Paths.get("data"), config.getDataDir());
+        assertFalse(config.isPersistenceEnabled());
