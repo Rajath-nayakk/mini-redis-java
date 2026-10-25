@@ -51,3 +51,4 @@ public class CommandDispatcher {
                 case "ECHO" -> handleEcho(args);
                 case "SET" -> handleSet(args);
                 case "GET" -> handleGet(args);
+                case "DEL" -> handleDel(args);
