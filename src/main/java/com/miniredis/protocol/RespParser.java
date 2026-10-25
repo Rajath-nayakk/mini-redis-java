@@ -54,3 +54,4 @@ public class RespParser {
                 compactIfNeeded();
                 return value;
             }
+            readPos = savedReadPos;
