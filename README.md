@@ -56,3 +56,4 @@ redis-cli -p 6379
 - [ ] Phase 5: TCP server & socket integration tests
 - [ ] Phase 6: TTL expiration & background sweeper
 - [ ] Phase 7: Append-Only File (AOF) persistence
+- [ ] Phase 8: Data structures (Lists, Sets, Hashes)
