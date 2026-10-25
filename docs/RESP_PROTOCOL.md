@@ -16,3 +16,4 @@ All RESP messages are framed by a type identifier prefix byte and terminated wit
 | `*` | Null Array | `*-1\r\n` | Represents a null array |
 
 ## 2. Streaming Parser Architecture
+The `RespParser` class decodes incoming byte streams incrementally:
