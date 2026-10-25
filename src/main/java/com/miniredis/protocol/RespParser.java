@@ -241,3 +241,4 @@ public class RespParser {
 
     private void compactIfNeeded() {
         if (readPos >= writePos) {
+            readPos = 0;
