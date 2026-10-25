@@ -132,3 +132,4 @@ class StorageEngineTest {
         pairs.put("gamma", "3");
         engine.mset(pairs);
 
+        List<String> values = engine.mget(List.of("alpha", "missing", "gamma"));
