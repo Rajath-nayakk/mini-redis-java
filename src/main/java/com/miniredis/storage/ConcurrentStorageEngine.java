@@ -125,3 +125,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public boolean exists(String key) {
         Objects.requireNonNull(key, "Key cannot be null");
         return store.containsKey(key);
+    }
