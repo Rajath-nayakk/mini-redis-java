@@ -21,3 +21,4 @@ public final class RespEncoder {
 
     private RespEncoder() {
     }
+
