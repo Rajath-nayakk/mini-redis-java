@@ -62,3 +62,4 @@ public class MiniRedisServer {
             try {
                 Socket clientSocket = serverSocket.accept();
                 if (!running) {
+                    try {
