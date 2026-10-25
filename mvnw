@@ -276,3 +276,4 @@ if [ -z "$actualDistributionDir" ]; then
         actualDistributionDir="$(basename "$dir")"
         break
       fi
+    fi
