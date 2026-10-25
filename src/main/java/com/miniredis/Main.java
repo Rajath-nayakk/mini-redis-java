@@ -23,3 +23,4 @@ public final class Main {
             e.printStackTrace();
             System.exit(1);
         }
+    }
