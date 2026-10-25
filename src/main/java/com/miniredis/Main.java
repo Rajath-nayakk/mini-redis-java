@@ -38,3 +38,4 @@ public final class Main {
         System.out.println("* Max clients=" + config.getMaxClients() + ", Persistence=" + (config.isPersistenceEnabled() ? "enabled" : "disabled"));
         System.out.println("-------------------------------------------------------");
     }
+}
