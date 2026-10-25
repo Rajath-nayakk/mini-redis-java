@@ -35,3 +35,4 @@ public final class Main {
             System.exit(1);
         } catch (Exception e) {
             System.err.println("Fatal error: " + e.getMessage());
+            e.printStackTrace();
