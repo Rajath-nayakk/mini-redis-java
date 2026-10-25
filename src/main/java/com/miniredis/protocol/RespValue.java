@@ -52,3 +52,4 @@ public interface RespValue {
 
     record RespSimpleString(String value) implements RespValue {
         public RespSimpleString {
+            Objects.requireNonNull(value, "Simple string value cannot be null");
