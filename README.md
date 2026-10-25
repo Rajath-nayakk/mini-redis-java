@@ -59,3 +59,4 @@ redis-cli -p 6379
 - [ ] Phase 8: Data structures (Lists, Sets, Hashes)
 - [ ] Phase 9: Transactions & Monitoring
 - [ ] Phase 10: Final quality, benchmarks & release
+
