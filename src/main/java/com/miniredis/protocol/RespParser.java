@@ -214,3 +214,4 @@ public class RespParser {
             if (buffer[i] == '\r' && buffer[i + 1] == '\n') {
                 return i;
             }
+        }
