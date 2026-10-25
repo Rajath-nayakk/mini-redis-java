@@ -236,3 +236,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         StringBuilder sb = new StringBuilder("^");
         for (int i = 0; i < glob.length(); i++) {
             char c = glob.charAt(i);
+            switch (c) {
