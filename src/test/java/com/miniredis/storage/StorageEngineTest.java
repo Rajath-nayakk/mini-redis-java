@@ -96,3 +96,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testIntegerOverflow() {
