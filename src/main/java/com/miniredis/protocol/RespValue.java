@@ -107,3 +107,4 @@ public interface RespValue {
             if (o == null || getClass() != o.getClass()) return false;
             RespBulkString that = (RespBulkString) o;
             return Arrays.equals(data, that.data);
+        }
