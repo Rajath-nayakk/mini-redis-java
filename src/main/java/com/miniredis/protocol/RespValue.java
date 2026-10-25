@@ -27,3 +27,4 @@ public interface RespValue {
     }
 
     static RespInteger integer(long value) {
+        return new RespInteger(value);
