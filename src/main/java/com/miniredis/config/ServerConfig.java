@@ -127,3 +127,4 @@ public final class ServerConfig {
         private int port = DEFAULT_PORT;
         private int maxClients = DEFAULT_MAX_CLIENTS;
         private int maxRequestSize = DEFAULT_MAX_REQUEST_SIZE;
+        private int timeoutMs = DEFAULT_TIMEOUT_MS;
