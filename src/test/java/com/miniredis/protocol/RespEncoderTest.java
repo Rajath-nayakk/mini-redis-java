@@ -35,3 +35,4 @@ class RespEncoderTest {
     }
 
     @Test
+    void testEncodeNullBulkString() {
