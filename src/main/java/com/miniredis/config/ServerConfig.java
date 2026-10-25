@@ -17,3 +17,4 @@ public final class ServerConfig {
     public static final String DEFAULT_DATA_DIR = "data";
     public static final boolean DEFAULT_PERSISTENCE_ENABLED = false;
     public static final String DEFAULT_AOF_SYNC_POLICY = "everysec";
+    public static final long DEFAULT_CLEANUP_INTERVAL_MS = 100L;
