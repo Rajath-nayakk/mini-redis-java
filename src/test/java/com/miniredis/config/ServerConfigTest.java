@@ -47,3 +47,4 @@ class ServerConfigTest {
         assertEquals(Paths.get("/custom/data"), config.getDataDir());
         assertTrue(config.isPersistenceEnabled());
         assertEquals("always", config.getAofSyncPolicy());
+        assertEquals(50L, config.getCleanupIntervalMs());
