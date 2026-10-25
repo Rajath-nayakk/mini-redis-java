@@ -118,3 +118,4 @@ class ServerIntegrationTest {
             RespValue g2 = sendAndReceive(c1, "*2\r\n$3\r\nGET\r\n$5\r\nuser2\r\n");
 
             assertEquals("Alice", ((RespValue.RespBulkString) g1).asUtf8String());
+            assertEquals("Bob", ((RespValue.RespBulkString) g2).asUtf8String());
