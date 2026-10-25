@@ -32,3 +32,4 @@ class ServerConfigTest {
                 .maxRequestSize(5 * 1024 * 1024)
                 .timeoutMs(5000)
                 .dataDir(Paths.get("/custom/data"))
+                .persistenceEnabled(true)
