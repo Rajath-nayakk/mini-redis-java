@@ -31,3 +31,4 @@ mvn exec:java -Dexec.mainClass="com.miniredis.Main"
 Or with custom arguments:
 ```bash
 mvn exec:java -Dexec.mainClass="com.miniredis.Main" -Dexec.args="--port 6380 --dir ./data"
+```
