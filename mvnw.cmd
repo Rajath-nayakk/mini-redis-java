@@ -104,3 +104,4 @@ if (Test-Path -Path "$MAVEN_HOME" -PathType Container) {
   Write-Output "MVN_CMD=$MAVEN_HOME/bin/$MVN_CMD"
   exit $?
 }
+
