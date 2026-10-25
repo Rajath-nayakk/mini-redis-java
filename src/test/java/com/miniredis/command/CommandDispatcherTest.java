@@ -118,3 +118,4 @@ class CommandDispatcherTest {
         assertEquals(RespType.ERROR, err.getType());
         assertTrue(((RespValue.RespError) err).message().contains("overflow"));
     }
+
