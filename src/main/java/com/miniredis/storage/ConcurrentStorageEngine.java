@@ -142,3 +142,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     }
 
     @Override
+    public boolean del(String key) {
