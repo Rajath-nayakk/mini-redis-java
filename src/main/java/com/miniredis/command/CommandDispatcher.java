@@ -156,3 +156,4 @@ public class CommandDispatcher {
         return RespValue.integer(result);
     }
 
+    private RespValue handleDecrBy(List<String> args) {
