@@ -87,3 +87,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         final long[] resultHolder = new long[1];
         store.compute(key, (k, old) -> {
             long current = 0L;
+            if (old != null) {
