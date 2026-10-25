@@ -112,3 +112,4 @@ public interface RespValue {
         @Override
         public int hashCode() {
             return Arrays.hashCode(data);
+        }
