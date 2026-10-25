@@ -75,3 +75,4 @@ class CommandDispatcherTest {
         assertEquals(RespType.INTEGER, ex1.getType());
         assertEquals(2L, ((RespValue.RespInteger) ex1).value());
 
+        RespValue delResp = dispatcher.dispatch(cmd("DEL", "k1", "k3"));
