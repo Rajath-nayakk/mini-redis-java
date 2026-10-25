@@ -26,3 +26,4 @@ class RespParserTest {
         assertNull(parser.parseNext());
     }
 
+    @Test
