@@ -32,3 +32,4 @@ class ServerIntegrationTest {
         CommandDispatcher dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
         server = new MiniRedisServer(config, dispatcher);
         server.start();
+        port = server.getPort();
