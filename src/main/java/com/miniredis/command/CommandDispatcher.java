@@ -35,3 +35,4 @@ public class CommandDispatcher {
             } else {
                 return RespValue.error("ERR Protocol error: command elements must be strings");
             }
+        }
