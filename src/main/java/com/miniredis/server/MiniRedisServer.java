@@ -126,3 +126,4 @@ public class MiniRedisServer {
 
         for (Socket s : activeSockets) {
             try {
+                if (!s.isClosed()) {
