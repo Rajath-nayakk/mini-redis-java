@@ -173,3 +173,4 @@ class StorageEngineTest {
         assertEquals(0L, engine.dbsize());
         assertNull(engine.get("k1"));
         assertNull(engine.get("k2"));
+    }
