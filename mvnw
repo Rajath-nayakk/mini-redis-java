@@ -153,3 +153,4 @@ exec_maven() {
 if [ -d "$MAVEN_HOME" ]; then
   verbose "found existing MAVEN_HOME at $MAVEN_HOME"
   exec_maven "$@"
+fi
