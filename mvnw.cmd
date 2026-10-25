@@ -154,3 +154,4 @@ $actualDistributionDir = ""
 
 # First try the expected directory name (for regular distributions)
 $expectedPath = Join-Path "$TMP_DOWNLOAD_DIR" "$distributionUrlNameMain"
+$expectedMvnPath = Join-Path "$expectedPath" "bin/$MVN_CMD"
