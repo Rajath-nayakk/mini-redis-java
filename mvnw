@@ -242,3 +242,4 @@ if [ -n "${distributionSha256Sum-}" ]; then
     echo "Please install either command, or disable validation by removing 'distributionSha256Sum' from your maven-wrapper.properties." >&2
     exit 1
   fi
+  if [ $distributionSha256Result = false ]; then
