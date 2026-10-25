@@ -66,3 +66,4 @@
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                    </execution>
