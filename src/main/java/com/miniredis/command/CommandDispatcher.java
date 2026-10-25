@@ -61,3 +61,4 @@ public class CommandDispatcher {
                 default -> RespValue.error("ERR unknown command '" + commandName + "'");
             };
         } catch (WrongTypeException | InvalidIntegerException | NumericOverflowException e) {
+            return RespValue.error(e.getMessage());
