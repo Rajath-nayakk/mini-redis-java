@@ -23,3 +23,4 @@ class RespEncoderTest {
 
     @Test
     void testEncodeInteger() {
+        assertEquals(":123\r\n", new String(RespEncoder.encode(RespValue.integer(123)), StandardCharsets.UTF_8));
