@@ -36,3 +36,4 @@ class RespParserTest {
     }
 
     @Test
+    void testParseInteger() {
