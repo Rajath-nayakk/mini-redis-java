@@ -56,3 +56,4 @@ public class CommandDispatcher {
                 case "DBSIZE" -> handleDbsize(args);
                 case "INCR" -> handleIncr(args);
                 case "INCRBY" -> handleIncrBy(args);
+                case "DECR" -> handleDecr(args);
