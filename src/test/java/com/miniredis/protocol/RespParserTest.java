@@ -24,3 +24,4 @@ class RespParserTest {
         assertEquals(RespType.SIMPLE_STRING, val.getType());
         assertEquals("OK", ((RespValue.RespSimpleString) val).value());
         assertNull(parser.parseNext());
+    }
