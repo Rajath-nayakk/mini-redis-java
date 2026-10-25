@@ -56,3 +56,4 @@ class CommandDispatcherTest {
         RespValue setResp = dispatcher.dispatch(cmd("SET", "mykey", "myval"));
         assertEquals(RespType.SIMPLE_STRING, setResp.getType());
         assertEquals("OK", ((RespValue.RespSimpleString) setResp).value());
+
