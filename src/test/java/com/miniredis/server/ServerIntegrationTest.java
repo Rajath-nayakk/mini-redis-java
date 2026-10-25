@@ -180,3 +180,4 @@ class ServerIntegrationTest {
     }
 
     @Test
+    void testServerShutdownClosesResources() throws Exception {
