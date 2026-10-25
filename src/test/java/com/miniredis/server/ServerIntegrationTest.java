@@ -44,3 +44,4 @@ class ServerIntegrationTest {
     void tearDown() {
         if (server != null) {
             server.stop();
+        }
