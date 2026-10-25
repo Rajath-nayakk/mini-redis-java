@@ -36,3 +36,4 @@ public interface RespValue {
 
     static RespBulkString bulkString(String string) {
         return string == null ? RespBulkString.NULL : new RespBulkString(string.getBytes(StandardCharsets.UTF_8));
+    }
