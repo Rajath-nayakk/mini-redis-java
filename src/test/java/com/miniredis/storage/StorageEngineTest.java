@@ -95,3 +95,4 @@ class StorageEngineTest {
         assertThrows(InvalidIntegerException.class, () -> engine.decr("nan"));
     }
 
+    @Test
