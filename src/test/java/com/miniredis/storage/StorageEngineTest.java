@@ -23,3 +23,4 @@ class StorageEngineTest {
         engine.set("foo", "bar");
         assertEquals("bar", engine.get("foo"));
         engine.set("foo", "baz");
+        assertEquals("baz", engine.get("foo"));
