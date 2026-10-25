@@ -35,3 +35,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testAppendAndStrlen() {
