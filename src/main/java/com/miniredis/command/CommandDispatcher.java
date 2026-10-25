@@ -113,3 +113,4 @@ public class CommandDispatcher {
     private RespValue handleExists(List<String> args) {
         if (args.isEmpty()) {
             return RespValue.error("ERR wrong number of arguments for 'exists' command");
+        }
