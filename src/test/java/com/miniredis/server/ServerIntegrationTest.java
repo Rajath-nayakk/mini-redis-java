@@ -49,3 +49,4 @@ class ServerIntegrationTest {
 
     private Socket connect() throws Exception {
         return new Socket("127.0.0.1", port);
+    }
