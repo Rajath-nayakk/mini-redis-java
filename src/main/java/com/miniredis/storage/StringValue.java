@@ -51,3 +51,4 @@ public final class StringValue implements RedisValue {
         return value.hashCode();
     }
 
+    @Override
