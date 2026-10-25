@@ -25,3 +25,4 @@ public final class ServerConfig {
     private final int port;
     private final int maxClients;
     private final int maxRequestSize;
+    private final int timeoutMs;
