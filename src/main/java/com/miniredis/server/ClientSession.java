@@ -42,3 +42,4 @@ public class ClientSession implements Runnable {
             while (!socket.isClosed() && (bytesRead = in.read(buffer)) != -1) {
                 parser.append(buffer, 0, bytesRead);
 
+                RespValue request;
