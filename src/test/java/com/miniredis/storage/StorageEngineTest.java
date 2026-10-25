@@ -22,3 +22,4 @@ class StorageEngineTest {
         assertNull(engine.get("missingKey"), "Missing key should return null");
         engine.set("foo", "bar");
         assertEquals("bar", engine.get("foo"));
+        engine.set("foo", "baz");
