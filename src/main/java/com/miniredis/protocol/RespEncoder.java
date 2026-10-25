@@ -50,3 +50,4 @@ public final class RespEncoder {
                 out.write(err.message().getBytes(StandardCharsets.UTF_8));
                 out.write(CRLF);
             }
+            case INTEGER -> {
