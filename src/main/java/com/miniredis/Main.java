@@ -28,3 +28,4 @@ public final class Main {
                 System.out.println("[MiniRedis] Server stopped.");
             }));
 
+            server.start();
