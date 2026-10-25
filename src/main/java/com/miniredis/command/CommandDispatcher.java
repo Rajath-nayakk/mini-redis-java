@@ -119,3 +119,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleDbsize(List<String> args) {
+        if (!args.isEmpty()) {
