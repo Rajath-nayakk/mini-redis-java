@@ -22,3 +22,4 @@ class ServerConfigTest {
         assertEquals(0L, config.getMaxMemoryBytes());
         assertEquals("notice", config.getLogLevel());
     }
+
