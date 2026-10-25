@@ -60,3 +60,4 @@ public final class RespEncoder {
                 RespValue.RespBulkString bs = (RespValue.RespBulkString) value;
                 if (bs.isNull()) {
                     out.write(NULL_BULK_STRING);
+                } else {
