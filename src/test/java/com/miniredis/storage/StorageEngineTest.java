@@ -58,3 +58,4 @@ class StorageEngineTest {
     void testAtomicConcurrentIncrements() throws InterruptedException {
         int threads = 50;
         int incrementsPerThread = 100;
+        ExecutorService executor = Executors.newFixedThreadPool(threads);
