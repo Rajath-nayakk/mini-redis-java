@@ -45,3 +45,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             throw new WrongTypeException();
         }
         return stringOldVal.getValue();
+    }
