@@ -150,3 +150,4 @@ class StorageEngineTest {
         assertEquals(4, allKeys.size());
 
         Set<String> userKeys = engine.keys("user:*");
+        assertEquals(3, userKeys.size());
