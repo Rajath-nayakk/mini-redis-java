@@ -104,3 +104,4 @@ trim() {
   #   exotic environments such as mingw bash on Windows.
   printf "%s" "${1}" | tr -d '[:space:]'
 }
+
