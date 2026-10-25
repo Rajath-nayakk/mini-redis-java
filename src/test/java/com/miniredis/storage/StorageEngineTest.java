@@ -63,3 +63,4 @@ class StorageEngineTest {
         CountDownLatch doneLatch = new CountDownLatch(threads);
 
         for (int i = 0; i < threads; i++) {
+            executor.submit(() -> {
