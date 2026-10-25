@@ -50,3 +50,4 @@ public final class ServerConfig {
 
     public void validate() {
         if (host == null || host.trim().isEmpty()) {
+            throw new IllegalArgumentException("Host cannot be null or empty");
