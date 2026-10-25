@@ -10,3 +10,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 - **TCP Networking**: Multithreaded network layer listening on loopback (127.0.0.1:6379).
 - **Atomic Numeric Operations**: Thread-safe operations for INCR, DECR, INCRBY, DECRBY.
 - **Expiration (TTL)**: Monotonic lazy expiration and active background cleanup.
+- **Append-Only File (AOF)**: Configurable durability and crash-recovery replay.
