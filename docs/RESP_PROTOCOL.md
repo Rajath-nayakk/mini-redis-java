@@ -2,3 +2,4 @@
 
 MiniRedis implements the RESP2 wire protocol for communication between clients and the database engine.
 
+## 1. Framing and Delimiters
