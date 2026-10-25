@@ -204,3 +204,4 @@ public class RespParser {
                 // Not all elements are available yet
                 return null;
             }
+            elements.add(elem);
