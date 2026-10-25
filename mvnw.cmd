@@ -93,3 +93,4 @@ if ((Get-Item $MAVEN_M2_PATH).Target[0] -eq $null) {
   $MAVEN_WRAPPER_DISTS = "$MAVEN_M2_PATH/wrapper/dists"
 } else {
   $MAVEN_WRAPPER_DISTS = (Get-Item $MAVEN_M2_PATH).Target[0] + "/wrapper/dists"
+}
