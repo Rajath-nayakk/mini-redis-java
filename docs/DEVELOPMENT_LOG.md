@@ -23,3 +23,4 @@
 - Implemented `com.miniredis.config.ServerConfig` with validation, defaults, builder, and CLI argument parsing.
 - Implemented `com.miniredis.Main` with startup banner and configuration bootstrap.
 - Implemented `com.miniredis.config.ServerConfigTest` testing defaults, custom builder, invalid parameters, and CLI parsing.
+- Created `README.md` with project overview, architecture, run/build/test instructions, and roadmap.
