@@ -90,3 +90,4 @@ public class MiniRedisServer {
                     clientExecutor.submit(session);
                 } catch (RejectedExecutionException e) {
                     onClientDisconnected(clientSocket);
+                    try {
