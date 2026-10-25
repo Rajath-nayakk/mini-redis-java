@@ -44,3 +44,4 @@ class StorageEngineTest {
         assertEquals(11, engine.strlen("msg"));
     }
 
+    @Test
