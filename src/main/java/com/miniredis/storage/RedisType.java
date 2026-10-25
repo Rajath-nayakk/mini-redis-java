@@ -11,3 +11,4 @@ public enum RedisType {
     ZSET("zset"),
     NONE("none");
 
+    private final String code;
