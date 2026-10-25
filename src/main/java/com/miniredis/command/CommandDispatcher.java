@@ -84,3 +84,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR wrong number of arguments for 'echo' command");
         }
         return RespValue.bulkString(args.get(0));
+    }
