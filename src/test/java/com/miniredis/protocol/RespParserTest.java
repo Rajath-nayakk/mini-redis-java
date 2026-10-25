@@ -27,3 +27,4 @@ class RespParserTest {
     }
 
     @Test
+    void testParseError() {
