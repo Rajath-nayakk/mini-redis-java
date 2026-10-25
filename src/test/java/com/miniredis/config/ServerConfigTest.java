@@ -90,3 +90,4 @@ class ServerConfigTest {
         assertEquals("10.0.0.1", config.getHost());
         assertEquals(7000, config.getPort());
         assertEquals(250, config.getMaxClients());
+        assertEquals(50_000_000L, config.getMaxMemoryBytes());
