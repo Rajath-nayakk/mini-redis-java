@@ -25,3 +25,4 @@
         <jacoco.maven.plugin.version>0.8.11</jacoco.maven.plugin.version>
     </properties>
 
+    <dependencies>
