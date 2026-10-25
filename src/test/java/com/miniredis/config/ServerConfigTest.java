@@ -12,3 +12,4 @@ class ServerConfigTest {
         ServerConfig config = ServerConfig.defaultConfig();
         assertEquals("127.0.0.1", config.getHost());
         assertEquals(6379, config.getPort());
+        assertEquals(1000, config.getMaxClients());
