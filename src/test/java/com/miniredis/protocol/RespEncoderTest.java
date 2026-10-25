@@ -21,3 +21,4 @@ class RespEncoderTest {
         assertEquals("-ERR unknown\r\n", new String(encoded, StandardCharsets.UTF_8));
     }
 
+    @Test
