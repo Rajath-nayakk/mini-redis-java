@@ -76,3 +76,4 @@ public final class RespEncoder {
                     out.write(PREFIX_ARRAY);
                     out.write(Integer.toString(arr.elements().size()).getBytes(StandardCharsets.US_ASCII));
                     out.write(CRLF);
+                    for (RespValue elem : arr.elements()) {
