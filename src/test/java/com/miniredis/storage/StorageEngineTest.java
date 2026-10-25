@@ -185,3 +185,4 @@ class StorageEngineTest {
     @Test
     void testMemoryEstimation() {
         assertEquals(0L, engine.approximateMemoryBytes());
+        engine.set("mykey", "myvalue");
