@@ -66,3 +66,4 @@ class RespParserTest {
         parser.append("$-1\r\n".getBytes(StandardCharsets.UTF_8));
         RespValue.RespBulkString bs = (RespValue.RespBulkString) parser.parseNext();
         assertNotNull(bs);
+        assertTrue(bs.isNull());
