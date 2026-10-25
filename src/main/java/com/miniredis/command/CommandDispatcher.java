@@ -107,3 +107,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR wrong number of arguments for 'del' command");
         }
         int deleted = engine.del(args);
+        return RespValue.integer(deleted);
