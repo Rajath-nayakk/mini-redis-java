@@ -90,3 +90,4 @@ class ServerIntegrationTest {
             RespValue getResp = sendAndReceive(socket, "*2\r\n$3\r\nGET\r\n$4\r\ncity\r\n");
             assertNotNull(getResp);
             assertEquals(RespType.BULK_STRING, getResp.getType());
+            assertEquals("Boston", ((RespValue.RespBulkString) getResp).asUtf8String());
