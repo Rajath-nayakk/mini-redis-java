@@ -32,3 +32,4 @@ public class RespParser {
         if (data != null && data.length > 0) {
             append(data, 0, data.length);
         }
+    }
