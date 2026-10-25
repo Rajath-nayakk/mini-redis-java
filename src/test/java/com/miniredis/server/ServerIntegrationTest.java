@@ -7,3 +7,4 @@ import com.miniredis.protocol.RespType;
 import com.miniredis.protocol.RespValue;
 import com.miniredis.storage.ConcurrentStorageEngine;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
