@@ -161,3 +161,4 @@ case "${distributionUrl-}" in
 esac
 
 # prepare tmp dir
+if TMP_DOWNLOAD_DIR="$(mktemp -d)" && [ -d "$TMP_DOWNLOAD_DIR" ]; then
