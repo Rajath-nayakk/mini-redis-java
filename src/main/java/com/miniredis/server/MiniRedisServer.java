@@ -84,3 +84,4 @@ public class MiniRedisServer {
 
                 activeClients.incrementAndGet();
                 activeSockets.add(clientSocket);
+
