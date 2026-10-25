@@ -6,3 +6,4 @@ import java.util.Objects;
 
 /**
  * Configuration parameters for the MiniRedis server instance.
+ */
