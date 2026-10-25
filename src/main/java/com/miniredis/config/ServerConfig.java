@@ -48,3 +48,4 @@ public final class ServerConfig {
         validate();
     }
 
+    public void validate() {
