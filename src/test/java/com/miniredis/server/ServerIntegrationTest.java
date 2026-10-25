@@ -75,3 +75,4 @@ class ServerIntegrationTest {
 
     @Test
     void testPingReturnsPong() throws Exception {
+        try (Socket socket = connect()) {
