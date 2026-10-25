@@ -249,3 +249,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                         sb.append(glob, i, closing + 1);
                         i = closing;
                     } else {
+                        sb.append("\\[");
