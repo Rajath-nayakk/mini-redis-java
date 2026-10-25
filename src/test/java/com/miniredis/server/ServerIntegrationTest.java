@@ -144,3 +144,4 @@ class ServerIntegrationTest {
 
     @Test
     void testInvalidCommandsReturnProtocolErrors() throws Exception {
+        try (Socket socket = connect()) {
