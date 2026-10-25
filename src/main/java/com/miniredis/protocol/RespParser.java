@@ -147,3 +147,4 @@ public class RespParser {
             throw new ProtocolException("Negative bulk string length invalid: " + bulkLength);
         }
         if (bulkLength > maxBulkStringLength) {
+            throw new ProtocolException("Bulk string length " + bulkLength + " exceeds limit " + maxBulkStringLength);
