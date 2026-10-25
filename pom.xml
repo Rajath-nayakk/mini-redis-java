@@ -5,3 +5,4 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.miniredis</groupId>
+    <artifactId>mini-redis-java</artifactId>
