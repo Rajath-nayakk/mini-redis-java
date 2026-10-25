@@ -62,3 +62,4 @@ public class ClientSession implements Runnable {
         } catch (IOException e) {
             // Socket IO exception
         } finally {
+            server.onClientDisconnected(socket);
