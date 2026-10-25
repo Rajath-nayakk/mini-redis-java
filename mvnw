@@ -31,3 +31,4 @@
 
 set -euf
 [ "${MVNW_VERBOSE-}" != debug ] || set -x
+
