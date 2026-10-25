@@ -62,3 +62,4 @@ public interface RespValue {
         public RespType getType() {
             return RespType.SIMPLE_STRING;
         }
+    }
