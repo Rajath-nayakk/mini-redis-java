@@ -74,3 +74,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Max memory cannot be negative: " + maxMemoryBytes);
         }
         if (!"always".equalsIgnoreCase(aofSyncPolicy) && !"everysec".equalsIgnoreCase(aofSyncPolicy) && !"no".equalsIgnoreCase(aofSyncPolicy)) {
+            throw new IllegalArgumentException("Invalid AOF sync policy: " + aofSyncPolicy + ". Must be 'always', 'everysec', or 'no'");
