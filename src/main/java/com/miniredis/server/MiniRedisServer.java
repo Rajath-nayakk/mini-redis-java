@@ -31,3 +31,4 @@ public class MiniRedisServer {
     private volatile boolean running = false;
 
     public MiniRedisServer(ServerConfig config, CommandDispatcher dispatcher) {
+        this.config = config;
