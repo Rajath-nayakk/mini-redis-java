@@ -121,3 +121,4 @@ public class RespParser {
             return new RespValue.RespInteger(val);
         } catch (NumberFormatException e) {
             throw new ProtocolException("Invalid RESP integer value: " + str);
+        }
