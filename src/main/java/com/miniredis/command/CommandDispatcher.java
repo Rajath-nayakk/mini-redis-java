@@ -34,3 +34,4 @@ public class CommandDispatcher {
                 tokens.add(ss.value());
             } else {
                 return RespValue.error("ERR Protocol error: command elements must be strings");
+            }
