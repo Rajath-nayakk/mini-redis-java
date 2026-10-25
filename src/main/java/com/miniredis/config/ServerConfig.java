@@ -95,3 +95,4 @@ public final class ServerConfig {
             String arg = args[i];
             if ("--port".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.port(Integer.parseInt(args[++i]));
+            } else if ("--host".equalsIgnoreCase(arg) && i + 1 < args.length) {
