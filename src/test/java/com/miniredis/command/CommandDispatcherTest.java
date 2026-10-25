@@ -24,3 +24,4 @@ class CommandDispatcherTest {
         for (String p : parts) {
             list.add(RespValue.bulkString(p));
         }
+        return RespValue.array(list);
