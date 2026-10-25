@@ -119,3 +119,4 @@ public class RespParser {
         try {
             long val = Long.parseLong(str);
             return new RespValue.RespInteger(val);
+        } catch (NumberFormatException e) {
