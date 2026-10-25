@@ -69,3 +69,4 @@ public final class RespEncoder {
                 }
             }
             case ARRAY -> {
+                RespValue.RespArray arr = (RespValue.RespArray) value;
