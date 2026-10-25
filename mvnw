@@ -114,3 +114,4 @@ while IFS="=" read -r key value; do
   distributionUrl) distributionUrl=$(trim "${value-}") ;;
   distributionSha256Sum) distributionSha256Sum=$(trim "${value-}") ;;
   esac
+done <"$scriptDir/.mvn/wrapper/maven-wrapper.properties"
