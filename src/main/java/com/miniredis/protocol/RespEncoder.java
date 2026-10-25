@@ -80,3 +80,4 @@ public final class RespEncoder {
                         encode(elem, out);
                     }
                 }
+            }
