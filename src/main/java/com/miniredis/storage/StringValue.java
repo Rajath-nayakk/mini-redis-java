@@ -19,3 +19,4 @@ public final class StringValue implements RedisValue {
     public String getValue() {
         return value;
     }
+
