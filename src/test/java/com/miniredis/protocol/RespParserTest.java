@@ -87,3 +87,4 @@ class RespParserTest {
     @Test
     void testParseArray() {
         String raw = "*2\r\n$3\r\nGET\r\n$4\r\nuser\r\n";
+        parser.append(raw.getBytes(StandardCharsets.UTF_8));
