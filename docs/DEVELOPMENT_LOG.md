@@ -35,3 +35,4 @@
 - Implemented storage exceptions: StorageException, WrongTypeException, InvalidIntegerException, NumericOverflowException.
 - Implemented StorageEngine interface and ConcurrentStorageEngine backed by ConcurrentHashMap.
 - Implemented atomic numeric operations: incr, incrBy, decr, decrBy using atomic computation with overflow checking.
+- Implemented string commands: get, set, getSet, append, strlen, exists, del, mget, mset, keys, type, dbsize, flushDb.
