@@ -154,3 +154,4 @@ class RespParserTest {
         assertThrows(ProtocolException.class, () -> parser.parseNext());
 
         RespParser p2 = new RespParser();
+        p2.append("*-2\r\n".getBytes(StandardCharsets.UTF_8));
