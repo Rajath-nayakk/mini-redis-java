@@ -232,3 +232,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         return total;
     }
 
+    private Pattern globToRegex(String glob) {
