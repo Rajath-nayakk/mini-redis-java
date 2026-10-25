@@ -81,3 +81,4 @@ class ServerIntegrationTest {
             assertEquals(RespType.SIMPLE_STRING, resp.getType());
             assertEquals("PONG", ((RespValue.RespSimpleString) resp).value());
         }
+    }
