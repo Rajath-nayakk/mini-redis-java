@@ -59,3 +59,4 @@ class ServerIntegrationTest {
             int read = in.read(buf);
             if (read == -1) {
                 break;
+            }
