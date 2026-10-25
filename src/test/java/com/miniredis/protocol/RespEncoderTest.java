@@ -36,3 +36,4 @@ class RespEncoderTest {
 
     @Test
     void testEncodeNullBulkString() {
+        byte[] encoded = RespEncoder.encode(RespValue.nullBulkString());
