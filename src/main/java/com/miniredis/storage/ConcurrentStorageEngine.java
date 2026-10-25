@@ -19,3 +19,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     }
 
     @Override
+    public String get(String key) {
