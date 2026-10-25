@@ -55,3 +55,4 @@ public class CommandDispatcher {
                 case "EXISTS" -> handleExists(args);
                 case "DBSIZE" -> handleDbsize(args);
                 case "INCR" -> handleIncr(args);
+                case "INCRBY" -> handleIncrBy(args);
