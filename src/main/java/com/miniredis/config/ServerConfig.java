@@ -36,3 +36,4 @@ public final class ServerConfig {
     private ServerConfig(Builder builder) {
         this.host = builder.host;
         this.port = builder.port;
+        this.maxClients = builder.maxClients;
