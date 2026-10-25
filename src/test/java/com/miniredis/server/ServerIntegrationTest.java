@@ -197,3 +197,4 @@ class ServerIntegrationTest {
         } catch (SocketException expected) {
             // Socket closure by remote peer can raise SocketException on Windows
         }
+        client.close();
