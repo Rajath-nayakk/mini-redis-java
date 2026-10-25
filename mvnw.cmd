@@ -151,3 +151,4 @@ Expand-Archive "$TMP_DOWNLOAD_DIR/$distributionUrlName" -DestinationPath "$TMP_D
 
 # Find the actual extracted directory name (handles snapshots where filename != directory name)
 $actualDistributionDir = ""
+
