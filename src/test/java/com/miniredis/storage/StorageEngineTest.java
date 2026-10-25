@@ -47,3 +47,4 @@ class StorageEngineTest {
     @Test
     void testIncrAndDecr() {
         assertEquals(1L, engine.incr("counter"), "Incr on missing key initializes to 1");
+        assertEquals(2L, engine.incr("counter"));
