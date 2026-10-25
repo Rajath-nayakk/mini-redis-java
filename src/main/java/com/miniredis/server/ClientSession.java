@@ -57,3 +57,4 @@ public class ClientSession implements Runnable {
                     break;
                 }
             }
+        } catch (SocketException e) {
