@@ -40,3 +40,4 @@ class StorageEngineTest {
         assertEquals(5, engine.append("msg", "Hello"));
         assertEquals("Hello", engine.get("msg"));
         assertEquals(11, engine.append("msg", " World"));
+        assertEquals("Hello World", engine.get("msg"));
