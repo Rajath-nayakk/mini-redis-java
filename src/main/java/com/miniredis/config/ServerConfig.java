@@ -44,3 +44,4 @@ public final class ServerConfig {
         this.aofSyncPolicy = builder.aofSyncPolicy;
         this.cleanupIntervalMs = builder.cleanupIntervalMs;
         this.maxMemoryBytes = builder.maxMemoryBytes;
+        this.logLevel = builder.logLevel;
