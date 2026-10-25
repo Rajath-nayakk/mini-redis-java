@@ -194,3 +194,4 @@ class ServerIntegrationTest {
             assertEquals(-1, b, "Socket should receive EOF on server shutdown");
         } catch (SocketException expected) {
             // Socket closure by remote peer can raise SocketException on Windows
+        }
