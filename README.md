@@ -11,3 +11,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 - **Atomic Numeric Operations**: Thread-safe operations for INCR, DECR, INCRBY, DECRBY.
 - **Expiration (TTL)**: Monotonic lazy expiration and active background cleanup.
 - **Append-Only File (AOF)**: Configurable durability and crash-recovery replay.
+- **Educational Transactions**: MULTI, EXEC, and DISCARD sequence isolation.
