@@ -234,3 +234,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     private Pattern globToRegex(String glob) {
         StringBuilder sb = new StringBuilder("^");
+        for (int i = 0; i < glob.length(); i++) {
