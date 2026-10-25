@@ -24,3 +24,4 @@ class ServerIntegrationTest {
 
     @BeforeEach
     void setUp() throws Exception {
+        ServerConfig config = ServerConfig.builder()
