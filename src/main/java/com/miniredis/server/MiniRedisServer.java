@@ -92,3 +92,4 @@ public class MiniRedisServer {
                     onClientDisconnected(clientSocket);
                     try {
                         clientSocket.close();
+                    } catch (IOException ignored) {
