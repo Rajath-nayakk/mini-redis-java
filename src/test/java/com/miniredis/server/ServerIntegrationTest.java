@@ -21,3 +21,4 @@ class ServerIntegrationTest {
 
     private MiniRedisServer server;
     private int port;
+
