@@ -279,3 +279,4 @@ if [ -z "$actualDistributionDir" ]; then
     fi
   done
   set -f
+fi
