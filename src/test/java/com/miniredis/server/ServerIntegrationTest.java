@@ -150,3 +150,4 @@ class ServerIntegrationTest {
 
             // Connection should remain usable
             RespValue ping = sendAndReceive(socket, "*1\r\n$4\r\nPING\r\n");
+            assertNotNull(ping);
