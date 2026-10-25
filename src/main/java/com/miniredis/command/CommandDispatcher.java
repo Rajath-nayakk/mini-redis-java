@@ -67,3 +67,4 @@ public class CommandDispatcher {
         } catch (Exception e) {
             return RespValue.error("ERR internal server error: " + e.getMessage());
         }
+    }
