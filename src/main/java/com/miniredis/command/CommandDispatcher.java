@@ -157,3 +157,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleDecrBy(List<String> args) {
+        if (args.size() != 2) {
