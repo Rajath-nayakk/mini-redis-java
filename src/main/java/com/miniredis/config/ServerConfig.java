@@ -73,3 +73,4 @@ public final class ServerConfig {
         if (maxMemoryBytes < 0) {
             throw new IllegalArgumentException("Max memory cannot be negative: " + maxMemoryBytes);
         }
+        if (!"always".equalsIgnoreCase(aofSyncPolicy) && !"everysec".equalsIgnoreCase(aofSyncPolicy) && !"no".equalsIgnoreCase(aofSyncPolicy)) {
