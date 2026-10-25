@@ -150,3 +150,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     @Override
     public int del(List<String> keys) {
         if (keys == null || keys.isEmpty()) {
+            return 0;
