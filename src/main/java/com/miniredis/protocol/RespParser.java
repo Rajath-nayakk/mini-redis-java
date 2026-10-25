@@ -177,3 +177,4 @@ public class RespParser {
         int lenStrLen = crlfIndex - start;
         String countStr = new String(buffer, start, lenStrLen, StandardCharsets.US_ASCII);
         int arrayCount;
+        try {
