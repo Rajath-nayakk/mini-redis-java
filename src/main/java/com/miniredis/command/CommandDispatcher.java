@@ -42,3 +42,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR Protocol error: empty command name");
         }
 
+        List<String> args = tokens.subList(1, tokens.size());
