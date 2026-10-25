@@ -100,3 +100,4 @@ public class MiniRedisServer {
             if (serverSocket != null && !serverSocket.isClosed()) {
                 serverSocket.close();
             }
+        } catch (IOException ignored) {
