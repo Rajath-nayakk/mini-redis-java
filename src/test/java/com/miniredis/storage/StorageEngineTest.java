@@ -26,3 +26,4 @@ class StorageEngineTest {
         assertEquals("baz", engine.get("foo"));
     }
 
+    @Test
