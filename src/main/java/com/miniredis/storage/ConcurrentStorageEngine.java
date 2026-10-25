@@ -238,3 +238,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             char c = glob.charAt(i);
             switch (c) {
                 case '*':
+                    sb.append(".*");
