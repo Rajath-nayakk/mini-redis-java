@@ -169,3 +169,4 @@ else
 fi
 
 mkdir -p -- "${MAVEN_HOME%/*}"
+
