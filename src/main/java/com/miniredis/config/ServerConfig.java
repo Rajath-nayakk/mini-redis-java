@@ -27,3 +27,4 @@ public final class ServerConfig {
     private final int maxRequestSize;
     private final int timeoutMs;
     private final Path dataDir;
+    private final boolean persistenceEnabled;
