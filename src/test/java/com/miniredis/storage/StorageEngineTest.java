@@ -15,3 +15,4 @@ class StorageEngineTest {
     @BeforeEach
     void setUp() {
         engine = new ConcurrentStorageEngine();
+    }
