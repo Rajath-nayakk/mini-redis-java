@@ -64,3 +64,4 @@ public interface RespValue {
         }
     }
 
+    record RespError(String message) implements RespValue {
