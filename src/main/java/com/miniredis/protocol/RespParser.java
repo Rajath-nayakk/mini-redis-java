@@ -202,3 +202,4 @@ public class RespParser {
             RespValue elem = parseValue();
             if (elem == null) {
                 // Not all elements are available yet
+                return null;
