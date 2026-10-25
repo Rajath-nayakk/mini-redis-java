@@ -181,3 +181,4 @@ if ! command -v unzip >/dev/null; then
   distributionUrlName="${distributionUrl##*/}"
 fi
 
+# verbose opt
