@@ -143,3 +143,4 @@ class RespParserTest {
 
     @Test
     void testMalformedMissingCrlf() {
+        // Bulk string missing terminating CRLF
