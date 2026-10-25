@@ -25,3 +25,4 @@
 @REM   MVNW_REPOURL - repo url base for downloading maven distribution
 @REM   MVNW_USERNAME/MVNW_PASSWORD - user and password for downloading maven
 @REM   MVNW_VERBOSE - true: enable verbose log; others: silence the output
+@REM ----------------------------------------------------------------------------
