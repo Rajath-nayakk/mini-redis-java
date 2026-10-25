@@ -135,3 +135,4 @@ public final class ServerConfig {
         private long maxMemoryBytes = DEFAULT_MAX_MEMORY_BYTES;
         private String logLevel = DEFAULT_LOG_LEVEL;
 
+        public Builder host(String host) { this.host = host; return this; }
