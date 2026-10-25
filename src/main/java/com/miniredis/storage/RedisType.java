@@ -8,3 +8,4 @@ public enum RedisType {
     LIST("list"),
     SET("set"),
     HASH("hash"),
+    ZSET("zset"),
