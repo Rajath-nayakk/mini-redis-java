@@ -288,3 +288,4 @@ if [ -z "$actualDistributionDir" ]; then
 fi
 
 verbose "Found extracted Maven distribution directory: $actualDistributionDir"
+printf %s\\n "$distributionUrl" >"$TMP_DOWNLOAD_DIR/$actualDistributionDir/mvnw.url"
