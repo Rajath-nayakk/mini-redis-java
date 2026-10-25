@@ -100,3 +100,4 @@ public class CommandDispatcher {
         }
         String val = engine.get(args.get(0));
         return val == null ? RespValue.nullBulkString() : RespValue.bulkString(val);
+    }
