@@ -16,3 +16,4 @@ class RespEncoderTest {
     }
 
     @Test
+    void testEncodeError() {
