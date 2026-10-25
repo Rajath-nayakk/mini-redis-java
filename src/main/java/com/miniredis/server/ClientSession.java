@@ -28,3 +28,4 @@ public class ClientSession implements Runnable {
         this.dispatcher = dispatcher;
         this.server = server;
         this.parser = new RespParser(maxRequestSize, RespParser.DEFAULT_MAX_ARRAY_LENGTH);
+    }
