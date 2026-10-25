@@ -130,3 +130,4 @@ class RespParserTest {
     }
 
     @Test
+    void testMultipleCommandsInSingleBuffer() {
