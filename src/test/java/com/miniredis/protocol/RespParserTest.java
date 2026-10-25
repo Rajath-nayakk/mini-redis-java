@@ -162,3 +162,4 @@ class RespParserTest {
     void testExceedingMaxLengths() {
         RespParser limitedParser = new RespParser(10, 5);
         limitedParser.append("$20\r\n01234567890123456789\r\n".getBytes(StandardCharsets.UTF_8));
+        assertThrows(ProtocolException.class, () -> limitedParser.parseNext());
