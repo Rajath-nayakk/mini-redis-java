@@ -29,3 +29,4 @@ mvn exec:java -Dexec.mainClass="com.miniredis.Main"
 ```
 
 Or with custom arguments:
+```bash
