@@ -121,3 +121,4 @@ public interface RespValue {
         public boolean isNull() {
             return elements == null;
         }
+
