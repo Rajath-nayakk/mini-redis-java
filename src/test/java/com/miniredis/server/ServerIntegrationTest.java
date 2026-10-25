@@ -182,3 +182,4 @@ class ServerIntegrationTest {
 
         server.stop();
         assertFalse(server.isRunning());
+
