@@ -61,3 +61,4 @@ class RespParserTest {
         assertEquals(0, bs.data().length);
     }
 
+    @Test
