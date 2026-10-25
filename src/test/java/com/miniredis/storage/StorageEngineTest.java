@@ -70,3 +70,4 @@ class StorageEngineTest {
                         engine.incr("concurrent-counter");
                     }
                 } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
