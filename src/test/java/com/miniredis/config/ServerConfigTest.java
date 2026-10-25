@@ -81,3 +81,4 @@ class ServerConfigTest {
         String[] args = new String[]{
                 "--host", "10.0.0.1",
                 "--port", "7000",
+                "--max-clients", "250",
