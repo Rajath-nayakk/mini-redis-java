@@ -8,3 +8,4 @@ import static org.junit.jupiter.api.Assertions.*;
 class ServerConfigTest {
 
     @Test
+    void testDefaultConfig() {
