@@ -39,3 +39,4 @@ public interface RespValue {
     }
 
     static RespBulkString nullBulkString() {
+        return RespBulkString.NULL;
