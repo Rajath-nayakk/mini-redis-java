@@ -90,3 +90,4 @@ class RespParserTest {
         parser.append(raw.getBytes(StandardCharsets.UTF_8));
 
         RespValue.RespArray array = (RespValue.RespArray) parser.parseNext();
+        assertNotNull(array);
