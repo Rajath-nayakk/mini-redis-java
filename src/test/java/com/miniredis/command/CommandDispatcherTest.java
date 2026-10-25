@@ -100,3 +100,4 @@ class CommandDispatcherTest {
         assertEquals(2L, ((RespValue.RespInteger) dispatcher.dispatch(cmd("DECRBY", "num", "4"))).value());
     }
 
+    @Test
