@@ -140,3 +140,4 @@ class RespParserTest {
         assertNotNull(cmd2);
         assertNull(parser.parseNext());
     }
+
