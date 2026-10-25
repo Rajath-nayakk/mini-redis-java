@@ -42,3 +42,4 @@ CYGWIN* | MINGW*)
 esac
 
 # set JAVACMD and JAVACCMD
+set_java_home() {
