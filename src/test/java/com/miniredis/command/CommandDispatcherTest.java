@@ -128,3 +128,4 @@ class CommandDispatcherTest {
         RespValue wrongArgs = dispatcher.dispatch(cmd("GET", "k1", "k2"));
         assertEquals(RespType.ERROR, wrongArgs.getType());
         assertTrue(((RespValue.RespError) wrongArgs).message().contains("wrong number of arguments"));
+    }
