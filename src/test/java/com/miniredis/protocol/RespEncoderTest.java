@@ -70,3 +70,4 @@ class RespEncoderTest {
         RespParser parser = new RespParser();
         parser.append(encoded);
         RespValue decoded = parser.parseNext();
+
