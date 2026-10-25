@@ -135,3 +135,4 @@ public class MiniRedisServer {
         activeSockets.clear();
         activeClients.set(0);
 
+        if (clientExecutor != null) {
