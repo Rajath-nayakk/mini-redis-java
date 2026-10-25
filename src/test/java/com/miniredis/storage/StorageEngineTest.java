@@ -83,3 +83,4 @@ class StorageEngineTest {
         assertTrue(completed, "All increment threads should finish within timeout");
 
         long expected = (long) threads * incrementsPerThread;
+        assertEquals(String.valueOf(expected), engine.get("concurrent-counter"),
