@@ -242,3 +242,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     break;
                 case '?':
                     sb.append(".");
+                    break;
