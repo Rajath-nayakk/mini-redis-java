@@ -33,3 +33,4 @@ public final class RespEncoder {
     }
 
     public static void encode(RespValue value, OutputStream out) throws IOException {
+        if (value == null) {
