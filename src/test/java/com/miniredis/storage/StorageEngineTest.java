@@ -156,3 +156,4 @@ class StorageEngineTest {
         assertTrue(userKeys.contains("user:3:profile"));
 
         Set<String> singleDigitUsers = engine.keys("user:?");
+        assertEquals(2, singleDigitUsers.size());
