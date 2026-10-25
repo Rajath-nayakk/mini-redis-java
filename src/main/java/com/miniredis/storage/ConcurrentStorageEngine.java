@@ -34,3 +34,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     @Override
     public String getSet(String key, String value) {
         Objects.requireNonNull(key, "Key cannot be null");
+        Objects.requireNonNull(value, "Value cannot be null");
