@@ -36,3 +36,4 @@ public final class Main {
         } catch (Exception e) {
             System.err.println("Fatal error: " + e.getMessage());
             e.printStackTrace();
+            System.exit(1);
