@@ -76,3 +76,4 @@ class RespParserTest {
         byte[] bytes = unicode.getBytes(StandardCharsets.UTF_8);
         String header = "$" + bytes.length + "\r\n";
         parser.append(header.getBytes(StandardCharsets.US_ASCII));
+        parser.append(bytes);
