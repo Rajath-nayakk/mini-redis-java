@@ -27,3 +27,4 @@ class ServerConfigTest {
     void testCustomBuilder() {
         ServerConfig config = ServerConfig.builder()
                 .host("192.168.1.10")
+                .port(6380)
