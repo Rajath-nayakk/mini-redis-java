@@ -80,3 +80,4 @@ class RespParserTest {
         parser.append("\r\n".getBytes(StandardCharsets.US_ASCII));
 
         RespValue.RespBulkString bs = (RespValue.RespBulkString) parser.parseNext();
+        assertNotNull(bs);
