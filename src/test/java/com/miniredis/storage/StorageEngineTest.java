@@ -87,3 +87,4 @@ class StorageEngineTest {
                 "Final counter value must equal total increments with zero lost updates");
     }
 
+    @Test
