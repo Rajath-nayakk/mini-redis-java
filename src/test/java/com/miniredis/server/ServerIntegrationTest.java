@@ -36,3 +36,4 @@ class ServerIntegrationTest {
         assertTrue(port > 0, "Server should bind to a valid dynamic port");
     }
 
+    @AfterEach
