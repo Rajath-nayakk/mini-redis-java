@@ -91,3 +91,4 @@ public class RespParser {
         int start = readPos + 1;
         int len = crlfIndex - start;
         String str = new String(buffer, start, len, StandardCharsets.UTF_8);
+        readPos = crlfIndex + 2;
