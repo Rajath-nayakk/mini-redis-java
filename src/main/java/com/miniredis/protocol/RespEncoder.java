@@ -45,3 +45,4 @@ public final class RespEncoder {
                 out.write(CRLF);
             }
             case ERROR -> {
+                RespValue.RespError err = (RespValue.RespError) value;
