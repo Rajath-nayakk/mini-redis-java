@@ -134,3 +134,4 @@ public class CommandDispatcher {
         return RespValue.integer(result);
     }
 
+    private RespValue handleIncrBy(List<String> args) {
