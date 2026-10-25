@@ -26,3 +26,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             return null;
         }
         if (!(val instanceof StringValue stringVal)) {
+            throw new WrongTypeException();
