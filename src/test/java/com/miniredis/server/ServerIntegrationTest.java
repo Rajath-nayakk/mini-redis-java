@@ -132,3 +132,4 @@ class ServerIntegrationTest {
         Socket s = connect();
         for (int i = 0; i < 50 && server.getActiveClientCount() == 0; i++) {
             Thread.sleep(20);
+        }
