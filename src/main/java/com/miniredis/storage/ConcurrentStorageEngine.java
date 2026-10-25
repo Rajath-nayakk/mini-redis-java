@@ -205,3 +205,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         }
         Pattern pattern = globToRegex(globPattern);
         Set<String> matched = new HashSet<>();
+        for (String key : store.keySet()) {
