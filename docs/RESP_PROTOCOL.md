@@ -10,3 +10,4 @@ All RESP messages are framed by a type identifier prefix byte and terminated wit
 | `+` | Simple String | `+OK\r\n` | Single-line ASCII/UTF-8 status reply (cannot contain CRLF) |
 | `-` | Error | `-ERR message\r\n` | Single-line error reply |
 | `:` | Integer | `:1000\r\n` | 64-bit signed integer |
+| `$` | Bulk String | `$5\r\nhello\r\n` | Binary-safe payload with byte-length declaration |
