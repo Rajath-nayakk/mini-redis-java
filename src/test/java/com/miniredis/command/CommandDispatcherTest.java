@@ -40,3 +40,4 @@ class CommandDispatcherTest {
         RespValue r3 = dispatcher.dispatch(cmd("PING", "arg1", "arg2"));
         assertEquals(RespType.ERROR, r3.getType());
     }
+
