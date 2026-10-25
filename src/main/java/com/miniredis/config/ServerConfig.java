@@ -31,3 +31,4 @@ public final class ServerConfig {
     private final String aofSyncPolicy;
     private final long cleanupIntervalMs;
     private final long maxMemoryBytes;
+    private final String logLevel;
