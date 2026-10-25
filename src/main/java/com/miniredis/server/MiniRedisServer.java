@@ -138,3 +138,4 @@ public class MiniRedisServer {
         if (clientExecutor != null) {
             clientExecutor.shutdownNow();
             try {
+                clientExecutor.awaitTermination(2, TimeUnit.SECONDS);
