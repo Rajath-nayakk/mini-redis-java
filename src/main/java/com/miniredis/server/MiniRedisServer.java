@@ -73,3 +73,4 @@ public class MiniRedisServer {
                 activeSockets.add(clientSocket);
 
                 ClientSession session = new ClientSession(clientSocket, dispatcher, this, config.getMaxRequestSize());
+                clientExecutor.submit(session);
