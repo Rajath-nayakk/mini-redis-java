@@ -44,3 +44,4 @@
 - Implemented RespType enum (SIMPLE_STRING, ERROR, INTEGER, BULK_STRING, ARRAY).
 - Implemented RespValue immutable records hierarchy: RespSimpleString, RespError, RespInteger, RespBulkString, RespArray.
 - Implemented ProtocolException domain exception for wire-level violations.
+- Implemented RespEncoder for serializing typed RESP values into RESP2 byte format.
