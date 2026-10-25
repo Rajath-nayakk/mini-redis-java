@@ -80,3 +80,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleEcho(List<String> args) {
+        if (args.size() != 1) {
