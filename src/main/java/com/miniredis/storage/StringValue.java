@@ -31,3 +31,4 @@ public final class StringValue implements RedisValue {
     @Override
     public RedisType getType() {
         return RedisType.STRING;
+    }
