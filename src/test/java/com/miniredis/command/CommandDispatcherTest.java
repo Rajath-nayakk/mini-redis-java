@@ -93,3 +93,4 @@ class CommandDispatcherTest {
 
     @Test
     void testIncrAndDecr() {
+        assertEquals(1L, ((RespValue.RespInteger) dispatcher.dispatch(cmd("INCR", "num"))).value());
