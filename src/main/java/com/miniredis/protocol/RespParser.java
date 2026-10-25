@@ -28,3 +28,4 @@ public class RespParser {
         this.maxArrayLength = maxArrayLength;
     }
 
+    public void append(byte[] data) {
