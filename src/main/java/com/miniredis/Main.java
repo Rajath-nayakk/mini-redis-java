@@ -28,3 +28,4 @@ public final class Main {
     private static void printBanner(ServerConfig config) {
         System.out.println("                _       _ _____          _ _       ");
         System.out.println("  /\\/\\   ___   (_)     | |  __ \\        | (_)      ");
+        System.out.println(" /    \\ / _ \\  | |     | | |__) |___  __| |_ ___   ");
