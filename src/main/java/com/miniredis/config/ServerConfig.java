@@ -65,3 +65,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Timeout cannot be negative: " + timeoutMs);
         }
         if (dataDir == null) {
+            throw new IllegalArgumentException("Data directory cannot be null");
