@@ -27,3 +27,4 @@ public class MiniRedisServer {
 
     private ServerSocket serverSocket;
     private ExecutorService clientExecutor;
+    private Thread listenerThread;
