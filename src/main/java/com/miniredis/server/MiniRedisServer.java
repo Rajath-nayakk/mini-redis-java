@@ -109,3 +109,4 @@ public class MiniRedisServer {
             activeSockets.remove(socket);
         }
         activeClients.decrementAndGet();
+    }
