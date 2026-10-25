@@ -110,3 +110,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testExistsAndDel() {
