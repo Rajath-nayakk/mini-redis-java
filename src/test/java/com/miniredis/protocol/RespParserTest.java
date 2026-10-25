@@ -94,3 +94,4 @@ class RespParserTest {
         assertEquals(2, array.elements().size());
         assertEquals("GET", ((RespValue.RespBulkString) array.elements().get(0)).asUtf8String());
         assertEquals("user", ((RespValue.RespBulkString) array.elements().get(1)).asUtf8String());
+    }
