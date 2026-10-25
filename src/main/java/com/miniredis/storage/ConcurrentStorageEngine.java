@@ -55,3 +55,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             if (old == null) {
                 return new StringValue(value);
             }
+            if (!(old instanceof StringValue strOld)) {
