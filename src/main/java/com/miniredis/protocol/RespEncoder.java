@@ -53,3 +53,4 @@ public final class RespEncoder {
             case INTEGER -> {
                 RespValue.RespInteger integer = (RespValue.RespInteger) value;
                 out.write(PREFIX_INTEGER);
+                out.write(Long.toString(integer.value()).getBytes(StandardCharsets.US_ASCII));
