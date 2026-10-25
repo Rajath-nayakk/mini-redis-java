@@ -4,3 +4,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 
 > **Disclaimer:** MiniRedis is an educational project and is not affiliated with or endorsed by Redis Ltd.
 
+## Features & Architectural Goals
