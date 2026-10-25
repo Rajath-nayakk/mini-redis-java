@@ -27,3 +27,4 @@ public interface StorageEngine {
     Set<String> keys(String globPattern);
     long dbsize();
     void flushDb();
+    long approximateMemoryBytes();
