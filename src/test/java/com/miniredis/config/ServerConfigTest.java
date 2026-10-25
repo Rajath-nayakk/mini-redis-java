@@ -33,3 +33,4 @@ class ServerConfigTest {
                 .timeoutMs(5000)
                 .dataDir(Paths.get("/custom/data"))
                 .persistenceEnabled(true)
+                .aofSyncPolicy("always")
