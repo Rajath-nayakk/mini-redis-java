@@ -136,3 +136,4 @@ public class RespParser {
         try {
             bulkLength = Integer.parseInt(lenStr);
         } catch (NumberFormatException e) {
+            throw new ProtocolException("Invalid bulk string length: " + lenStr);
