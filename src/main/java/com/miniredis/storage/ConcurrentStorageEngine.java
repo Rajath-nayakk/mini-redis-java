@@ -248,3 +248,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     if (closing != -1) {
                         sb.append(glob, i, closing + 1);
                         i = closing;
+                    } else {
