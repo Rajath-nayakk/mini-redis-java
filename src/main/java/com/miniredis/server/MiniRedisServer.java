@@ -35,3 +35,4 @@ public class MiniRedisServer {
         this.config = Objects.requireNonNull(config, "ServerConfig cannot be null");
         this.dispatcher = Objects.requireNonNull(dispatcher, "CommandDispatcher cannot be null");
     }
+
