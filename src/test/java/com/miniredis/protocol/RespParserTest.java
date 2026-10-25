@@ -119,3 +119,4 @@ class RespParserTest {
             assertNull(parser.parseNext(), "Should not parse until entire frame arrives");
         }
 
+        // Send last byte
