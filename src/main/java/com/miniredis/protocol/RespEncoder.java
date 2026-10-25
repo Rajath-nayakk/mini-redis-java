@@ -38,3 +38,4 @@ public final class RespEncoder {
             return;
         }
         switch (value.getType()) {
+            case SIMPLE_STRING -> {
