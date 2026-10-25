@@ -7,3 +7,4 @@ public enum RedisType {
     STRING("string"),
     LIST("list"),
     SET("set"),
+    HASH("hash"),
