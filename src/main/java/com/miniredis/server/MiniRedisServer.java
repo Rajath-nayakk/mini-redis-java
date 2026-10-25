@@ -76,3 +76,4 @@ public class MiniRedisServer {
                 clientExecutor.submit(session);
 
             } catch (IOException e) {
+                if (!running) {
