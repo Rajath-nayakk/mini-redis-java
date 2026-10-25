@@ -23,3 +23,4 @@ public interface StorageEngine {
     int del(List<String> keys);
     List<String> mget(List<String> keys);
     void mset(Map<String, String> entries);
+    RedisType type(String key);
