@@ -125,3 +125,4 @@ public class RespParser {
     }
 
     private RespValue.RespBulkString parseBulkString() {
+        int crlfIndex = findCrlf(readPos + 1);
