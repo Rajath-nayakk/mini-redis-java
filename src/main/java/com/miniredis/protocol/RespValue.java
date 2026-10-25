@@ -24,3 +24,4 @@ public interface RespValue {
 
     static RespError error(String message) {
         return new RespError(message);
+    }
