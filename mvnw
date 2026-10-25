@@ -68,3 +68,4 @@ set_java_home() {
     JAVACCMD="$(
       'set' +e
       'unset' -f command 2>/dev/null
+      'command' -v javac
