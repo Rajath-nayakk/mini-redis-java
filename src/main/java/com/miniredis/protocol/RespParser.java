@@ -82,3 +82,4 @@ public class RespParser {
                 throw new ProtocolException("Unexpected RESP prefix: '" + (char) prefix + "' (0x" + Integer.toHexString(prefix & 0xFF) + ")");
         }
     }
+
