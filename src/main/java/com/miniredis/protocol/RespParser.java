@@ -118,3 +118,4 @@ public class RespParser {
         readPos = crlfIndex + 2;
         try {
             long val = Long.parseLong(str);
+            return new RespValue.RespInteger(val);
