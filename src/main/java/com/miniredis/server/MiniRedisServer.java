@@ -120,3 +120,4 @@ public class MiniRedisServer {
                 clientExecutor.awaitTermination(3, TimeUnit.SECONDS);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
+            }
