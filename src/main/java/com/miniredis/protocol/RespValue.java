@@ -56,3 +56,4 @@ public interface RespValue {
             if (value.indexOf('\r') != -1 || value.indexOf('\n') != -1) {
                 throw new IllegalArgumentException("Simple string cannot contain CRLF");
             }
+        }
