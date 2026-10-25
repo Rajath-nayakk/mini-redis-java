@@ -74,3 +74,4 @@ public class MiniRedisServer {
                 }
 
                 if (activeClients.get() >= config.getMaxClients()) {
+                    try (clientSocket; OutputStream out = clientSocket.getOutputStream()) {
