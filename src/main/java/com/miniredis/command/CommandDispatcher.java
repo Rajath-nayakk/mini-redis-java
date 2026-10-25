@@ -118,3 +118,4 @@ public class CommandDispatcher {
         return RespValue.integer(count);
     }
 
+    private RespValue handleDbsize(List<String> args) {
