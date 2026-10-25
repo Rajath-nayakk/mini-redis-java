@@ -39,3 +39,4 @@ public class ClientSession implements Runnable {
             byte[] buffer = new byte[8192];
             int bytesRead;
 
+            while (!socket.isClosed() && (bytesRead = in.read(buffer)) != -1) {
