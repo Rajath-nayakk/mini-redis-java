@@ -141,3 +141,4 @@ class ServerIntegrationTest {
         }
         assertEquals(0, server.getActiveClientCount());
     }
+
