@@ -25,3 +25,4 @@ class RespParserTest {
         assertEquals("OK", ((RespValue.RespSimpleString) val).value());
         assertNull(parser.parseNext());
     }
+
