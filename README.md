@@ -43,3 +43,4 @@ Once started, you can connect using netcat or redis-cli:
 ```bash
 nc 127.0.0.1 6379
 ```
+```bash
