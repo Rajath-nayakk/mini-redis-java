@@ -118,3 +118,4 @@ public final class ServerConfig {
     public Path getDataDir() { return dataDir; }
     public boolean isPersistenceEnabled() { return persistenceEnabled; }
     public String getAofSyncPolicy() { return aofSyncPolicy; }
+    public long getCleanupIntervalMs() { return cleanupIntervalMs; }
