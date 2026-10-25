@@ -143,3 +143,4 @@ public class RespParser {
             readPos = crlfIndex + 2;
             return RespValue.RespBulkString.NULL;
         }
+        if (bulkLength < -1) {
