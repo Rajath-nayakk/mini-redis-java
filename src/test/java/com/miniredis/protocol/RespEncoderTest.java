@@ -49,3 +49,4 @@ class RespEncoderTest {
         ));
         byte[] encoded = RespEncoder.encode(array);
         assertEquals("*3\r\n$3\r\nSET\r\n$1\r\nk\r\n$1\r\nv\r\n", new String(encoded, StandardCharsets.UTF_8));
+    }
