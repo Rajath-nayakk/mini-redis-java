@@ -149,3 +149,4 @@ class ServerIntegrationTest {
             assertNotNull(err);
             assertEquals(RespType.ERROR, err.getType());
             assertTrue(((RespValue.RespError) err).message().contains("unknown command"));
+
