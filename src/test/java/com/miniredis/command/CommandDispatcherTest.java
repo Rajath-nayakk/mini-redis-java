@@ -60,3 +60,4 @@ class CommandDispatcherTest {
         RespValue getResp = dispatcher.dispatch(cmd("GET", "mykey"));
         assertEquals(RespType.BULK_STRING, getResp.getType());
         assertEquals("myval", ((RespValue.RespBulkString) getResp).asUtf8String());
+
