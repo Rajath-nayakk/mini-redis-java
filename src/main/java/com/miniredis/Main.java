@@ -17,3 +17,4 @@ public final class Main {
             System.out.println("[MiniRedis] Ready for client connections (networking scheduled for Phase 5).");
         } catch (IllegalArgumentException e) {
             System.err.println("Configuration error: " + e.getMessage());
+            System.exit(1);
