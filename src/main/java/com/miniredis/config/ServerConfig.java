@@ -133,3 +133,4 @@ public final class ServerConfig {
         private String aofSyncPolicy = DEFAULT_AOF_SYNC_POLICY;
         private long cleanupIntervalMs = DEFAULT_CLEANUP_INTERVAL_MS;
         private long maxMemoryBytes = DEFAULT_MAX_MEMORY_BYTES;
+        private String logLevel = DEFAULT_LOG_LEVEL;
