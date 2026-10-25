@@ -34,3 +34,4 @@ class ServerIntegrationTest {
         server.start();
         port = server.getPort();
         assertTrue(port > 0, "Server should bind to a valid dynamic port");
+    }
