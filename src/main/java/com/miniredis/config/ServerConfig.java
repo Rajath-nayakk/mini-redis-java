@@ -38,3 +38,4 @@ public final class ServerConfig {
         this.port = builder.port;
         this.maxClients = builder.maxClients;
         this.maxRequestSize = builder.maxRequestSize;
+        this.timeoutMs = builder.timeoutMs;
