@@ -49,3 +49,4 @@ public class RespParser {
         }
         int savedReadPos = readPos;
         try {
+            RespValue value = parseValue();
