@@ -203,3 +203,4 @@ public class RespParser {
             if (elem == null) {
                 // Not all elements are available yet
                 return null;
+            }
