@@ -171,3 +171,4 @@ class ServerIntegrationTest {
             assertTrue(response.startsWith("-ERR Protocol error"));
         }
 
+        // Verify server is healthy and accepts new clients
