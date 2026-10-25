@@ -22,3 +22,4 @@ public interface RespValue {
         return new RespSimpleString(value);
     }
 
+    static RespError error(String message) {
