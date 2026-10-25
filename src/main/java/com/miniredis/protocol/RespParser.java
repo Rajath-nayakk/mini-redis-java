@@ -68,3 +68,4 @@ public class RespParser {
         }
         byte prefix = buffer[readPos];
         switch (prefix) {
+            case '+':
