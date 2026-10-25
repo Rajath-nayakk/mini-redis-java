@@ -50,3 +50,4 @@ if ($env:MVNW_VERBOSE -eq "true") {
   $VerbosePreference = "Continue"
 }
 
+# calculate distributionUrl, requires .mvn/wrapper/maven-wrapper.properties
