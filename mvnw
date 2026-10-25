@@ -41,3 +41,4 @@ CYGWIN* | MINGW*)
   ;;
 esac
 
+# set JAVACMD and JAVACCMD
