@@ -44,3 +44,4 @@ public class MiniRedisServer {
         serverSocket.setReuseAddress(true);
         serverSocket.bind(new InetSocketAddress(config.getHost(), config.getPort()));
 
+        clientExecutor = Executors.newFixedThreadPool(config.getMaxClients());
