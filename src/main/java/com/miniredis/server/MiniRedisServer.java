@@ -93,3 +93,4 @@ public class MiniRedisServer {
     public synchronized void stop() {
         if (!running) {
             return;
+        }
