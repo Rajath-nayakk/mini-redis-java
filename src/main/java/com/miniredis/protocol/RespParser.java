@@ -225,3 +225,4 @@ public class RespParser {
     private void ensureCapacity(int needed) {
         if (buffer.length - writePos < needed) {
             int unread = writePos - readPos;
+            if (readPos > 0) {
