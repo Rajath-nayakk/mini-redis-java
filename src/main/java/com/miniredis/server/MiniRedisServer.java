@@ -5,3 +5,4 @@ import com.miniredis.config.ServerConfig;
 import com.miniredis.protocol.RespEncoder;
 import com.miniredis.protocol.RespValue;
 
+import java.io.IOException;
