@@ -239,3 +239,4 @@ public class RespParser {
         }
     }
 
+    private void compactIfNeeded() {
