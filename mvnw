@@ -160,3 +160,4 @@ case "${distributionUrl-}" in
 *) die "distributionUrl is not valid, must match *-bin.zip or maven-mvnd-*.zip, but found '${distributionUrl-}'" ;;
 esac
 
+# prepare tmp dir
