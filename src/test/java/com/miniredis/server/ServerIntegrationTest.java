@@ -132,3 +132,4 @@ class ServerIntegrationTest {
 
         s.close();
         // Allow session cleanup
+        Thread.sleep(100);
