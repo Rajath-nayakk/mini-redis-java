@@ -24,3 +24,4 @@ data/
 # Secrets and environment
 .env
 .env.*
+*.pem
