@@ -164,3 +164,4 @@ class RespParserTest {
         limitedParser.append("$20\r\n01234567890123456789\r\n".getBytes(StandardCharsets.UTF_8));
         assertThrows(ProtocolException.class, () -> limitedParser.parseNext());
     }
+
