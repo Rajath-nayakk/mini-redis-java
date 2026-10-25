@@ -42,3 +42,4 @@ public interface RespValue {
         return RespBulkString.NULL;
     }
 
+    static RespArray array(List<RespValue> elements) {
