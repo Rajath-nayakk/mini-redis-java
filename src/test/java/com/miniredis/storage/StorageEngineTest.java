@@ -45,3 +45,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testIncrAndDecr() {
