@@ -165,3 +165,4 @@ public class RespParser {
         byte[] payload = new byte[bulkLength];
         System.arraycopy(buffer, payloadStart, payload, 0, bulkLength);
         readPos = payloadStart + requiredBytes;
+        return new RespValue.RespBulkString(payload);
