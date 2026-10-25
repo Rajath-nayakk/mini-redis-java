@@ -19,3 +19,4 @@ public final class RespEncoder {
     private static final byte[] NULL_BULK_STRING = "$-1\r\n".getBytes(StandardCharsets.US_ASCII);
     private static final byte[] NULL_ARRAY = "*-1\r\n".getBytes(StandardCharsets.US_ASCII);
 
+    private RespEncoder() {
