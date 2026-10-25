@@ -64,3 +64,4 @@ class CommandDispatcherTest {
         RespValue missResp = dispatcher.dispatch(cmd("GET", "nonexistent"));
         assertEquals(RespType.BULK_STRING, missResp.getType());
         assertTrue(((RespValue.RespBulkString) missResp).isNull());
+    }
