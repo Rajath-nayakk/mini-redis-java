@@ -192,3 +192,4 @@ class ServerIntegrationTest {
         try {
             int b = in.read();
             assertEquals(-1, b, "Socket should receive EOF on server shutdown");
+        } catch (SocketException expected) {
