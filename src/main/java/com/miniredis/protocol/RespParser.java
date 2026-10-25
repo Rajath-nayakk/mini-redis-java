@@ -186,3 +186,4 @@ public class RespParser {
         if (arrayCount == -1) {
             readPos = crlfIndex + 2;
             return RespValue.RespArray.NULL;
+        }
