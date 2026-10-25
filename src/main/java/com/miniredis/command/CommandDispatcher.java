@@ -27,3 +27,4 @@ public class CommandDispatcher {
         }
 
         List<String> tokens = new ArrayList<>(elements.size());
+        for (RespValue elem : elements) {
