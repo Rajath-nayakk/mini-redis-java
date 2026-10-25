@@ -107,3 +107,4 @@ public final class ServerConfig {
                 builder.persistenceEnabled(Boolean.parseBoolean(args[++i]));
             }
         }
+        return builder.build();
