@@ -129,3 +129,4 @@ class RespParserTest {
         assertEquals("value", ((RespValue.RespBulkString) cmd.elements().get(2)).asUtf8String());
     }
 
+    @Test
