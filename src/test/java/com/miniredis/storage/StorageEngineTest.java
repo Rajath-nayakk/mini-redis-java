@@ -184,3 +184,4 @@ class StorageEngineTest {
 
     @Test
     void testMemoryEstimation() {
+        assertEquals(0L, engine.approximateMemoryBytes());
