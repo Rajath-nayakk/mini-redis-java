@@ -277,3 +277,4 @@ if [ -z "$actualDistributionDir" ]; then
         break
       fi
     fi
+  done
