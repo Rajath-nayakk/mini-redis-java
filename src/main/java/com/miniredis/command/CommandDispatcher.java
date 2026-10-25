@@ -98,3 +98,4 @@ public class CommandDispatcher {
         if (args.size() != 1) {
             return RespValue.error("ERR wrong number of arguments for 'get' command");
         }
+        String val = engine.get(args.get(0));
