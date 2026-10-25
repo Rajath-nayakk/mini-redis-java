@@ -81,3 +81,4 @@ class CommandDispatcherTest {
 
         RespValue ex2 = dispatcher.dispatch(cmd("EXISTS", "k1"));
         assertEquals(0L, ((RespValue.RespInteger) ex2).value());
+    }
