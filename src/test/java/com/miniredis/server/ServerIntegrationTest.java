@@ -88,3 +88,4 @@ class ServerIntegrationTest {
             assertEquals("OK", ((RespValue.RespSimpleString) setResp).value());
 
             RespValue getResp = sendAndReceive(socket, "*2\r\n$3\r\nGET\r\n$4\r\ncity\r\n");
+            assertNotNull(getResp);
