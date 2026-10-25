@@ -119,3 +119,4 @@ public final class ServerConfig {
     public boolean isPersistenceEnabled() { return persistenceEnabled; }
     public String getAofSyncPolicy() { return aofSyncPolicy; }
     public long getCleanupIntervalMs() { return cleanupIntervalMs; }
+    public long getMaxMemoryBytes() { return maxMemoryBytes; }
