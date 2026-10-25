@@ -225,3 +225,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public long approximateMemoryBytes() {
+        long total = 0L;
