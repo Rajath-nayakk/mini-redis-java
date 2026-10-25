@@ -51,3 +51,4 @@ public class ClientSession implements Runnable {
                         out.flush();
                     }
                 } catch (ProtocolException e) {
+                    byte[] errBytes = RespEncoder.encode(RespValue.error("ERR Protocol error: " + e.getMessage()));
