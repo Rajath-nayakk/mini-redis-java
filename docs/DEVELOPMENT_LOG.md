@@ -36,3 +36,4 @@
 - Implemented StorageEngine interface and ConcurrentStorageEngine backed by ConcurrentHashMap.
 - Implemented atomic numeric operations: incr, incrBy, decr, decrBy using atomic computation with overflow checking.
 - Implemented string commands: get, set, getSet, append, strlen, exists, del, mget, mset, keys, type, dbsize, flushDb.
+- Created test suite StorageEngineTest testing missing keys, 50-thread concurrent increments (zero lost updates), invalid integers, overflow, underflow, pattern matching, multi-key operations, and flush.
