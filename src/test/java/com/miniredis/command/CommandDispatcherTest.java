@@ -111,3 +111,4 @@ class CommandDispatcherTest {
         assertEquals(RespType.ERROR, err2.getType());
     }
 
+    @Test
