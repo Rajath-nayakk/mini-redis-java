@@ -105,3 +105,4 @@ if (Test-Path -Path "$MAVEN_HOME" -PathType Container) {
   exit $?
 }
 
+if (! $distributionUrlNameMain -or ($distributionUrlName -eq $distributionUrlNameMain)) {
