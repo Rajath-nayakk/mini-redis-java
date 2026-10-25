@@ -73,3 +73,4 @@ class StorageEngineTest {
                     Thread.currentThread().interrupt();
                 } finally {
                     doneLatch.countDown();
+                }
