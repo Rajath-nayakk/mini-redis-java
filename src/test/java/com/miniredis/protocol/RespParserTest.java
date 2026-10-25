@@ -14,3 +14,4 @@ class RespParserTest {
     @BeforeEach
     void setUp() {
         parser = new RespParser();
+    }
