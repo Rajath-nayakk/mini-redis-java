@@ -128,3 +128,4 @@ class RespParserTest {
         assertEquals("key", ((RespValue.RespBulkString) cmd.elements().get(1)).asUtf8String());
         assertEquals("value", ((RespValue.RespBulkString) cmd.elements().get(2)).asUtf8String());
     }
+
