@@ -131,3 +131,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     public int exists(List<String> keys) {
         if (keys == null || keys.isEmpty()) {
             return 0;
+        }
