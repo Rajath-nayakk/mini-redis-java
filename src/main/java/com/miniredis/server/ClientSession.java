@@ -64,3 +64,4 @@ public class ClientSession implements Runnable {
         } finally {
             server.onClientDisconnected(socket);
         }
+    }
