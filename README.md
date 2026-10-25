@@ -39,3 +39,4 @@ mvn test
 ```
 
 ## Connecting to MiniRedis
+Once started, you can connect using netcat or redis-cli:
