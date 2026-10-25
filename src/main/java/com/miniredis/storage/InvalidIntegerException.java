@@ -10,3 +10,4 @@ public class InvalidIntegerException extends StorageException {
         super(DEFAULT_MESSAGE);
     }
 
+    public InvalidIntegerException(String message) {
