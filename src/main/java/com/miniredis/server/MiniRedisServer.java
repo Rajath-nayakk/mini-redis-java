@@ -118,3 +118,4 @@ public class MiniRedisServer {
         running = false;
 
         try {
+            if (serverSocket != null && !serverSocket.isClosed()) {
