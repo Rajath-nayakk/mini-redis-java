@@ -102,3 +102,4 @@ class RespParserTest {
         RespValue.RespArray empty = (RespValue.RespArray) parser.parseNext();
         assertNotNull(empty);
         assertFalse(empty.isNull());
+        assertTrue(empty.elements().isEmpty());
