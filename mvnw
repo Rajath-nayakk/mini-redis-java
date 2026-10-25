@@ -59,3 +59,4 @@ set_java_home() {
         return 1
       fi
     fi
+  else
