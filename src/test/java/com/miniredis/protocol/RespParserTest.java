@@ -125,3 +125,4 @@ class RespParserTest {
         assertNotNull(cmd, "Should complete when final byte arrives");
         assertEquals(3, cmd.elements().size());
         assertEquals("SET", ((RespValue.RespBulkString) cmd.elements().get(0)).asUtf8String());
+        assertEquals("key", ((RespValue.RespBulkString) cmd.elements().get(1)).asUtf8String());
