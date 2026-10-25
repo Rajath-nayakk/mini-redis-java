@@ -239,3 +239,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             switch (c) {
                 case '*':
                     sb.append(".*");
+                    break;
