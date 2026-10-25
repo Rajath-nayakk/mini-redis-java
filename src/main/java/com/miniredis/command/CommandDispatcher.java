@@ -102,3 +102,4 @@ public class CommandDispatcher {
         return val == null ? RespValue.nullBulkString() : RespValue.bulkString(val);
     }
 
+    private RespValue handleDel(List<String> args) {
