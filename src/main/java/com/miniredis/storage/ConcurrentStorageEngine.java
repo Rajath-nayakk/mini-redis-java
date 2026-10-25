@@ -245,3 +245,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     break;
                 case '[':
                     int closing = glob.indexOf(']', i + 1);
+                    if (closing != -1) {
