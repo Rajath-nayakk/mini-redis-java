@@ -44,3 +44,4 @@ public class CommandDispatcher {
 
         List<String> args = tokens.subList(1, tokens.size());
         String upperCommand = commandName.toUpperCase(Locale.ROOT);
+
