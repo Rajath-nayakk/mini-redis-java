@@ -161,3 +161,4 @@ if ((Test-Path -Path $expectedPath -PathType Container) -and (Test-Path -Path $e
 
 # If not found, search for any directory with the Maven executable (for snapshots)
 if (!$actualDistributionDir) {
+  Get-ChildItem -Path "$TMP_DOWNLOAD_DIR" -Directory | ForEach-Object {
