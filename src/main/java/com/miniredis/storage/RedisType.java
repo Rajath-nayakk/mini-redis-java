@@ -17,3 +17,4 @@ public enum RedisType {
         this.code = code;
     }
 
+    public String getCode() {
