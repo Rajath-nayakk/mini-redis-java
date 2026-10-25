@@ -272,3 +272,4 @@ if [ -z "$actualDistributionDir" ]; then
   set +f
   for dir in "$TMP_DOWNLOAD_DIR"/*; do
     if [ -d "$dir" ]; then
+      if [ -f "$dir/bin/$MVN_CMD" ]; then
