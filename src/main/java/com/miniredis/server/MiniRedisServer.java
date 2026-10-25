@@ -115,3 +115,4 @@ public class MiniRedisServer {
         activeClients.set(0);
 
         if (clientExecutor != null) {
+            clientExecutor.shutdownNow();
