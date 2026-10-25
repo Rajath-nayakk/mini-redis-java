@@ -96,3 +96,4 @@ public interface RespValue {
             return data == null ? null : new String(data, StandardCharsets.UTF_8);
         }
 
+        @Override
