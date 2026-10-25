@@ -42,3 +42,4 @@ public class RespParser {
         System.arraycopy(data, offset, buffer, writePos, length);
         writePos += length;
     }
+
