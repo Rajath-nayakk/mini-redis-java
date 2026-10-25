@@ -26,3 +26,4 @@ public interface StorageEngine {
     RedisType type(String key);
     Set<String> keys(String globPattern);
     long dbsize();
+    void flushDb();
