@@ -103,3 +103,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 return new StringValue(String.valueOf(newVal));
             } catch (ArithmeticException e) {
                 throw new NumericOverflowException();
+            }
