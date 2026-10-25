@@ -157,3 +157,4 @@ public class RespParser {
             return null;
         }
 
+        int trailingCrIndex = payloadStart + bulkLength;
