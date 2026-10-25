@@ -19,3 +19,4 @@ public final class Main {
             System.err.println("Configuration error: " + e.getMessage());
             System.exit(1);
         } catch (Exception e) {
+            System.err.println("Fatal error: " + e.getMessage());
