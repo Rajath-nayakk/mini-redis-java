@@ -8,3 +8,4 @@ public enum RespType {
     ERROR,         // -
     INTEGER,       // :
     BULK_STRING,   // $
+    ARRAY          // *
