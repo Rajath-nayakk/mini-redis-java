@@ -12,3 +12,4 @@ class RespParserTest {
     private RespParser parser;
 
     @BeforeEach
+    void setUp() {
