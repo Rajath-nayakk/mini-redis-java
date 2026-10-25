@@ -155,3 +155,4 @@ class ServerIntegrationTest {
     void testMalformedRequestsDoNotCrashServer() throws Exception {
         try (Socket socket = connect()) {
             // Send malformed non-RESP bytes
+            OutputStream out = socket.getOutputStream();
