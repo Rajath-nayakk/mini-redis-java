@@ -142,3 +142,4 @@ class RespParserTest {
     }
 
     @Test
+    void testMalformedMissingCrlf() {
