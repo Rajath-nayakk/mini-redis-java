@@ -153,3 +153,4 @@ public class MiniRedisServer {
         return Math.max(0, activeClients.get());
     }
 
+    public boolean isRunning() {
