@@ -78,3 +78,4 @@ public class RespParser {
                 return parseBulkString();
             case '*':
                 return parseArray();
+            default:
