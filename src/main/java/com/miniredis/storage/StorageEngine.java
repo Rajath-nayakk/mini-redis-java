@@ -17,3 +17,4 @@ public interface StorageEngine {
     long incrBy(String key, long delta);
     long decr(String key);
     long decrBy(String key, long delta);
+    boolean exists(String key);
