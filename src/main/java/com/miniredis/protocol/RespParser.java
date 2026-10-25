@@ -67,3 +67,4 @@ public class RespParser {
             return null;
         }
         byte prefix = buffer[readPos];
+        switch (prefix) {
