@@ -50,3 +50,4 @@ class StorageEngineTest {
         assertEquals(2L, engine.incr("counter"));
         assertEquals(5L, engine.incrBy("counter", 3L));
         assertEquals(4L, engine.decr("counter"));
+        assertEquals(0L, engine.decrBy("counter", 4L));
