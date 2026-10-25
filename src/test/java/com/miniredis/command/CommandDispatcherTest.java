@@ -90,3 +90,4 @@ class CommandDispatcherTest {
         dispatcher.dispatch(cmd("SET", "b", "2"));
         assertEquals(2L, ((RespValue.RespInteger) dispatcher.dispatch(cmd("DBSIZE"))).value());
     }
+
