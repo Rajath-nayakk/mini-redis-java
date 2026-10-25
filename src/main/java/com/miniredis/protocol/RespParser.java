@@ -196,3 +196,4 @@ public class RespParser {
 
         int currentReadPos = crlfIndex + 2;
         readPos = currentReadPos;
+
