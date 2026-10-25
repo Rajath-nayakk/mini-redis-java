@@ -32,3 +32,4 @@ class ServerIntegrationTest {
                 .host("127.0.0.1")
                 .port(port)
                 .maxClients(100)
+                .build();
