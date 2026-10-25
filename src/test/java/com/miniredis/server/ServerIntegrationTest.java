@@ -62,3 +62,4 @@ class ServerIntegrationTest {
         while (!socket.isClosed()) {
             int read = in.read(buf);
             if (read == -1) {
+                break;
