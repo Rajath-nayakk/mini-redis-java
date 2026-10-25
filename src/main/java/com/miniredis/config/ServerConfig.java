@@ -124,3 +124,4 @@ public final class ServerConfig {
 
     public static final class Builder {
         private String host = DEFAULT_HOST;
+        private int port = DEFAULT_PORT;
