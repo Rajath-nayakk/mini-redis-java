@@ -62,3 +62,4 @@ class RespParserTest {
     }
 
     @Test
+    void testParseNullBulkString() {
