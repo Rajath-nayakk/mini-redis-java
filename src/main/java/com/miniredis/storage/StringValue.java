@@ -8,3 +8,4 @@ import java.util.Objects;
  */
 public final class StringValue implements RedisValue {
 
+    private final String value;
