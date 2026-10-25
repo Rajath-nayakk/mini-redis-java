@@ -6,3 +6,4 @@ import com.miniredis.protocol.RespEncoder;
 import com.miniredis.protocol.RespValue;
 
 import java.io.IOException;
+import java.io.OutputStream;
