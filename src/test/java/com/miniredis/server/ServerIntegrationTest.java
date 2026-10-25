@@ -107,3 +107,4 @@ class ServerIntegrationTest {
                 assertEquals("msg-" + i, ((RespValue.RespBulkString) resp).asUtf8String());
             }
         }
+    }
