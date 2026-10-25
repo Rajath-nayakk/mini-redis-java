@@ -48,3 +48,4 @@ class CommandDispatcherTest {
         assertEquals("test-message", ((RespValue.RespBulkString) r1).asUtf8String());
 
         RespValue r2 = dispatcher.dispatch(cmd("ECHO"));
+        assertEquals(RespType.ERROR, r2.getType());
