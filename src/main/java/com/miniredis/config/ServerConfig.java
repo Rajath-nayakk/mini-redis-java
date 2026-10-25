@@ -83,3 +83,4 @@ public final class ServerConfig {
     }
 
     public static ServerConfig defaultConfig() {
+        return builder().build();
