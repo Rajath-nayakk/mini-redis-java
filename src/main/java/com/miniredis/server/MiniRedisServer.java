@@ -155,3 +155,4 @@ public class MiniRedisServer {
 
     public boolean isRunning() {
         return running;
+    }
