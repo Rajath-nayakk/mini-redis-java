@@ -27,3 +27,4 @@ class ServerIntegrationTest {
         ServerConfig config = ServerConfig.builder()
                 .host("127.0.0.1")
                 .port(0) // Ephemeral port assigned by OS
+                .maxClients(100)
