@@ -89,3 +89,4 @@ public interface RespValue {
         public static final RespBulkString NULL = new RespBulkString(null);
 
         public boolean isNull() {
+            return data == null;
