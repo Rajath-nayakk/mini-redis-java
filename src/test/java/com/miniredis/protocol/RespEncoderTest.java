@@ -44,3 +44,4 @@ class RespEncoderTest {
     void testEncodeArray() {
         RespValue.RespArray array = RespValue.array(List.of(
                 RespValue.bulkString("SET"),
+                RespValue.bulkString("k"),
