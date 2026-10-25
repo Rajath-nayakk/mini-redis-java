@@ -10,3 +10,4 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StorageEngineTest {
 
+    private StorageEngine engine;
