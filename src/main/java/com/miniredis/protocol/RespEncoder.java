@@ -79,3 +79,4 @@ public final class RespEncoder {
                     for (RespValue elem : arr.elements()) {
                         encode(elem, out);
                     }
+                }
