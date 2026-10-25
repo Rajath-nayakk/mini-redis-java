@@ -44,3 +44,4 @@ public final class StringValue implements RedisValue {
         if (o == null || getClass() != o.getClass()) return false;
         StringValue that = (StringValue) o;
         return Objects.equals(value, that.value);
+    }
