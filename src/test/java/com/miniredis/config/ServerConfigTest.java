@@ -25,3 +25,4 @@ class ServerConfigTest {
 
     @Test
     void testCustomBuilder() {
+        ServerConfig config = ServerConfig.builder()
