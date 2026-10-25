@@ -6,3 +6,4 @@ import java.util.*;
 /**
  * Represents a typed RESP2 protocol value.
  */
+public interface RespValue {
