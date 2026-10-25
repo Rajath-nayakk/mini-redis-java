@@ -96,3 +96,4 @@ class CommandDispatcherTest {
         assertEquals(1L, ((RespValue.RespInteger) dispatcher.dispatch(cmd("INCR", "num"))).value());
         assertEquals(2L, ((RespValue.RespInteger) dispatcher.dispatch(cmd("INCR", "num"))).value());
         assertEquals(7L, ((RespValue.RespInteger) dispatcher.dispatch(cmd("INCRBY", "num", "5"))).value());
+        assertEquals(6L, ((RespValue.RespInteger) dispatcher.dispatch(cmd("DECR", "num"))).value());
