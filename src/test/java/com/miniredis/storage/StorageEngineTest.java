@@ -85,3 +85,4 @@ class StorageEngineTest {
         long expected = (long) threads * incrementsPerThread;
         assertEquals(String.valueOf(expected), engine.get("concurrent-counter"),
                 "Final counter value must equal total increments with zero lost updates");
+    }
