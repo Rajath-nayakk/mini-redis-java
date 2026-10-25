@@ -80,3 +80,4 @@ class ServerConfigTest {
     void testParseArgs() {
         String[] args = new String[]{
                 "--host", "10.0.0.1",
+                "--port", "7000",
