@@ -48,3 +48,4 @@ public final class RespEncoder {
                 RespValue.RespError err = (RespValue.RespError) value;
                 out.write(PREFIX_ERROR);
                 out.write(err.message().getBytes(StandardCharsets.UTF_8));
+                out.write(CRLF);
