@@ -7,3 +7,4 @@ public class InvalidIntegerException extends StorageException {
     public static final String DEFAULT_MESSAGE = "ERR value is not an integer or out of range";
 
     public InvalidIntegerException() {
+        super(DEFAULT_MESSAGE);
