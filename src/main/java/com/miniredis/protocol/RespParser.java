@@ -210,3 +210,4 @@ public class RespParser {
     }
 
     private int findCrlf(int start) {
+        for (int i = start; i < writePos - 1; i++) {
