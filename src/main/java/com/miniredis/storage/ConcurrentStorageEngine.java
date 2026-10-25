@@ -98,3 +98,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 }
             }
             try {
+                long newVal = Math.addExact(current, delta);
