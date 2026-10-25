@@ -16,3 +16,4 @@ public final class ServerConfig {
     public static final int DEFAULT_TIMEOUT_MS = 0; // 0 = no timeout
     public static final String DEFAULT_DATA_DIR = "data";
     public static final boolean DEFAULT_PERSISTENCE_ENABLED = false;
+    public static final String DEFAULT_AOF_SYNC_POLICY = "everysec";
