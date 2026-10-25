@@ -152,3 +152,4 @@ class RespParserTest {
     void testMalformedInvalidLength() {
         parser.append("$abc\r\n".getBytes(StandardCharsets.UTF_8));
         assertThrows(ProtocolException.class, () -> parser.parseNext());
+
