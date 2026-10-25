@@ -36,3 +36,4 @@
   IF "%%A"=="MVN_CMD" (set __MVNW_CMD__=%%B) ELSE IF "%%B"=="" (echo %%A) ELSE (echo %%A=%%B)
 )
 @SET PSModulePath=%__MVNW_PSMODULEP_SAVE%
+@SET __MVNW_PSMODULEP_SAVE=
