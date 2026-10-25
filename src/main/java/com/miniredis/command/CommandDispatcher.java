@@ -65,3 +65,4 @@ public class CommandDispatcher {
         } catch (StorageException e) {
             return RespValue.error("ERR " + e.getMessage());
         } catch (Exception e) {
+            return RespValue.error("ERR internal server error: " + e.getMessage());
