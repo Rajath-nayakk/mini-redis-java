@@ -53,3 +53,4 @@ public interface RespValue {
     record RespSimpleString(String value) implements RespValue {
         public RespSimpleString {
             Objects.requireNonNull(value, "Simple string value cannot be null");
+            if (value.indexOf('\r') != -1 || value.indexOf('\n') != -1) {
