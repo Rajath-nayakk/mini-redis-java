@@ -103,3 +103,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleDel(List<String> args) {
+        if (args.isEmpty()) {
