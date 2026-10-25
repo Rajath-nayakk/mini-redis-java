@@ -50,3 +50,4 @@ public class RespParser {
         int savedReadPos = readPos;
         try {
             RespValue value = parseValue();
+            if (value != null) {
