@@ -124,3 +124,4 @@ public class CommandDispatcher {
         }
         long size = engine.dbsize();
         return RespValue.integer(size);
+    }
