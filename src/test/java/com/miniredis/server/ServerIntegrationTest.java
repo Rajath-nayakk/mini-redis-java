@@ -96,3 +96,4 @@ class ServerIntegrationTest {
 
     @Test
     void testMultipleRequestsOverOneConnection() throws Exception {
+        try (Socket socket = connect()) {
