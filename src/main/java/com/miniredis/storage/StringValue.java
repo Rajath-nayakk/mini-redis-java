@@ -55,3 +55,4 @@ public final class StringValue implements RedisValue {
     public String toString() {
         return value;
     }
+}
