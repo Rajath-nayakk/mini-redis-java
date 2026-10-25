@@ -19,3 +19,4 @@ public final class Main {
             printBanner(config);
 
             StorageEngine engine = new ConcurrentStorageEngine();
+            CommandDispatcher dispatcher = new CommandDispatcher(engine);
