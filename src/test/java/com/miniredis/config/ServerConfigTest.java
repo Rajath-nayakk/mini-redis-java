@@ -67,3 +67,4 @@ class ServerConfigTest {
     }
 
     @Test
+    void testInvalidLimits() {
