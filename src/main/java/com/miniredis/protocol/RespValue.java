@@ -76,3 +76,4 @@ public interface RespValue {
         public RespType getType() {
             return RespType.ERROR;
         }
+    }
