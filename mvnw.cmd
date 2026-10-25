@@ -69,3 +69,4 @@ switch -wildcard -casesensitive ( $($distributionUrl -replace '^.*/','') ) {
     break
   }
 }
+
