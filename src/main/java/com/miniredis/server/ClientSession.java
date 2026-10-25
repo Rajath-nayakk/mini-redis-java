@@ -51,3 +51,4 @@ public class ClientSession implements Runnable {
                 }
             }
         } catch (ProtocolException e) {
+            try {
