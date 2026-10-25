@@ -45,3 +45,4 @@
 @GOTO :EOF
 : end batch / begin powershell #>
 
+$ErrorActionPreference = "Stop"
