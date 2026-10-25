@@ -69,3 +69,4 @@ public final class ServerConfig {
         }
         if (cleanupIntervalMs <= 0) {
             throw new IllegalArgumentException("Cleanup interval must be positive: " + cleanupIntervalMs);
+        }
