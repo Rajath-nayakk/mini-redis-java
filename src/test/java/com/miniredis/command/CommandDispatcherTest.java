@@ -14,3 +14,4 @@ class CommandDispatcherTest {
 
     private CommandDispatcher dispatcher;
 
+    @BeforeEach
