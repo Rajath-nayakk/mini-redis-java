@@ -5,3 +5,4 @@ import com.miniredis.config.ServerConfig;
 /**
  * Main entry point for the MiniRedis database server.
  */
+public final class Main {
