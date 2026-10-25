@@ -54,3 +54,4 @@ public final class RespEncoder {
                 RespValue.RespInteger integer = (RespValue.RespInteger) value;
                 out.write(PREFIX_INTEGER);
                 out.write(Long.toString(integer.value()).getBytes(StandardCharsets.US_ASCII));
+                out.write(CRLF);
