@@ -90,3 +90,4 @@ public final class ServerConfig {
         Builder builder = builder();
         if (args == null) {
             return builder.build();
+        }
