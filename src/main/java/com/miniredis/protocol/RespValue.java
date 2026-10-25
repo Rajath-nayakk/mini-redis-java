@@ -92,3 +92,4 @@ public interface RespValue {
             return data == null;
         }
 
+        public String asUtf8String() {
