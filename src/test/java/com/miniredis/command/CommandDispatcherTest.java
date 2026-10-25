@@ -51,3 +51,4 @@ class CommandDispatcherTest {
         assertEquals(RespType.ERROR, r2.getType());
     }
 
+    @Test
