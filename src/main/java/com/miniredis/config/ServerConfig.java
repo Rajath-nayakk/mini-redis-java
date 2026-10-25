@@ -19,3 +19,4 @@ public final class ServerConfig {
     public static final String DEFAULT_AOF_SYNC_POLICY = "everysec";
     public static final long DEFAULT_CLEANUP_INTERVAL_MS = 100L;
     public static final long DEFAULT_MAX_MEMORY_BYTES = 0L; // 0 = unlimited
+    public static final String DEFAULT_LOG_LEVEL = "notice";
