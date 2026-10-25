@@ -22,3 +22,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR Protocol error: expected array of bulk strings");
         }
         List<RespValue> elements = array.elements();
+        if (elements == null || elements.isEmpty()) {
