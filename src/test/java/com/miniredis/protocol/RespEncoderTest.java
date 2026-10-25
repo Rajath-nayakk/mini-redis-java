@@ -75,3 +75,4 @@ class RespEncoderTest {
         assertEquals(RespType.ARRAY, decoded.getType());
         RespValue.RespArray decodedArr = (RespValue.RespArray) decoded;
         assertEquals(4, decodedArr.elements().size());
+        assertEquals("MGET", ((RespValue.RespBulkString) decodedArr.elements().get(0)).asUtf8String());
