@@ -46,3 +46,4 @@ public class MiniRedisServer {
         serverSocket.bind(new InetSocketAddress(config.getHost(), config.getPort()));
 
         clientExecutor = Executors.newFixedThreadPool(config.getMaxClients(), r -> {
+            Thread t = new Thread(r, "miniredis-client");
