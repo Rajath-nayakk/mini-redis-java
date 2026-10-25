@@ -56,3 +56,4 @@
                 <configuration>
                     <mainClass>com.miniredis.Main</mainClass>
                 </configuration>
+            </plugin>
