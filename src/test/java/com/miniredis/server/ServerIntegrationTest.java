@@ -110,3 +110,4 @@ class ServerIntegrationTest {
     }
 
     @Test
+    void testMultipleSimultaneousClients() throws Exception {
