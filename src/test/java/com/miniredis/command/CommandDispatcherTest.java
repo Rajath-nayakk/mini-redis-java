@@ -19,3 +19,4 @@ class CommandDispatcherTest {
         dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
     }
 
+    private RespValue cmd(String... parts) {
