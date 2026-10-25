@@ -10,3 +10,4 @@ import static org.junit.jupiter.api.Assertions.*;
 class RespEncoderTest {
 
     @Test
+    void testEncodeSimpleString() {
