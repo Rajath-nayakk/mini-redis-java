@@ -43,3 +43,4 @@ class RespEncoderTest {
     @Test
     void testEncodeArray() {
         RespValue.RespArray array = RespValue.array(List.of(
+                RespValue.bulkString("SET"),
