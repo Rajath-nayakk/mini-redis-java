@@ -13,3 +13,4 @@ import java.net.Socket;
 import java.net.SocketException;
 
 /**
+ * Handles communication with a connected TCP client.
