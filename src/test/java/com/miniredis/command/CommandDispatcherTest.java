@@ -120,3 +120,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testUnknownCommandAndWrongArgs() {
