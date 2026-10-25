@@ -188,3 +188,4 @@ class ServerIntegrationTest {
         assertFalse(server.isRunning());
 
         // Client read should detect closure (EOF -1 or SocketException)
+        InputStream in = client.getInputStream();
