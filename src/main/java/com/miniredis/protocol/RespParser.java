@@ -13,3 +13,4 @@ public class RespParser {
     public static final int DEFAULT_MAX_ARRAY_LENGTH = 1024 * 1024; // 1M elements
 
     private final int maxBulkStringLength;
+    private final int maxArrayLength;
