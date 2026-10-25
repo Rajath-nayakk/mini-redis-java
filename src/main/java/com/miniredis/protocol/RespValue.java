@@ -60,3 +60,4 @@ public interface RespValue {
 
         @Override
         public RespType getType() {
+            return RespType.SIMPLE_STRING;
