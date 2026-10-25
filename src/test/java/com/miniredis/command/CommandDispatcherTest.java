@@ -101,3 +101,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testInvalidIntegerErrors() {
