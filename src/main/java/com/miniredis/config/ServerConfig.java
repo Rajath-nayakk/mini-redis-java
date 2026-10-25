@@ -71,3 +71,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Cleanup interval must be positive: " + cleanupIntervalMs);
         }
         if (maxMemoryBytes < 0) {
+            throw new IllegalArgumentException("Max memory cannot be negative: " + maxMemoryBytes);
