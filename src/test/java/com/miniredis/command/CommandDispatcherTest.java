@@ -25,3 +25,4 @@ class CommandDispatcherTest {
             list.add(RespValue.bulkString(p));
         }
         return RespValue.array(list);
+    }
