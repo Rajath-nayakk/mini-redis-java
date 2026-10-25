@@ -135,3 +135,4 @@ public class CommandDispatcher {
     }
 
     private RespValue handleIncrBy(List<String> args) {
+        if (args.size() != 2) {
