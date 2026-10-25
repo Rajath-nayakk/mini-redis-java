@@ -111,3 +111,4 @@ class ServerIntegrationTest {
 
     @Test
     void testMultipleSimultaneousClients() throws Exception {
+        try (Socket c1 = connect(); Socket c2 = connect()) {
