@@ -166,3 +166,4 @@ class ServerIntegrationTest {
             InputStream in = socket.getInputStream();
             byte[] buf = new byte[256];
             int read = in.read(buf);
+            assertTrue(read > 0, "Server should reply with error before closing malformed connection");
