@@ -74,3 +74,4 @@ public class RespParser {
                 return parseError();
             case ':':
                 return parseInteger();
+            case '$':
