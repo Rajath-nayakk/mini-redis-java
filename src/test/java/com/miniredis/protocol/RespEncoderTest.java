@@ -64,3 +64,4 @@ class RespEncoderTest {
                 RespValue.bulkString("user:1"),
                 RespValue.bulkString("user:2"),
                 RespValue.nullBulkString()
+        ));
