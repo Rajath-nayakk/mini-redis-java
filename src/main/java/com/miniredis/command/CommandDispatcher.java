@@ -153,3 +153,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR wrong number of arguments for 'decr' command");
         }
         long result = engine.decr(args.get(0));
+        return RespValue.integer(result);
