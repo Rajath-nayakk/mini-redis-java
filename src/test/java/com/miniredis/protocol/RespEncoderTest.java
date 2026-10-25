@@ -80,3 +80,4 @@ class RespEncoderTest {
         assertEquals("user:2", ((RespValue.RespBulkString) decodedArr.elements().get(2)).asUtf8String());
         assertTrue(((RespValue.RespBulkString) decodedArr.elements().get(3)).isNull());
     }
+}
