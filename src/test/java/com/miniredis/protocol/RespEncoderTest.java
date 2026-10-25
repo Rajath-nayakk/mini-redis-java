@@ -71,3 +71,4 @@ class RespEncoderTest {
         parser.append(encoded);
         RespValue decoded = parser.parseNext();
 
+        assertNotNull(decoded);
