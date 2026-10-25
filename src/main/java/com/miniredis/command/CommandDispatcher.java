@@ -161,3 +161,4 @@ public class CommandDispatcher {
             return RespValue.error("ERR wrong number of arguments for 'decrby' command");
         }
         long delta;
+        try {
