@@ -122,3 +122,4 @@ public class CommandDispatcher {
         if (!args.isEmpty()) {
             return RespValue.error("ERR wrong number of arguments for 'dbsize' command");
         }
+        long size = engine.dbsize();
