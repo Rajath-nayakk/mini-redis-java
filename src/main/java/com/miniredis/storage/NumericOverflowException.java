@@ -6,3 +6,4 @@ package com.miniredis.storage;
 public class NumericOverflowException extends StorageException {
     public static final String DEFAULT_MESSAGE = "ERR increment or decrement would overflow";
 
+    public NumericOverflowException() {
