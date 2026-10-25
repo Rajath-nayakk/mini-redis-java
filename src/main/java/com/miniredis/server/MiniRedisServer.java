@@ -73,3 +73,4 @@ public class MiniRedisServer {
                     clientSocket.setSoTimeout(config.getTimeoutMs());
                 }
 
+                if (activeClients.get() >= config.getMaxClients()) {
