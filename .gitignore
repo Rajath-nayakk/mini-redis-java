@@ -18,3 +18,4 @@ Thumbs.db
 hs_err_pid*
 
 # MiniRedis runtime data directory
+data/
