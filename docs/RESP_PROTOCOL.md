@@ -23,3 +23,4 @@ The `RespParser` class decodes incoming byte streams incrementally:
 4. **Buffer Compaction**: Consumed bytes are periodically compacted to prevent buffer drift.
 
 ## 3. Command Integration
+Commands sent by standard Redis clients arrive as RESP arrays of bulk strings:
