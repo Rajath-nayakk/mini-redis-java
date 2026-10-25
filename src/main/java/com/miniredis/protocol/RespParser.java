@@ -209,3 +209,4 @@ public class RespParser {
         return new RespValue.RespArray(Collections.unmodifiableList(elements));
     }
 
+    private int findCrlf(int start) {
