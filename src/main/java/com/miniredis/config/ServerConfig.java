@@ -93,3 +93,4 @@ public final class ServerConfig {
         }
         for (int i = 0; i < args.length; i++) {
             String arg = args[i];
+            if ("--port".equalsIgnoreCase(arg) && i + 1 < args.length) {
