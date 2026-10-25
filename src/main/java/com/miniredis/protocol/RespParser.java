@@ -57,3 +57,4 @@ public class RespParser {
             readPos = savedReadPos;
             return null;
         } catch (ProtocolException e) {
+            readPos = savedReadPos;
