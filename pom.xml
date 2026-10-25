@@ -55,3 +55,4 @@
                 <version></version>
                 <configuration>
                     <mainClass>com.miniredis.Main</mainClass>
+                </configuration>
