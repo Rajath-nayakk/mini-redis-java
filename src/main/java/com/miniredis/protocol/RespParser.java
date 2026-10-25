@@ -47,3 +47,4 @@ public class RespParser {
         if (available() == 0) {
             return null;
         }
+        int savedReadPos = readPos;
