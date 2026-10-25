@@ -34,3 +34,4 @@ mvn exec:java -Dexec.mainClass="com.miniredis.Main" -Dexec.args="--port 6380 --d
 ```
 
 ## Testing
+```bash
