@@ -78,3 +78,4 @@ class ServerConfigTest {
 
     @Test
     void testParseArgs() {
+        String[] args = new String[]{
