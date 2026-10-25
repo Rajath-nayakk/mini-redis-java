@@ -31,3 +31,4 @@ class RespParserTest {
         parser.append("-ERR unknown command\r\n".getBytes(StandardCharsets.UTF_8));
         RespValue val = parser.parseNext();
         assertNotNull(val);
+        assertEquals(RespType.ERROR, val.getType());
