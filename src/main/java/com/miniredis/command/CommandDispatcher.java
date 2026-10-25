@@ -14,3 +14,4 @@ public class CommandDispatcher {
     private final StorageEngine engine;
 
     public CommandDispatcher(StorageEngine engine) {
+        this.engine = Objects.requireNonNull(engine, "StorageEngine cannot be null");
