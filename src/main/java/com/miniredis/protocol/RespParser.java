@@ -75,3 +75,4 @@ public class RespParser {
             case ':':
                 return parseInteger();
             case '$':
+                return parseBulkString();
