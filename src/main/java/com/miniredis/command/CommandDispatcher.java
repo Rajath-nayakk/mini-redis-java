@@ -32,3 +32,4 @@ public class CommandDispatcher {
                 tokens.add(bulkStr.asUtf8String());
             } else if (elem instanceof RespValue.RespSimpleString ss) {
                 tokens.add(ss.value());
+            } else {
