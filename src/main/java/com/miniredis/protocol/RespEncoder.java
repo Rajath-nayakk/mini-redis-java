@@ -22,3 +22,4 @@ public final class RespEncoder {
     private RespEncoder() {
     }
 
+    public static byte[] encode(RespValue value) {
