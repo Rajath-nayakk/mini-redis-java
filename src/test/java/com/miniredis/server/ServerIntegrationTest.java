@@ -127,3 +127,4 @@ class ServerIntegrationTest {
     }
 
     @Test
+    void testDisconnectionCleansUpResources() throws Exception {
