@@ -56,3 +56,4 @@ public final class RespEncoder {
                 out.write(Long.toString(integer.value()).getBytes(StandardCharsets.US_ASCII));
                 out.write(CRLF);
             }
+            case BULK_STRING -> {
