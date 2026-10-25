@@ -159,3 +159,4 @@ if ((Test-Path -Path $expectedPath -PathType Container) -and (Test-Path -Path $e
   $actualDistributionDir = $distributionUrlNameMain
 }
 
+# If not found, search for any directory with the Maven executable (for snapshots)
