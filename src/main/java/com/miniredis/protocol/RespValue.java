@@ -18,3 +18,4 @@ public interface RespValue {
         return new RespSimpleString("PONG");
     }
 
+    static RespSimpleString simpleString(String value) {
