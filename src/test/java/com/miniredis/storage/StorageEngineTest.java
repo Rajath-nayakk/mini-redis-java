@@ -103,3 +103,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testIntegerUnderflow() {
