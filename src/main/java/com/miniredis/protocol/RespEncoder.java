@@ -52,3 +52,4 @@ public final class RespEncoder {
             }
             case INTEGER -> {
                 RespValue.RespInteger integer = (RespValue.RespInteger) value;
+                out.write(PREFIX_INTEGER);
