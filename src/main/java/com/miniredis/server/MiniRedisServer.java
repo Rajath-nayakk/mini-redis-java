@@ -143,3 +143,4 @@ public class MiniRedisServer {
                 Thread.currentThread().interrupt();
             }
         }
+    }
