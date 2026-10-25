@@ -125,3 +125,4 @@ public class MiniRedisServer {
         }
 
         for (Socket s : activeSockets) {
+            try {
