@@ -189,3 +189,4 @@ class ServerIntegrationTest {
         assertEquals(-1, b, "Socket should receive EOF on server shutdown");
         client.close();
     }
+}
