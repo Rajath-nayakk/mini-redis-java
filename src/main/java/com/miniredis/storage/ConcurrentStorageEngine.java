@@ -97,3 +97,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                     throw new InvalidIntegerException();
                 }
             }
+            try {
