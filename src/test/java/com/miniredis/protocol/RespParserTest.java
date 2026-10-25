@@ -169,3 +169,4 @@ class RespParserTest {
     void testUnexpectedPrefix() {
         parser.append("!UNKNOWN\r\n".getBytes(StandardCharsets.UTF_8));
         assertThrows(ProtocolException.class, () -> parser.parseNext());
+    }
