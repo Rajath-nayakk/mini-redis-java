@@ -34,3 +34,4 @@ class CommandDispatcherTest {
         assertEquals("PONG", ((RespValue.RespSimpleString) r1).value());
 
         RespValue r2 = dispatcher.dispatch(cmd("ping", "hello"));
+        assertEquals(RespType.BULK_STRING, r2.getType());
