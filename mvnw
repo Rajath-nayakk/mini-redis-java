@@ -82,3 +82,4 @@ set_java_home() {
 hash_string() {
   str="${1:-}" h=0
   while [ -n "$str" ]; do
+    char="${str%"${str#?}"}"
