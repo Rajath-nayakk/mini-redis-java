@@ -14,3 +14,4 @@ class ServerConfigTest {
         assertEquals(6379, config.getPort());
         assertEquals(1000, config.getMaxClients());
         assertEquals(10 * 1024 * 1024, config.getMaxRequestSize());
+        assertEquals(0, config.getTimeoutMs());
