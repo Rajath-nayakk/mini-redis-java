@@ -66,3 +66,4 @@ public class MiniRedisServer {
                         out.write(err);
                         out.flush();
                     }
+                    continue;
