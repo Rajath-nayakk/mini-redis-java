@@ -75,3 +75,4 @@ public final class ServerConfig {
         }
         if (!"always".equalsIgnoreCase(aofSyncPolicy) && !"everysec".equalsIgnoreCase(aofSyncPolicy) && !"no".equalsIgnoreCase(aofSyncPolicy)) {
             throw new IllegalArgumentException("Invalid AOF sync policy: " + aofSyncPolicy + ". Must be 'always', 'everysec', or 'no'");
+        }
