@@ -106,3 +106,4 @@ class RespParserTest {
 
         RespValue.RespArray nullArr = (RespValue.RespArray) parser.parseNext();
         assertNotNull(nullArr);
+        assertTrue(nullArr.isNull());
