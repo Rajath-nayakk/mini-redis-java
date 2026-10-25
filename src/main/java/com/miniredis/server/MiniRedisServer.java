@@ -96,3 +96,4 @@ public class MiniRedisServer {
                     }
                 }
 
+            } catch (IOException e) {
