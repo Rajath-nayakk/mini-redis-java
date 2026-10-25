@@ -139,3 +139,4 @@ class RespParserTest {
         RespValue cmd2 = parser.parseNext();
         assertNotNull(cmd2);
         assertNull(parser.parseNext());
+    }
