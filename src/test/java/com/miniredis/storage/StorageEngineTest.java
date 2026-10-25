@@ -165,3 +165,4 @@ class StorageEngineTest {
     @Test
     void testDbsizeAndFlushDb() {
         assertEquals(0L, engine.dbsize());
+        engine.set("k1", "v1");
