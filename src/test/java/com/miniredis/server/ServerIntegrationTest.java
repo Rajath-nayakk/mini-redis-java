@@ -153,3 +153,4 @@ class ServerIntegrationTest {
 
     @Test
     void testMalformedRequestsDoNotCrashServer() throws Exception {
+        try (Socket socket = connect()) {
