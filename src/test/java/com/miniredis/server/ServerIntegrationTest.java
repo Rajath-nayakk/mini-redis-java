@@ -87,3 +87,4 @@ class ServerIntegrationTest {
     void testSetFollowedByGet() throws Exception {
         try (Socket socket = connect()) {
             RespValue setResp = sendAndReceive(socket, "*3\r\n$3\r\nSET\r\n$4\r\ncity\r\n$6\r\nBoston\r\n");
+            assertNotNull(setResp);
