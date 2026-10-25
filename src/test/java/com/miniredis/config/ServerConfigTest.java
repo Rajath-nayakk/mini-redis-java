@@ -11,3 +11,4 @@ class ServerConfigTest {
     void testDefaultConfig() {
         ServerConfig config = ServerConfig.defaultConfig();
         assertEquals("127.0.0.1", config.getHost());
+        assertEquals(6379, config.getPort());
