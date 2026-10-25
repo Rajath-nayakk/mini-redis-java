@@ -27,3 +27,4 @@ Commands sent by standard Redis clients arrive as RESP arrays of bulk strings:
 ```text
 *3\r\n$3\r\nSET\r\n$4\r\nuser\r\n$5\r\nalice\r\n
 ```
+The `CommandDispatcher` processes these arrays, dispatches them to `StorageEngine`, and encodes results into RESP responses.
