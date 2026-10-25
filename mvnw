@@ -70,3 +70,4 @@ set_java_home() {
       'unset' -f command 2>/dev/null
       'command' -v javac
     )" || :
+
