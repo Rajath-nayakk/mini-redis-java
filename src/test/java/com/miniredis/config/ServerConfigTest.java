@@ -18,3 +18,4 @@ class ServerConfigTest {
         assertEquals(Paths.get("data"), config.getDataDir());
         assertFalse(config.isPersistenceEnabled());
         assertEquals("everysec", config.getAofSyncPolicy());
+        assertEquals(100L, config.getCleanupIntervalMs());
