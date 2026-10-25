@@ -61,3 +61,4 @@ class RespEncoderTest {
     void testRoundTrip() {
         RespValue.RespArray original = RespValue.array(List.of(
                 RespValue.bulkString("MGET"),
+                RespValue.bulkString("user:1"),
