@@ -50,3 +50,4 @@ public final class StringValue implements RedisValue {
     public int hashCode() {
         return value.hashCode();
     }
+
