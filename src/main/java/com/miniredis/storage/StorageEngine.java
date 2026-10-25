@@ -8,3 +8,4 @@ import java.util.Set;
  * Contract for the in-memory Redis storage engine.
  */
 public interface StorageEngine {
+    void set(String key, String value);
