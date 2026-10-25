@@ -89,3 +89,4 @@ public class RespParser {
             return null;
         }
         int start = readPos + 1;
+        int len = crlfIndex - start;
