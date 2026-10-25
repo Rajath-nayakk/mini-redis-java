@@ -90,3 +90,4 @@ public class CommandDispatcher {
         if (args.size() != 2) {
             return RespValue.error("ERR wrong number of arguments for 'set' command");
         }
+        engine.set(args.get(0), args.get(1));
