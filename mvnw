@@ -105,3 +105,4 @@ trim() {
   printf "%s" "${1}" | tr -d '[:space:]'
 }
 
+scriptDir="$(dirname "$0")"
