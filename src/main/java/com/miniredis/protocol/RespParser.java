@@ -183,3 +183,4 @@ public class RespParser {
             throw new ProtocolException("Invalid array length: " + countStr);
         }
 
+        if (arrayCount == -1) {
