@@ -246,3 +246,4 @@ public class RespParser {
         } else if (readPos >= 4096 && readPos >= buffer.length / 2) {
             int unread = writePos - readPos;
             System.arraycopy(buffer, readPos, buffer, 0, unread);
+            readPos = 0;
