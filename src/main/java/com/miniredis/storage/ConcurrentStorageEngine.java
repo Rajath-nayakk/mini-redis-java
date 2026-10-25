@@ -262,3 +262,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 case '@':
                 case '%':
                 case '\\':
+                    sb.append('\\').append(c);
