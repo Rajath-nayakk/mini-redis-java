@@ -63,3 +63,4 @@ public class RespParser {
     }
 
     private RespValue parseValue() {
+        if (available() == 0) {
