@@ -52,3 +52,4 @@ public class MiniRedisServer {
         listenerThread.start();
     }
 
+    private void listenLoop() {
