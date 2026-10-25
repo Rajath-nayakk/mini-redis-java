@@ -7,3 +7,4 @@ import java.nio.charset.StandardCharsets;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+class RespParserTest {
