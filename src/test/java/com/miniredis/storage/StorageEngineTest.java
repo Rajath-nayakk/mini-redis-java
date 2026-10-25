@@ -104,3 +104,4 @@ class StorageEngineTest {
 
     @Test
     void testIntegerUnderflow() {
+        engine.set("underflowKey", String.valueOf(Long.MIN_VALUE));
