@@ -17,3 +17,4 @@ class CommandDispatcherTest {
     @BeforeEach
     void setUp() {
         dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
+    }
