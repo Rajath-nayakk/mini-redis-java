@@ -66,3 +66,4 @@ class CommandDispatcherTest {
         assertTrue(((RespValue.RespBulkString) missResp).isNull());
     }
 
+    @Test
