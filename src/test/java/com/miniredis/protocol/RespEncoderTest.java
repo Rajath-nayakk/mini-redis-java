@@ -56,3 +56,4 @@ class RespEncoderTest {
         assertEquals("*0\r\n", new String(RespEncoder.encode(RespValue.array(List.of())), StandardCharsets.UTF_8));
         assertEquals("*-1\r\n", new String(RespEncoder.encode(RespValue.nullArray()), StandardCharsets.UTF_8));
     }
+
