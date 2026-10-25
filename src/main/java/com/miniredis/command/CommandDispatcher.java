@@ -138,3 +138,4 @@ public class CommandDispatcher {
         if (args.size() != 2) {
             return RespValue.error("ERR wrong number of arguments for 'incrby' command");
         }
+        long delta;
