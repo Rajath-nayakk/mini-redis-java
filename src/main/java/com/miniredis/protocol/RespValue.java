@@ -51,3 +51,4 @@ public interface RespValue {
     }
 
     record RespSimpleString(String value) implements RespValue {
+        public RespSimpleString {
