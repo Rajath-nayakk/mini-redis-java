@@ -52,3 +52,4 @@ class ServerIntegrationTest {
         out.write(respCommand.getBytes(StandardCharsets.UTF_8));
         out.flush();
 
+        InputStream in = socket.getInputStream();
