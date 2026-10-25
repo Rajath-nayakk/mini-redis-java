@@ -108,3 +108,4 @@ public class MiniRedisServer {
         if (socket != null) {
             activeSockets.remove(socket);
         }
+        activeClients.decrementAndGet();
