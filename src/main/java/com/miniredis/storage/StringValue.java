@@ -12,3 +12,4 @@ public final class StringValue implements RedisValue {
     private final byte[] bytes;
 
     public StringValue(String value) {
+        this.value = Objects.requireNonNull(value, "Value cannot be null");
