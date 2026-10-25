@@ -19,3 +19,4 @@ MiniRedis is a clean, educational, Redis-inspired in-memory database built from 
 - **Git**: Git 2.30+
 
 ## Building the Project
+```bash
