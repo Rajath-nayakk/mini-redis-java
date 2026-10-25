@@ -38,3 +38,4 @@ class RespEncoderTest {
     void testEncodeNullBulkString() {
         byte[] encoded = RespEncoder.encode(RespValue.nullBulkString());
         assertEquals("$-1\r\n", new String(encoded, StandardCharsets.UTF_8));
+    }
