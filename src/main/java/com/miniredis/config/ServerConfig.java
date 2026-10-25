@@ -53,3 +53,4 @@ public final class ServerConfig {
             throw new IllegalArgumentException("Host cannot be null or empty");
         }
         if (port < 1 || port > 65535) {
+            throw new IllegalArgumentException("Port must be between 1 and 65535: " + port);
