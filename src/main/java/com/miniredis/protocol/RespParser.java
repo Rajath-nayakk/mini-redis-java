@@ -77,3 +77,4 @@ public class RespParser {
             case '$':
                 return parseBulkString();
             case '*':
+                return parseArray();
