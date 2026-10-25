@@ -47,3 +47,4 @@ nc 127.0.0.1 6379
 redis-cli -p 6379
 ```
 
+## Project Status
