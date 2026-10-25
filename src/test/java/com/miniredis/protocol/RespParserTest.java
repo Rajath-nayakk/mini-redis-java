@@ -82,3 +82,4 @@ class RespParserTest {
         RespValue.RespBulkString bs = (RespValue.RespBulkString) parser.parseNext();
         assertNotNull(bs);
         assertEquals(unicode, bs.asUtf8String());
+    }
