@@ -19,3 +19,4 @@ import java.net.SocketException;
 public class ClientSession implements Runnable {
 
     private final Socket socket;
+    private final CommandDispatcher dispatcher;
