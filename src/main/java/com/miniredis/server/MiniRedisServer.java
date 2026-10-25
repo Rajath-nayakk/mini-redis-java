@@ -49,3 +49,4 @@ public class MiniRedisServer {
             Thread t = new Thread(r, "miniredis-client");
             t.setDaemon(true);
             return t;
+        });
