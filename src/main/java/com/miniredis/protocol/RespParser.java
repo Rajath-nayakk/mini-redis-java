@@ -144,3 +144,4 @@ public class RespParser {
             return RespValue.RespBulkString.NULL;
         }
         if (bulkLength < -1) {
+            throw new ProtocolException("Negative bulk string length invalid: " + bulkLength);
