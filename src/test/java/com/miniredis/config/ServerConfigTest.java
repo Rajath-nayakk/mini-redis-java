@@ -84,3 +84,4 @@ class ServerConfigTest {
                 "--max-clients", "250",
                 "--max-memory", "50000000",
                 "--appendonly", "true",
+                "--dir", "mydata"
