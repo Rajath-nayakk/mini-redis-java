@@ -23,3 +23,4 @@ public class ClientSession implements Runnable {
     private final MiniRedisServer server;
     private final RespParser parser;
 
+    public ClientSession(Socket socket, CommandDispatcher dispatcher, MiniRedisServer server, int maxRequestSize) {
