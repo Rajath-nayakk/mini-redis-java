@@ -120,3 +120,4 @@ public final class ServerConfig {
     public String getAofSyncPolicy() { return aofSyncPolicy; }
     public long getCleanupIntervalMs() { return cleanupIntervalMs; }
     public long getMaxMemoryBytes() { return maxMemoryBytes; }
+    public String getLogLevel() { return logLevel; }
