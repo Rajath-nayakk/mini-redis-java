@@ -70,3 +70,4 @@ public interface RespValue {
             if (message.indexOf('\r') != -1 || message.indexOf('\n') != -1) {
                 throw new IllegalArgumentException("Error message cannot contain CRLF");
             }
+        }
