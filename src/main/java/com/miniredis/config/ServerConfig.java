@@ -102,3 +102,4 @@ public final class ServerConfig {
             } else if ("--max-clients".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 builder.maxClients(Integer.parseInt(args[++i]));
             } else if ("--max-memory".equalsIgnoreCase(arg) && i + 1 < args.length) {
+                builder.maxMemoryBytes(Long.parseLong(args[++i]));
