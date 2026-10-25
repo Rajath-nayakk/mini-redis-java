@@ -123,3 +123,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public boolean exists(String key) {
+        Objects.requireNonNull(key, "Key cannot be null");
