@@ -39,3 +39,4 @@ public class RespParser {
             return;
         }
         ensureCapacity(length);
+        System.arraycopy(data, offset, buffer, writePos, length);
