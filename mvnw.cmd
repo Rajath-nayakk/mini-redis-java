@@ -146,3 +146,4 @@ if ($distributionSha256Sum) {
   }
 }
 
+# unzip and move
