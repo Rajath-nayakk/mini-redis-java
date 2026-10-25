@@ -71,3 +71,4 @@ public class MiniRedisServer {
 
                 if (config.getTimeoutMs() > 0) {
                     clientSocket.setSoTimeout(config.getTimeoutMs());
+                }
