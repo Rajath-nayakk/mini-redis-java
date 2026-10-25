@@ -11,3 +11,4 @@ public class NumericOverflowException extends StorageException {
     }
 
     public NumericOverflowException(String message) {
+        super(message);
