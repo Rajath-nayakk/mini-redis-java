@@ -10,3 +10,4 @@ public enum RedisType {
     HASH("hash"),
     ZSET("zset"),
     NONE("none");
+
