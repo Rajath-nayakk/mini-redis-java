@@ -32,3 +32,4 @@ class StorageEngineTest {
         assertEquals("100", engine.get("counter"));
         assertEquals("100", engine.getSet("counter", "200"), "getSet returns previous value");
         assertEquals("200", engine.get("counter"));
+    }
