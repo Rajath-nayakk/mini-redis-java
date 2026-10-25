@@ -69,3 +69,4 @@ class StorageEngineTest {
                     for (int j = 0; j < incrementsPerThread; j++) {
                         engine.incr("concurrent-counter");
                     }
+                } catch (InterruptedException e) {
