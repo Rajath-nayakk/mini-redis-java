@@ -32,3 +32,4 @@ public final class Main {
             System.out.println("[MiniRedis] Server started on " + config.getHost() + ":" + server.getPort());
         } catch (IllegalArgumentException e) {
             System.err.println("Configuration error: " + e.getMessage());
+            System.exit(1);
