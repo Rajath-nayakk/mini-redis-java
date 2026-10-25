@@ -59,3 +59,4 @@ class StorageEngineTest {
         int threads = 50;
         int incrementsPerThread = 100;
         ExecutorService executor = Executors.newFixedThreadPool(threads);
+        CountDownLatch startLatch = new CountDownLatch(1);
