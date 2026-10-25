@@ -50,3 +50,4 @@ public class MiniRedisServer {
             t.setDaemon(true);
             return t;
         });
+        running = true;
