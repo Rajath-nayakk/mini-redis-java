@@ -30,3 +30,4 @@ public final class ServerConfig {
     private final boolean persistenceEnabled;
     private final String aofSyncPolicy;
     private final long cleanupIntervalMs;
+    private final long maxMemoryBytes;
