@@ -25,3 +25,4 @@ mvn clean verify
 
 ## Running the Server
 ```bash
+mvn exec:java -Dexec.mainClass="com.miniredis.Main"
