@@ -65,3 +65,4 @@ class ServerIntegrationTest {
                 break;
             }
             parser.append(buf, 0, read);
+            RespValue value = parser.parseNext();
