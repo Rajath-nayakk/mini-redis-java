@@ -105,3 +105,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
                 throw new NumericOverflowException();
             }
         });
+        return resultHolder[0];
