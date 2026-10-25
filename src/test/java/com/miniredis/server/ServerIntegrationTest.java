@@ -29,3 +29,4 @@ class ServerIntegrationTest {
             port = ss.getLocalPort();
         }
         ServerConfig config = ServerConfig.builder()
+                .host("127.0.0.1")
