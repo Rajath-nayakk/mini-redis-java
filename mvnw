@@ -88,3 +88,4 @@ hash_string() {
   done
   printf %x\\n $h
 }
+
