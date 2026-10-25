@@ -144,3 +144,4 @@ class RespParserTest {
     @Test
     void testMalformedMissingCrlf() {
         // Bulk string missing terminating CRLF
+        parser.append("$3\r\nfooXX".getBytes(StandardCharsets.UTF_8));
