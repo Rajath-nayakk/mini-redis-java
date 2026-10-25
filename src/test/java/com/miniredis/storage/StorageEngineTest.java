@@ -159,3 +159,4 @@ class StorageEngineTest {
         assertEquals(2, singleDigitUsers.size());
         assertTrue(singleDigitUsers.contains("user:1"));
         assertTrue(singleDigitUsers.contains("user:2"));
+        assertFalse(singleDigitUsers.contains("user:3:profile"));
