@@ -54,3 +54,4 @@ class StorageEngineTest {
         assertEquals(-5L, engine.decrBy("counter", 5L));
     }
 
+    @Test
