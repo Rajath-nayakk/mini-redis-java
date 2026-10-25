@@ -99,3 +99,4 @@ public class MiniRedisServer {
             } catch (IOException e) {
                 if (!running) {
                     break;
+                }
