@@ -101,3 +101,4 @@ public interface RespValue {
             return RespType.BULK_STRING;
         }
 
+        @Override
