@@ -38,3 +38,4 @@ public interface RespValue {
         return string == null ? RespBulkString.NULL : new RespBulkString(string.getBytes(StandardCharsets.UTF_8));
     }
 
+    static RespBulkString nullBulkString() {
