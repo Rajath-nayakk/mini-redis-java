@@ -14,3 +14,4 @@ public final class RespEncoder {
     private static final byte PREFIX_SIMPLE_STRING = '+';
     private static final byte PREFIX_ERROR = '-';
     private static final byte PREFIX_INTEGER = ':';
+    private static final byte PREFIX_BULK_STRING = '$';
