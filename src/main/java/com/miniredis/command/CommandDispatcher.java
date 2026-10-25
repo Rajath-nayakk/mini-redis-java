@@ -48,3 +48,4 @@ public class CommandDispatcher {
         try {
             return switch (upperCommand) {
                 case "PING" -> handlePing(args);
+                case "ECHO" -> handleEcho(args);
