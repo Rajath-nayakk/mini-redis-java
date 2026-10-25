@@ -113,3 +113,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         return decrBy(key, 1L);
     }
 
+    @Override
