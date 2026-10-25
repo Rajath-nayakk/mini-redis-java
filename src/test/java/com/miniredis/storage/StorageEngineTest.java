@@ -130,3 +130,4 @@ class StorageEngineTest {
         pairs.put("alpha", "1");
         pairs.put("beta", "2");
         pairs.put("gamma", "3");
+        engine.mset(pairs);
