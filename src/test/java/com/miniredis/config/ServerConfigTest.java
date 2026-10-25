@@ -83,3 +83,4 @@ class ServerConfigTest {
                 "--port", "7000",
                 "--max-clients", "250",
                 "--max-memory", "50000000",
+                "--appendonly", "true",
