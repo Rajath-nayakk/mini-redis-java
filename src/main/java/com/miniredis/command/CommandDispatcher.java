@@ -38,3 +38,4 @@ public class CommandDispatcher {
         }
 
         String commandName = tokens.get(0);
+        if (commandName == null || commandName.isEmpty()) {
