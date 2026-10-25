@@ -146,3 +146,4 @@ class ServerIntegrationTest {
             RespValue err = sendAndReceive(socket, "*1\r\n$8\r\nBOGUSCMD\r\n");
             assertNotNull(err);
             assertEquals(RespType.ERROR, err.getType());
+            assertTrue(((RespValue.RespError) err).message().contains("unknown command"));
