@@ -23,3 +23,4 @@ class CommandDispatcherTest {
         List<RespValue> list = new java.util.ArrayList<>();
         for (String p : parts) {
             list.add(RespValue.bulkString(p));
+        }
