@@ -89,3 +89,4 @@ public class CommandDispatcher {
     private RespValue handleSet(List<String> args) {
         if (args.size() != 2) {
             return RespValue.error("ERR wrong number of arguments for 'set' command");
+        }
