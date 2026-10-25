@@ -50,3 +50,4 @@ public class ClientSession implements Runnable {
                     out.flush();
                 }
             }
+        } catch (ProtocolException e) {
