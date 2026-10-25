@@ -50,3 +50,4 @@ class RespParserTest {
         RespValue.RespBulkString bs = (RespValue.RespBulkString) parser.parseNext();
         assertNotNull(bs);
         assertEquals("hello", bs.asUtf8String());
+    }
