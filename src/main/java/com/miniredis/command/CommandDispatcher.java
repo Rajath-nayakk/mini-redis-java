@@ -60,3 +60,4 @@ public class CommandDispatcher {
                 case "DECRBY" -> handleDecrBy(args);
                 default -> RespValue.error("ERR unknown command '" + commandName + "'");
             };
+        } catch (WrongTypeException | InvalidIntegerException | NumericOverflowException e) {
