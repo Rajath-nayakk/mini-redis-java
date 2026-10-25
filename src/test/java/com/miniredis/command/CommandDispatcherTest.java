@@ -62,3 +62,4 @@ class CommandDispatcherTest {
         assertEquals("myval", ((RespValue.RespBulkString) getResp).asUtf8String());
 
         RespValue missResp = dispatcher.dispatch(cmd("GET", "nonexistent"));
+        assertEquals(RespType.BULK_STRING, missResp.getType());
