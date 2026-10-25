@@ -44,3 +44,4 @@ public final class RespEncoder {
                 out.write(ss.value().getBytes(StandardCharsets.UTF_8));
                 out.write(CRLF);
             }
+            case ERROR -> {
