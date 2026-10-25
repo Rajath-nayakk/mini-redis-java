@@ -64,3 +64,4 @@ class RespParserTest {
     @Test
     void testParseNullBulkString() {
         parser.append("$-1\r\n".getBytes(StandardCharsets.UTF_8));
+        RespValue.RespBulkString bs = (RespValue.RespBulkString) parser.parseNext();
