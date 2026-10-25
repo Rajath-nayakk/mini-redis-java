@@ -78,3 +78,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public long incr(String key) {
+        return incrBy(key, 1L);
