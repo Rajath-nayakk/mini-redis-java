@@ -22,3 +22,4 @@ The `RespParser` class decodes incoming byte streams incrementally:
 3. **Memory Safety**: Declared lengths for bulk strings are validated against `maxBulkStringLength` (default 512MB) before any allocation. The parser waits for bytes to arrive before allocating memory.
 4. **Buffer Compaction**: Consumed bytes are periodically compacted to prevent buffer drift.
 
+## 3. Command Integration
