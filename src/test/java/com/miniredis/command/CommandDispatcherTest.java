@@ -113,3 +113,4 @@ class CommandDispatcherTest {
 
     @Test
     void testNumericOverflowErrors() {
+        dispatcher.dispatch(cmd("SET", "big", String.valueOf(Long.MAX_VALUE)));
