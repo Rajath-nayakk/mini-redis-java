@@ -68,3 +68,4 @@ public interface RespValue {
         public RespError {
             Objects.requireNonNull(message, "Error message cannot be null");
             if (message.indexOf('\r') != -1 || message.indexOf('\n') != -1) {
+                throw new IllegalArgumentException("Error message cannot contain CRLF");
