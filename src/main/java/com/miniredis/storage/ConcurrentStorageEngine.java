@@ -133,3 +133,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             return 0;
         }
         int count = 0;
+        for (String key : keys) {
