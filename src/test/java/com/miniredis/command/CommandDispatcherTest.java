@@ -102,3 +102,4 @@ class CommandDispatcherTest {
 
     @Test
     void testInvalidIntegerErrors() {
+        dispatcher.dispatch(cmd("SET", "nan", "text"));
