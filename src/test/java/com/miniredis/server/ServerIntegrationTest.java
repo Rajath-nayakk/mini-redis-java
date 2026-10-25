@@ -170,3 +170,4 @@ class ServerIntegrationTest {
             String response = new String(buf, 0, read, StandardCharsets.UTF_8);
             assertTrue(response.startsWith("-ERR Protocol error"));
         }
+
