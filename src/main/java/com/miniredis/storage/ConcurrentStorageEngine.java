@@ -74,3 +74,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             throw new WrongTypeException();
         }
         return stringVal.length();
+    }
