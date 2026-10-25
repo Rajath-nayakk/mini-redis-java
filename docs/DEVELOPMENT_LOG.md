@@ -42,3 +42,4 @@
 ## Phase 3 â€” RESP2 Protocol Implementation
 - Date: 2026-10-25
 - Implemented RespType enum (SIMPLE_STRING, ERROR, INTEGER, BULK_STRING, ARRAY).
+- Implemented RespValue immutable records hierarchy: RespSimpleString, RespError, RespInteger, RespBulkString, RespArray.
