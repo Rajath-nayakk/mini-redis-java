@@ -144,3 +144,4 @@ class StorageEngineTest {
         engine.set("user:1", "alice");
         engine.set("user:2", "bob");
         engine.set("order:1", "item");
+        engine.set("user:3:profile", "details");
