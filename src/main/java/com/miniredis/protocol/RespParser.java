@@ -220,3 +220,4 @@ public class RespParser {
 
     private int available() {
         return writePos - readPos;
+    }
