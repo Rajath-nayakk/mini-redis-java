@@ -66,3 +66,4 @@ set_java_home() {
       'command' -v java
     )" || :
     JAVACCMD="$(
+      'set' +e
