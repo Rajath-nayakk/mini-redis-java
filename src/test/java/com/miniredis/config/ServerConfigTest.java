@@ -50,3 +50,4 @@ class ServerConfigTest {
         assertEquals(50L, config.getCleanupIntervalMs());
         assertEquals(100_000_000L, config.getMaxMemoryBytes());
         assertEquals("debug", config.getLogLevel());
+    }
