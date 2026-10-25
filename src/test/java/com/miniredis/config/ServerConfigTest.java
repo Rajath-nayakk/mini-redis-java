@@ -69,3 +69,4 @@ class ServerConfigTest {
     @Test
     void testInvalidLimits() {
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().maxClients(0).build());
+        assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().maxRequestSize(0).build());
