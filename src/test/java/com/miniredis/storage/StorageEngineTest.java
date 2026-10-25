@@ -140,3 +140,4 @@ class StorageEngineTest {
     }
 
     @Test
+    void testKeysPatternMatching() {
