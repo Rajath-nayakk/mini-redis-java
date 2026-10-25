@@ -14,3 +14,4 @@ public final class ServerConfig {
     public static final int DEFAULT_MAX_CLIENTS = 1000;
     public static final int DEFAULT_MAX_REQUEST_SIZE = 10 * 1024 * 1024; // 10MB
     public static final int DEFAULT_TIMEOUT_MS = 0; // 0 = no timeout
+    public static final String DEFAULT_DATA_DIR = "data";
