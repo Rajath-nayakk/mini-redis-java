@@ -83,3 +83,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
 
     @Override
     public long incrBy(String key, long delta) {
+        Objects.requireNonNull(key, "Key cannot be null");
