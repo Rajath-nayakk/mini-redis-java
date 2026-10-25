@@ -172,3 +172,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             if (val instanceof StringValue stringVal) {
                 result.add(stringVal.getValue());
             } else {
+                result.add(null);
