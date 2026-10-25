@@ -9,3 +9,4 @@ class ServerConfigTest {
 
     @Test
     void testDefaultConfig() {
+        ServerConfig config = ServerConfig.defaultConfig();
