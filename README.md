@@ -57,3 +57,4 @@ redis-cli -p 6379
 - [ ] Phase 6: TTL expiration & background sweeper
 - [ ] Phase 7: Append-Only File (AOF) persistence
 - [ ] Phase 8: Data structures (Lists, Sets, Hashes)
+- [ ] Phase 9: Transactions & Monitoring
