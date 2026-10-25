@@ -199,3 +199,4 @@ public class RespParser {
 
         List<RespValue> elements = new ArrayList<>(arrayCount);
         for (int i = 0; i < arrayCount; i++) {
+            RespValue elem = parseValue();
