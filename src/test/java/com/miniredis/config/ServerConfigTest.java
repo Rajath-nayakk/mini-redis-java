@@ -88,3 +88,4 @@ class ServerConfigTest {
         };
         ServerConfig config = ServerConfig.parseArgs(args);
         assertEquals("10.0.0.1", config.getHost());
+        assertEquals(7000, config.getPort());
