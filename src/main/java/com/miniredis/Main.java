@@ -51,3 +51,4 @@ public final class Main {
         System.out.println("* MiniRedis version=" + VERSION + ", Java=" + System.getProperty("java.version"));
         System.out.println("* Listening on host=" + config.getHost() + ", port=" + config.getPort());
         System.out.println("* Max clients=" + config.getMaxClients() + ", Persistence=" + (config.isPersistenceEnabled() ? "enabled" : "disabled"));
+        System.out.println("-------------------------------------------------------");
