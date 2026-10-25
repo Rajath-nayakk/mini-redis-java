@@ -85,3 +85,4 @@ class ServerIntegrationTest {
 
     @Test
     void testSetFollowedByGet() throws Exception {
+        try (Socket socket = connect()) {
