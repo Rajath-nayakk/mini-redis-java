@@ -30,3 +30,4 @@ class RespEncoderTest {
 
     @Test
     void testEncodeBulkString() {
+        byte[] encoded = RespEncoder.encode(RespValue.bulkString("hello"));
