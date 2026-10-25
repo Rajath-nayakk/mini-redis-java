@@ -22,3 +22,4 @@ class RespEncoderTest {
     }
 
     @Test
+    void testEncodeInteger() {
