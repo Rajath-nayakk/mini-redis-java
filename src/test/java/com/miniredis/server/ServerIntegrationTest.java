@@ -96,3 +96,4 @@ class ServerIntegrationTest {
             assertEquals(RespType.BULK_STRING, getResp.getType());
             assertEquals("Boston", ((RespValue.RespBulkString) getResp).asUtf8String());
         }
+    }
