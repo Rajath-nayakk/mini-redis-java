@@ -86,3 +86,4 @@ if ($env:MAVEN_USER_HOME) {
 
 if (-not (Test-Path -Path $MAVEN_M2_PATH)) {
     New-Item -Path $MAVEN_M2_PATH -ItemType Directory | Out-Null
+}
