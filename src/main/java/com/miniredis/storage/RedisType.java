@@ -12,3 +12,4 @@ public enum RedisType {
     NONE("none");
 
     private final String code;
+
