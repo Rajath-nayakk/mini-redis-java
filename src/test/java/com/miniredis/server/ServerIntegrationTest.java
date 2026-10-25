@@ -29,3 +29,4 @@ class ServerIntegrationTest {
                 .port(0) // Ephemeral port assigned by OS
                 .maxClients(100)
                 .build();
+        CommandDispatcher dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
