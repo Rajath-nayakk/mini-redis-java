@@ -144,3 +144,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     @Override
     public boolean del(String key) {
         Objects.requireNonNull(key, "Key cannot be null");
+        return store.remove(key) != null;
