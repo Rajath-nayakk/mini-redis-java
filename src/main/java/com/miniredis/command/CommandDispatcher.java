@@ -13,3 +13,4 @@ public class CommandDispatcher {
 
     private final StorageEngine engine;
 
+    public CommandDispatcher(StorageEngine engine) {
