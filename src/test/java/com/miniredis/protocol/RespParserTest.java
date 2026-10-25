@@ -132,3 +132,4 @@ class RespParserTest {
     @Test
     void testMultipleCommandsInSingleBuffer() {
         String multi = "*1\r\n$4\r\nPING\r\n*1\r\n$4\r\nPING\r\n";
+        parser.append(multi.getBytes(StandardCharsets.UTF_8));
