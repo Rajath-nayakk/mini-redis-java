@@ -66,3 +66,4 @@ public class RespParser {
         if (available() == 0) {
             return null;
         }
+        byte prefix = buffer[readPos];
