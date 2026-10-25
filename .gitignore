@@ -5,3 +5,4 @@ target/
 # IDE and editor files
 .idea/
 *.iml
+.vscode/
