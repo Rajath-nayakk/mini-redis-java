@@ -26,3 +26,4 @@ public final class RespEncoder {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         try {
             encode(value, baos);
+        } catch (IOException e) {
