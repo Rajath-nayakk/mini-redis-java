@@ -39,3 +39,4 @@ CYGWIN* | MINGW*)
   [ -z "${JAVA_HOME-}" ] || JAVA_HOME="$(cygpath --unix "$JAVA_HOME")"
   native_path() { cygpath --path --windows "$1"; }
   ;;
+esac
