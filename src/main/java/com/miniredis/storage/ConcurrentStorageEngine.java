@@ -116,3 +116,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
     @Override
     public long decrBy(String key, long delta) {
         if (delta == Long.MIN_VALUE) {
+            throw new NumericOverflowException();
