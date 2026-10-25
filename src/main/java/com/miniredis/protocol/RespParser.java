@@ -19,3 +19,4 @@ public class RespParser {
     private int readPos = 0;
     private int writePos = 0;
 
+    public RespParser() {
