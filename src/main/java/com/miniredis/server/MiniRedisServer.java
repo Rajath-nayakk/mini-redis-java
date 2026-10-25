@@ -146,3 +146,4 @@ public class MiniRedisServer {
     }
 
     public int getPort() {
+        return (serverSocket != null && serverSocket.isBound()) ? serverSocket.getLocalPort() : config.getPort();
