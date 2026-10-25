@@ -119,3 +119,4 @@ public interface RespValue {
         public static final RespArray NULL = new RespArray(null);
 
         public boolean isNull() {
+            return elements == null;
