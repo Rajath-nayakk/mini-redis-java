@@ -111,3 +111,4 @@ public class MiniRedisServer {
             } catch (IOException ignored) {
             }
         }
+        activeSockets.clear();
