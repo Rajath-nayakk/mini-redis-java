@@ -186,3 +186,4 @@ class ServerIntegrationTest {
         // Client read should detect closure (EOF -1)
         InputStream in = client.getInputStream();
         int b = in.read();
+        assertEquals(-1, b, "Socket should receive EOF on server shutdown");
