@@ -102,3 +102,4 @@ public interface RespValue {
         }
 
         @Override
+        public boolean equals(Object o) {
