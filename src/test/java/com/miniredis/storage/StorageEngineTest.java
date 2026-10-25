@@ -146,3 +146,4 @@ class StorageEngineTest {
         engine.set("order:1", "item");
         engine.set("user:3:profile", "details");
 
+        Set<String> allKeys = engine.keys("*");
