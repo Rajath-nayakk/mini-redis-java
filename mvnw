@@ -170,3 +170,4 @@ fi
 
 mkdir -p -- "${MAVEN_HOME%/*}"
 
+# Download and Install Apache Maven
