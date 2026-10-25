@@ -33,3 +33,4 @@ class ServerIntegrationTest {
                 .port(port)
                 .maxClients(100)
                 .build();
+        CommandDispatcher dispatcher = new CommandDispatcher(new ConcurrentStorageEngine());
