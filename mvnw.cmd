@@ -120,3 +120,4 @@ trap {
   }
 }
 
+New-Item -Itemtype Directory -Path "$MAVEN_HOME_PARENT" -Force | Out-Null
