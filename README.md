@@ -50,3 +50,4 @@ redis-cli -p 6379
 ## Project Status
 - [x] Phase 0: Workspace inspection & environment validation
 - [x] Phase 1: Buildable foundation, configuration & tests
+- [ ] Phase 2: In-memory storage engine
