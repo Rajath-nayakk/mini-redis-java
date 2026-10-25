@@ -56,3 +56,4 @@ class ServerConfigTest {
     void testInvalidPort() {
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().port(0).build());
         assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().port(-1).build());
+        assertThrows(IllegalArgumentException.class, () -> ServerConfig.builder().port(65536).build());
