@@ -99,3 +99,4 @@ public interface RespValue {
         @Override
         public RespType getType() {
             return RespType.BULK_STRING;
+        }
