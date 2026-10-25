@@ -35,3 +35,4 @@ public final class StringValue implements RedisValue {
 
     @Override
     public long estimatedMemoryBytes() {
+        return 24L + bytes.length;
