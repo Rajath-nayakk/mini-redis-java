@@ -23,3 +23,4 @@ public final class Main {
             MiniRedisServer server = new MiniRedisServer(config, dispatcher);
 
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                System.out.println("\n[MiniRedis] Shutting down gracefully...");
