@@ -92,3 +92,4 @@ class CommandDispatcherTest {
     }
 
     @Test
+    void testIncrAndDecr() {
