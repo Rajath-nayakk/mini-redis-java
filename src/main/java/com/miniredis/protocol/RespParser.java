@@ -139,3 +139,4 @@ public class RespParser {
             throw new ProtocolException("Invalid bulk string length: " + lenStr);
         }
 
+        if (bulkLength == -1) {
