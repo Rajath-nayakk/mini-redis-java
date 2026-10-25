@@ -111,3 +111,4 @@ class StorageEngineTest {
 
     @Test
     void testExistsAndDel() {
+        assertFalse(engine.exists("k1"));
