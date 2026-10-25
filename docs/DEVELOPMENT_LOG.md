@@ -6,3 +6,4 @@
 - Repository: Clean Git repository initialized on branch main.
 - User Identity: Rajath Nayak <rajathnayak2006@gmail.com>
 
+### Environment Discovery
