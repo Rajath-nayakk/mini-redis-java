@@ -134,3 +134,4 @@ public class RespParser {
         String lenStr = new String(buffer, start, lenStrLen, StandardCharsets.US_ASCII);
         int bulkLength;
         try {
+            bulkLength = Integer.parseInt(lenStr);
