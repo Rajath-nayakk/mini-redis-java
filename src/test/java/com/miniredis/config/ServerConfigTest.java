@@ -30,3 +30,4 @@ class ServerConfigTest {
                 .port(6380)
                 .maxClients(500)
                 .maxRequestSize(5 * 1024 * 1024)
+                .timeoutMs(5000)
