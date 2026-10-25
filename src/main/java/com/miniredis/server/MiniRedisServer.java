@@ -94,3 +94,4 @@ public class MiniRedisServer {
         if (!running) {
             return;
         }
+        running = false;
