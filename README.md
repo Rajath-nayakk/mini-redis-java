@@ -61,3 +61,4 @@ redis-cli -p 6379
 - [ ] Phase 10: Final quality, benchmarks & release
 
 ## License
+Distributed under the [MIT License](LICENSE).
