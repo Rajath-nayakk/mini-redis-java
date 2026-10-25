@@ -76,3 +76,4 @@
                     </execution>
                 </executions>
             </plugin>
+        </plugins>
