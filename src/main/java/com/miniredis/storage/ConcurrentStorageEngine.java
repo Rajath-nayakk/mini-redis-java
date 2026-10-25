@@ -86,3 +86,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
         Objects.requireNonNull(key, "Key cannot be null");
         final long[] resultHolder = new long[1];
         store.compute(key, (k, old) -> {
+            long current = 0L;
