@@ -21,3 +21,4 @@ public interface StorageEngine {
     int exists(List<String> keys);
     boolean del(String key);
     int del(List<String> keys);
+    List<String> mget(List<String> keys);
