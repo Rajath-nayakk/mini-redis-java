@@ -184,3 +184,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             return;
         }
         for (Map.Entry<String, String> entry : entries.entrySet()) {
+            set(entry.getKey(), entry.getValue());
