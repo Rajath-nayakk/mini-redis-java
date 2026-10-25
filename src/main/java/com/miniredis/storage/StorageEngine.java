@@ -15,3 +15,4 @@ public interface StorageEngine {
     int strlen(String key);
     long incr(String key);
     long incrBy(String key, long delta);
+    long decr(String key);
