@@ -47,3 +47,4 @@ class ServerIntegrationTest {
         }
     }
 
+    private Socket connect() throws Exception {
