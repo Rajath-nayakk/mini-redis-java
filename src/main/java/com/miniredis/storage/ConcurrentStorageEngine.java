@@ -44,3 +44,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             store.put(key, oldVal);
             throw new WrongTypeException();
         }
+        return stringOldVal.getValue();
