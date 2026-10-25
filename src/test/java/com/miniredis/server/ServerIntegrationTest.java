@@ -103,3 +103,4 @@ class ServerIntegrationTest {
         try (Socket socket = connect()) {
             for (int i = 0; i < 5; i++) {
                 RespValue resp = sendAndReceive(socket, "*2\r\n$4\r\nECHO\r\n$5\r\nmsg-" + i + "\r\n");
+                assertNotNull(resp);
