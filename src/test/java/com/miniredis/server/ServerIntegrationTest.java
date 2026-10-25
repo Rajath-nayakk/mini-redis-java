@@ -47,3 +47,4 @@ class ServerIntegrationTest {
         return new Socket("127.0.0.1", port);
     }
 
+    private RespValue sendAndReceive(Socket socket, String respCommand) throws Exception {
