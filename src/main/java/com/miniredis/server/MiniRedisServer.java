@@ -41,3 +41,4 @@ public class MiniRedisServer {
             return;
         }
 
+        serverSocket = new ServerSocket();
