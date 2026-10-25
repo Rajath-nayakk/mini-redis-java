@@ -5,3 +5,4 @@ package com.miniredis.storage;
  */
 public interface RedisValue {
     RedisType getType();
+    long estimatedMemoryBytes();
