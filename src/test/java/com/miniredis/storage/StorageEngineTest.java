@@ -89,3 +89,4 @@ class StorageEngineTest {
 
     @Test
     void testInvalidInteger() {
+        engine.set("nan", "not-a-number");
