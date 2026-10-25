@@ -58,3 +58,4 @@ public class ConcurrentStorageEngine implements StorageEngine {
             if (!(old instanceof StringValue strOld)) {
                 throw new WrongTypeException();
             }
+            return new StringValue(strOld.getValue() + value);
